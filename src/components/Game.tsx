@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { BACKSPACE, ENTER, GAME_ROUNDS, GAME_WORD_LENGTH, type LetterState } from "../constants";
+import { BACKSPACE, ENTER, GAME_ROUNDS, GAME_WORD_LENGTH, LetterState } from "../constants";
 import { GuessRow } from "./GuessRow";
 import { Keyboard } from "./Keyboard";
 import { useCurrentGuessReducer } from "../hooks/useCurrentGuessReducer";

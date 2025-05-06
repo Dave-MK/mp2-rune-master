@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { BACKSPACE, ENTER, type LetterState } from "../constants";
+import { BACKSPACE, ENTER, LetterState } from "../constants";
 
 const ROWS = [
     "QWERTYUIOP".split(""),

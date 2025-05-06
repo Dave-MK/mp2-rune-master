@@ -1,5 +1,5 @@
 import classNames from "classnames"
-import { GAME_WORD_LENGTH, type LetterState } from "../constants"
+import { GAME_WORD_LENGTH, LetterState } from "../constants"
 
 type Props = {
     guess: string | undefined
