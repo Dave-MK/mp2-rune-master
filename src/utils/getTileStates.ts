@@ -1,4 +1,4 @@
-import { GAME_WORD_LENGTH } from "../constants"
+import { GAME_WORD_LENGTH, LetterState } from "../constants"
 
 export const replaceCharAtIndex = (
     str: string,
@@ -13,7 +13,7 @@ export const getTileStates = (
     guess: string,
     isSubmitted: boolean
 ) => {
-    const tileStates: Array<TileState> = Array.from<TileState>({
+    const tileStates: Array<LetterState> = Array.from<LetterState>({
         length: GAME_WORD_LENGTH
     }).fill('default')
 
