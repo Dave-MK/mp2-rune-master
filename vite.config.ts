@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base: '/mp2-thats-the-word/',
 })
