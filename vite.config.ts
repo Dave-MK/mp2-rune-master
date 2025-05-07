@@ -4,9 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/mp2-thats-the-word/',
   plugins: [
     react(),
     tailwindcss(),
   ],
-  base: '/mp2-thats-the-word/',
 })
