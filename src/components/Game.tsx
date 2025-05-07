@@ -17,10 +17,31 @@ export const Game = ({ solution }: Props) => {
     const [gameCompletionState, setGameCompletion] = useState<
         'active' | 'won' | 'lost'
     >('active');
+
     const setGuessesCallback = (guesses: Array<string>) => {
         setGuesses(guesses);
         setStoredGameState(guesses);
     }
+
+    const submitWord = useCallback(() => {
+        if (currentGuess.length !== GAME_WORD_LENGTH) {
+            return;
+        }
+        if (!IsValidWord(currentGuess)) {
+            return;
+        }
+        setGuessesCallback([...guesses, currentGuess]);
+        if (currentGuess === solution) {
+            setGameCompletion('won');
+            return;
+        }
+        if (guesses.length + 1 === GAME_ROUNDS) {
+            setGameCompletion('lost');
+            return;
+        }
+
+        dispatch({ type: "clear" });
+    }, [currentGuess, guesses, dispatch, setGameCompletion])
 
     const onKeyPress = useCallback(
         (key: string) => {
@@ -31,22 +52,7 @@ export const Game = ({ solution }: Props) => {
             }
 
             if (key === ENTER) {
-                if (currentGuess.length !== GAME_WORD_LENGTH) {
-                    return;
-                }
-                if (!IsValidWord(currentGuess)) {
-                    return;
-                }
-                setGuessesCallback([...guesses, currentGuess]);
-                if (currentGuess === solution) {
-                    setGameCompletion('won');
-                    return;
-                }
-                if (guesses.length + 1 === GAME_ROUNDS) {
-                    setGameCompletion('lost');
-                    return;
-                }
-                dispatch({ type: "clear" });
+                submitWord();
                 return;
             }
             if (key.length !== 1 || !/[a-z]|[A-Z]/.test(key)) {
@@ -54,7 +60,7 @@ export const Game = ({ solution }: Props) => {
             }
             dispatch({ type: "add", letter: key.toUpperCase() });
         },
-        [dispatch, currentGuess]
+        [dispatch, submitWord]
     );
 
     const onKeyDownEvt = useCallback(
@@ -101,6 +107,7 @@ export const Game = ({ solution }: Props) => {
     return (
         <div className="w-full h-full flex justify-center ">
             <div className="w-full max-w-lg flex flex-col items-center justify-between py-4 max-h-[625px]">
+                <h1>{gameCompletionState}</h1>
                 <div className="flex flex-col gap-2">
                     {Array.from({ length: GAME_ROUNDS }).map((_, idx) => {
                         return (
