@@ -1,4 +1,4 @@
-import { use, useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
     BACKSPACE,
     ENTER,
@@ -26,10 +26,10 @@ export const Game = ({ solution }: Props) => {
     const [gameCompletionState, setGameCompletion] = useState<
         "active" | "won" | "lost"
     >("active");
-    const [toastText, setToastText] = useState("");
-    const toastTimeout = useRef<number>();
+    const [toastText, setToastText] = useState<string>("");
+    const toastTimeout = useRef<NodeJS.Timeout | null>(null);
     const [shakeCurrentRow, setShakeCurrentRow] = useState<boolean>(false);
-    const shakeTimeout = useRef<number>();
+    const shakeTimeout = useRef<NodeJS.Timeout | null>(null);
 
     const setGuessesCallback = useCallback(
         (guesses: Array<string>) => {
@@ -39,26 +39,31 @@ export const Game = ({ solution }: Props) => {
         [setGuesses, setStoredGameState]
     );
 
-    const showToast = useCallback(
-        (text: string) => {
+    const showToast = useCallback((text: string) => {
+        // Clear any existing timeout
+        if (toastTimeout.current) {
             clearTimeout(toastTimeout.current);
-            setToastText(text);
-            toastTimeout.current = setTimeout(() => {
-                setToastText('');
-            }, 2000);
-            return () => clearTimeout(toastTimeout.current);
-        },
-        [setToastText, toastTimeout]
-    );
+        }
+
+        setToastText(text);
+
+        toastTimeout.current = setTimeout(() => {
+            setToastText('');
+        }, 2000);
+    }, [setToastText, toastTimeout]);
 
     const shakeCurrentGuess = useCallback(() => {
-        clearTimeout(shakeTimeout.current)
+        // Clear any existing timeout
+        if (shakeTimeout.current) {
+            clearTimeout(shakeTimeout.current);
+        }
+
         setShakeCurrentRow(true);
+
         shakeTimeout.current = setTimeout(() => {
             setShakeCurrentRow(false);
-        }, 1000)
-        return () => clearTimeout(shakeTimeout.current);
-    }, [shakeTimeout])
+        }, 1000);
+    }, [shakeTimeout]);
 
     const submitWord = useCallback(() => {
         if (currentGuess.length !== GAME_WORD_LENGTH) {

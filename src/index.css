@@ -29,57 +29,65 @@ h1 {
   @apply font-bold text-2xl;
 }
 
-@theme {
-  --animate-pop: pop 100ms ease-in-out;
-
-  @keyframes pop {
-    from {
-      transform: scale(1.1);
-      border-color: @apply border-gray-500;
-    }
-    to {
-      transform: scale(1);
-      border-color: @apply border-gray-300;
-    }
+/* ✅ Pop animation */
+@keyframes pop {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
   }
 }
-
-@theme {
-  --animate-fade-in: fade-in 300ms ease-in;
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+.animate-pop {
+  animation: pop 100ms ease-in-out;
 }
 
-@theme {
-  --animate-shake: shake 600ms;
-
-  @keyframes shake {
-    10%,
-    90% {
-      transform: translateX(-1px);
-    }
-  
-    20%,
-    80% {
-      transform: translateX(2px);
-    }
-  
-    30%,
-    50%,
-    70% {
-      transform: translateX(-4px);
-    }
-  
-    40%,
-    60% {
-      transform: translateX(4px);
-    }
+/* Fade-in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+.animate-fade-in {
+  animation: fade-in 300ms ease-in;
+}
+
+/* Shake animation */
+@keyframes shake {
+  10%, 90% {
+    transform: translateX(-1px);
+  }
+  20%, 80% {
+    transform: translateX(2px);
+  }
+  30%, 50%, 70% {
+    transform: translateX(-4px);
+  }
+  40%, 60% {
+    transform: translateX(4px);
+  }
+}
+.animate-shake {
+  animation: shake 600ms;
+}
+
+/* Flip animation */
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+.animate-flip {
+  animation: flip 600ms ease-in;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }

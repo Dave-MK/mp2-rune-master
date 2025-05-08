@@ -11,7 +11,7 @@ export const GuessRow = ({ guess, letterStates, shake }: Props) => {
     // const tileStates = getTileStates(solution, guess, isSubmitted)
 
     return (
-        <div className={classNames("flex gap-2", {['animate-shake']: shake})}>
+        <div className={classNames("flex gap-2", { ['animate-shake']: shake })}>
             {Array.from({ length: GAME_WORD_LENGTH }).map((_, idx) => {
                 return (
                     <Tile
@@ -25,26 +25,31 @@ export const GuessRow = ({ guess, letterStates, shake }: Props) => {
 }
 
 type TileProps = {
-    letter: string | undefined
-    state: LetterState
+    letter: string;
+    state: LetterState;
 }
 
-export const Tile = ({ letter, state }: TileProps) => {
+export const Tile: React.FC<TileProps> = ({ letter, state }) => {
     return (
         <div
             className={classNames(
-                "border w-14 h-14 flex justify-center items-center text-3xl font-bold",
+                'border w-14 h-14 flex justify-center items-center text-3xl font-bold transition-all duration-200',
                 {
-                    ['border-gray-500 bg-[#292929]']: !letter,
-                    ['animate-pop']: letter,
-                    ['bg-[#242424]']: state === 'default',
-                    ['bg-teal-500']: state === 'correct',
-                    ['bg-gray-700']: state === 'incorrect',
-                    ['bg-teal-800']: state === 'out-of-place'
+                    // Empty tile
+                    'border-gray-500 bg-[#292929]': !letter,
+                    // Animate pop when letter appears
+                    'animate-pop': !!letter && state === 'default',
+                    // Animate flip when state changes (e.g., after guess is checked)
+                    'animate-flip': state !== 'default' && !!letter,
+                    // State backgrounds
+                    'bg-[#242424]': state === 'default',
+                    'bg-teal-500 text-white': state === 'correct',
+                    'bg-gray-700 text-white': state === 'incorrect',
+                    'bg-teal-800 text-white': state === 'out-of-place',
                 }
             )}
         >
             {letter}
         </div>
-    )
-}
+    );
+};
