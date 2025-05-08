@@ -90,7 +90,7 @@ export const Game = ({ solution }: Props) => {
                 showToast(
                     `Ha, Still just a mere Apprentice!
                     The word was ${solution}!`);
-            }, 2000)
+            }, 5000)
             return;
         }
     }, [currentGuess, guesses, dispatch, setGameCompletion]);
