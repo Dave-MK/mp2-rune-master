@@ -77,15 +77,18 @@ export const Game = ({ solution }: Props) => {
         }
         setGuessesCallback([...guesses, currentGuess]);
         dispatch({ type: "clear" });
-
         if (currentGuess === solution) {
             setGameCompletion("won");
-            showToast("You truly are the Rune Master!")
+            setTimeout(() => {
+                showToast("You truly are the Rune Master!")
+            }, 1500)
             return;
         }
         if (guesses.length + 1 === GAME_ROUNDS) {
             setGameCompletion("lost");
-            showToast("Ha! Still just a mere Apprentice!")
+            setTimeout(() => {
+                showToast("Ha! Still just a mere Apprentice!")
+            }, 1500)
             return;
         }
     }, [currentGuess, guesses, dispatch, setGameCompletion]);

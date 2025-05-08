@@ -1,5 +1,6 @@
 import classNames from "classnames"
 import { GAME_WORD_LENGTH, LetterState } from "../constants"
+import { useEffect, useState } from "react";
 
 type Props = {
     guess: string | undefined;
@@ -18,7 +19,8 @@ export const GuessRow = ({ guess, letterStates, shake }: Props) => {
                         key={idx}
                         idx={idx}
                         letter={guess ? guess[idx] : ''}
-                        state={letterStates[idx]} />
+                        state={letterStates[idx]} 
+                    />
                 )
             })}
         </div>
@@ -32,9 +34,21 @@ type TileProps = {
 }
 
 export const Tile: React.FC<TileProps> = ({ letter, state, idx }) => {
+    const [revealColour, setRevealColour] = useState<boolean>(false);
+    const animationDelay = idx * 150;
+
+    useEffect(() => {
+        let timeout: NodeJS.Timeout;
+        if (state !== 'default') {
+            timeout = setTimeout(() => {
+                setRevealColour(true);
+            }, animationDelay + 300);
+        }
+        return () => clearTimeout(timeout);
+    }, [state])
     return (
         <div
-            style={{ animationDelay: state === 'default' ? '0ms' : `${idx * 150}ms`}}
+            style={{ animationDelay: state === 'default' ? '0ms' : `${animationDelay}ms`}}
             className={classNames(
                 'border w-14 h-14 flex justify-center items-center text-3xl font-bold transition-all duration-200',
                 {
@@ -46,9 +60,9 @@ export const Tile: React.FC<TileProps> = ({ letter, state, idx }) => {
                     'animate-flip': state !== 'default' && !!letter,
                     // State backgrounds
                     'bg-[#242424]': state === 'default',
-                    'bg-teal-500 text-white': state === 'correct',
-                    'bg-gray-700 text-white': state === 'incorrect',
-                    'bg-teal-800 text-white': state === 'out-of-place',
+                    'bg-teal-500 text-white': state === 'correct' && revealColour,
+                    'bg-gray-700 text-white': state === 'incorrect' && revealColour,
+                    'bg-teal-800 text-white': state === 'out-of-place' && revealColour,
                 }
             )}
         >

@@ -1,4 +1,4 @@
-import allowedWords from "../config/allowed_words.json";
+import allowedWords from "../config/allowed_words";
 
 const allowedWordsSet = new Set(allowedWords);
 

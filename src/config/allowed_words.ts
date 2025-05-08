@@ -1,4 +1,4 @@
-[
+const allowed_words = [
     "aahed",
     "aalii",
     "aapas",
@@ -14855,3 +14855,5 @@
     "widow",
     "augur"
 ]
+
+export default allowed_words;
