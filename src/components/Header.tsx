@@ -6,14 +6,14 @@ type Props = {}
 export const Header = (_props: Props) => {
     return (
         <>
-            <div className="flex justify-between items-center w-full h-14 border-b border-gray-600 p-8">
-                <span className="text-white text-5xl">
+            <div className="flex justify-between items-center w-full h-12 border-b border-gray-600 p-6">
+                <span className="text-white text-4xl">
                     <FaRobot />
                 </span>
                 <h1>
                     THAT'S THE WORD!
                 </h1>
-                <span className="text-white text-4xl">
+                <span className="text-white text-3xl">
                     <GiHamburgerMenu />
                 </span>
                 

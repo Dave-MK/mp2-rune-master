@@ -174,7 +174,7 @@ export const Game = ({ solution }: Props) => {
                 </div>
             )}
             <div className="w-full max-w-lg flex flex-col items-center justify-between py-4 max-h-[625px]">
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-2 mb-[5px]">
                     {Array.from({ length: GAME_ROUNDS }).map((_, idx) => {
                         const isCurrentGuess = idx === guesses.length;
                         return (
