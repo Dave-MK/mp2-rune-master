@@ -80,15 +80,18 @@ export const Game = ({ solution }: Props) => {
         if (currentGuess === solution) {
             setGameCompletion("won");
             setTimeout(() => {
-                showToast("You truly are the Rune Master!")
+                showToast("You truly are the Rune Master!");
             }, 1500)
             return;
         }
         if (guesses.length + 1 === GAME_ROUNDS) {
             setGameCompletion("lost");
             setTimeout(() => {
-                showToast(`Ha! Still just a mere Apprentice! The word was ${solution}`)
-            }, 1500)
+                showToast(
+                    `Ha! Still just a mere Apprentice!<br>
+                    The word was<br>
+                    ${solution}!`);
+            }, 2000)
             return;
         }
     }, [currentGuess, guesses, dispatch, setGameCompletion]);
