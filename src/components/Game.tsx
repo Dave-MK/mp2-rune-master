@@ -27,9 +27,9 @@ export const Game = ({ solution }: Props) => {
         "active" | "won" | "lost"
     >("active");
     const [toastText, setToastText] = useState<string>("");
-    const toastTimeout = useRef<NodeJS.Timeout | null>(null);
+    const toastTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
     const [shakeCurrentRow, setShakeCurrentRow] = useState<boolean>(false);
-    const shakeTimeout = useRef<NodeJS.Timeout | null>(null);
+    const shakeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
     const setGuessesCallback = useCallback(
         (guesses: Array<string>) => {
