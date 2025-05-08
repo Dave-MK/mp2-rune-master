@@ -88,9 +88,8 @@ export const Game = ({ solution }: Props) => {
             setGameCompletion("lost");
             setTimeout(() => {
                 showToast(
-                    `Ha! Still just a mere Apprentice!<br>
-                    The word was<br>
-                    ${solution}!`);
+                    `Ha, Still just a mere Apprentice!
+                    The word was ${solution}!`);
             }, 2000)
             return;
         }
@@ -169,9 +168,9 @@ export const Game = ({ solution }: Props) => {
         <div className="w-full h-full flex justify-center ">
             {toastText && (
                 <div
-                    className="z-10 animate-fade-in absolute font-bold bg-slate-600 p-4 mt-4 rounded-md"
+                    className="z-10 max-w-xs flex justify-center animate-fade-in absolute font-bold bg-slate-600 p-4 mt-4 rounded-md"
                 >
-                    {toastText}
+                    <span className="text-xl font-bold text-center">{toastText}</span>
                 </div>
             )}
             <div className="w-full max-w-lg flex flex-col items-center justify-between py-4 max-h-[625px]">
