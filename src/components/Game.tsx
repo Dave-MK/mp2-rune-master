@@ -87,7 +87,7 @@ export const Game = ({ solution }: Props) => {
         if (guesses.length + 1 === GAME_ROUNDS) {
             setGameCompletion("lost");
             setTimeout(() => {
-                showToast("Ha! Still just a mere Apprentice!")
+                showToast(`Ha! Still just a mere Apprentice! The word was ${solution}`)
             }, 1500)
             return;
         }
