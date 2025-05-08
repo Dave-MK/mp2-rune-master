@@ -16,6 +16,7 @@ export const GuessRow = ({ guess, letterStates, shake }: Props) => {
                 return (
                     <Tile
                         key={idx}
+                        idx={idx}
                         letter={guess ? guess[idx] : ''}
                         state={letterStates[idx]} />
                 )
@@ -27,11 +28,13 @@ export const GuessRow = ({ guess, letterStates, shake }: Props) => {
 type TileProps = {
     letter: string;
     state: LetterState;
+    idx: number;
 }
 
-export const Tile: React.FC<TileProps> = ({ letter, state }) => {
+export const Tile: React.FC<TileProps> = ({ letter, state, idx }) => {
     return (
         <div
+            style={{ animationDelay: state === 'default' ? '0ms' : `${idx * 150}ms`}}
             className={classNames(
                 'border w-14 h-14 flex justify-center items-center text-3xl font-bold transition-all duration-200',
                 {
