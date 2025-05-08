@@ -18,6 +18,8 @@ export const getStoredGameState = () => {
     if (gameState.puzzleDate !== getTodayPuzzleDate()) {
         return [];
     }
+    // comment out the line below to turn on local storage
+    return [];
     return gameState.guesses;
 }
 

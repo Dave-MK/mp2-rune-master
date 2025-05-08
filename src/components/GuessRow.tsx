@@ -2,15 +2,16 @@ import classNames from "classnames"
 import { GAME_WORD_LENGTH, LetterState } from "../constants"
 
 type Props = {
-    guess: string | undefined
-    letterStates: Array<LetterState>
+    guess: string | undefined;
+    letterStates: Array<LetterState>;
+    shake: boolean;
 }
 
-export const GuessRow = ({ guess, letterStates }: Props) => {
+export const GuessRow = ({ guess, letterStates, shake }: Props) => {
     // const tileStates = getTileStates(solution, guess, isSubmitted)
 
     return (
-        <div className="flex gap-2">
+        <div className={classNames("flex gap-2", {['animate-shake']: shake})}>
             {Array.from({ length: GAME_WORD_LENGTH }).map((_, idx) => {
                 return (
                     <Tile
