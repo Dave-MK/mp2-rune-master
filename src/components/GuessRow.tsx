@@ -38,7 +38,7 @@ export const Tile: React.FC<TileProps> = ({ letter, state, idx }) => {
     const animationDelay = idx * 150;
 
     useEffect(() => {
-        let timeout: NodeJS.Timeout;
+        let timeout: ReturnType<typeof setTimeout>;
         if (state !== 'default') {
             timeout = setTimeout(() => {
                 setRevealColour(true);
