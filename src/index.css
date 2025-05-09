@@ -11,7 +11,8 @@
 
   color-scheme: light dark;
   color: white;
-  background-color: #242424;
+  background: blueviolet url(./assets/site_bg.jpg) no-repeat 50% 60%;
+  background-size: 100%;
 
   height: 100%;
 

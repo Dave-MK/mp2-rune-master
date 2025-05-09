@@ -12,7 +12,7 @@ export const GuessRow = ({ guess, letterStates, shake }: Props) => {
     // const tileStates = getTileStates(solution, guess, isSubmitted)
 
     return (
-        <div className={classNames("flex gap-2", { ['animate-shake']: shake })}>
+        <div className={classNames("flex gap-1", { ['animate-shake']: shake })}>
             {Array.from({ length: GAME_WORD_LENGTH }).map((_, idx) => {
                 return (
                     <Tile
@@ -50,7 +50,7 @@ export const Tile: React.FC<TileProps> = ({ letter, state, idx }) => {
         <div
             style={{ animationDelay: state === 'default' ? '0ms' : `${animationDelay}ms`}}
             className={classNames(
-                'border w-14 h-14 flex justify-center items-center text-3xl font-bold transition-all duration-200',
+                'border w-13 h-13 flex justify-center items-center text-3xl font-bold transition-all duration-200',
                 {
                     // Empty tile
                     'border-gray-500 bg-[#292929]': !letter,
