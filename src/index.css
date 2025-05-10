@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 #root {
-  height: 100%;
+  height: 100vh;
 }
 
 :root {
@@ -17,7 +17,7 @@
   color-scheme: light dark;
   color: white;
 
-  height: 100%;
+  height: 100vh;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,8 +26,8 @@
 }
 
 body {
-  height: 100%;
-  background: blueviolet url(./assets/images/site_bg.jpg) no-repeat 50% 40%;
+  height: 100vh;
+  background: rgb(20, 112, 74) url(./assets/images/site_bg.jpg) no-repeat 50% 40%;
   background-size: cover;
   backdrop-filter: brightness(0.7) contrast(1.1);
 }
