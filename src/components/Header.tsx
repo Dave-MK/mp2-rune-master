@@ -6,18 +6,16 @@ type Props = {}
 export const Header = (_props: Props) => {
     return (
         <>
-            <div className="flex justify-between items-center w-full h-12 border-b border-gray-600 p-6 bg-teal-600">
-                <span className="text-white text-4xl">
+            <div className="flex justify-between items-center w-full h-12 border-b border-teal-600 p-7 bg-teal-900/60">
+                <span className="text-yellow-500 text-4xl">
                     <GiGems />
                 </span>
                 <h1>
-                    RUNE MASTER
+                    Rune Master
                 </h1>
-                <span className="text-white text-3xl">
+                <span className="text-yellow-500 text-3xl">
                 <GiScrollUnfurled />
                 </span>
-                
-                
             </div>
         </>
     )

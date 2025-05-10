@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Pirata+One&display=swap');
 @import "tailwindcss";
 
 #root {
@@ -9,10 +10,12 @@
   line-height: 1.5;
   font-weight: 400;
 
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+
   color-scheme: light dark;
   color: white;
-  background: blueviolet url(./assets/site_bg.jpg) no-repeat 50% 60%;
-  background-size: 100%;
 
   height: 100%;
 
@@ -24,10 +27,18 @@
 
 body {
   height: 100%;
+  background: blueviolet url(./assets/images/site_bg.jpg) no-repeat 50% 60%;
+  background-size: cover;
+  backdrop-filter: brightness(0.7) contrast(1.1);
 }
 
 h1 {
-  @apply font-bold text-2xl;
+  @apply relative font-bold text-4xl bg-gradient-to-tl from-yellow-600 via-yellow-300 to-yellow-600 inline-block text-transparent bg-clip-text; 
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 3px;
+  filter: drop-shadow(-0.5px 2px black);
 }
 
 /* ✅ Pop animation */

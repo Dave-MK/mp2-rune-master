@@ -50,20 +50,20 @@ export const Tile: React.FC<TileProps> = ({ letter, state, idx }) => {
         <div
             style={{ animationDelay: state === 'default' ? '0ms' : `${animationDelay}ms`}}
             className={classNames(
-                'border w-13 h-13 flex justify-center items-center text-3xl font-bold transition-all duration-200',
                 {
                     // Empty tile
-                    'border-gray-500 bg-[#292929]': !letter,
+                    'bg-[url(./assets/images/tile.png)] bg-center bg-contain bg-no-repeat bg-transparent': !letter,
                     // Animate pop when letter appears
-                    'animate-pop': !!letter && state === 'default',
+                    'animate-pop bg-[url(./assets/images/tile.png)] bg-center bg-contain bg-no-repeat bg-transparent text-black': !!letter && state === 'default',
                     // Animate flip when state changes (e.g., after guess is checked)
-                    'animate-flip': state !== 'default' && !!letter,
+                    'animate-flip bg-[url(./assets/images/tile.png)] bg-center bg-contain bg-no-repeat bg-transparent text-black': state !== 'default' && !!letter,
                     // State backgrounds
-                    'bg-[#242424]': state === 'default',
-                    'bg-teal-500 text-white': state === 'correct' && revealColour,
-                    'bg-gray-700 text-white': state === 'incorrect' && revealColour,
-                    'bg-teal-800 text-white': state === 'out-of-place' && revealColour,
-                }
+                    'bg-[url(./src/assets/images/tile.png)]': state === 'default',
+                    'bg-[url(./src/assets/images/correct.png)] bg-center bg-contain bg-no-repeat bg-transparent text-orange-900': state === 'correct' && revealColour,
+                    'bg-[url(./src/assets/images/wrong.png)] bg-center bg-contain bg-no-repeat bg-transparent text-yellow-300': state === 'incorrect' && revealColour,
+                    'bg-[url(./src/assets/images/oop.png)] bg-center bg-contain bg-no-repeat bg-transparent text-yellow-100': state === 'out-of-place' && revealColour,
+                },
+                'w-10 h-14 flex justify-center items-center text-4xl font-bold transition-all duration-200'
             )}
         >
             {letter}
