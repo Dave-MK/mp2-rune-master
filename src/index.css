@@ -27,7 +27,7 @@
 
 body {
   height: 100%;
-  background: blueviolet url(./assets/images/site_bg.jpg) no-repeat 50% 60%;
+  background: blueviolet url(./assets/images/site_bg.jpg) no-repeat 50% 40%;
   background-size: cover;
   backdrop-filter: brightness(0.7) contrast(1.1);
 }
