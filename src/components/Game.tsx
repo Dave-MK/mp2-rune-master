@@ -165,7 +165,7 @@ export const Game = ({ solution }: Props) => {
     });
 
     return (
-        <div className="w-full h-full flex justify-center">
+        <div className="w-full h-screen flex justify-center">
             {toastText && (
                 <div
                     className="z-10 max-w-xs flex justify-center animate-fade-in absolute font-bold bg-slate-600 p-4 mt-4 rounded-md"
