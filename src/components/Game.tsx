@@ -49,7 +49,7 @@ export const Game = ({ solution }: Props) => {
 
         toastTimeout.current = setTimeout(() => {
             setToastText('');
-        }, 2000);
+        }, 5000);
     }, [setToastText, toastTimeout]);
 
     const shakeCurrentGuess = useCallback(() => {
@@ -90,7 +90,7 @@ export const Game = ({ solution }: Props) => {
                 showToast(
                     `Ha, Still just a mere Apprentice!
                     The word was ${solution}!`);
-            }, 5000)
+            }, 1500)
             return;
         }
     }, [currentGuess, guesses, dispatch, setGameCompletion]);
@@ -168,7 +168,7 @@ export const Game = ({ solution }: Props) => {
         <div className="w-full h-screen flex justify-center">
             {toastText && (
                 <div
-                    className="z-10 max-w-xs flex justify-center animate-fade-in absolute font-bold bg-slate-600 p-4 mt-4 rounded-md"
+                    className="bg-parchment z-10 max-w-xs flex justify-center animate-fade-in absolute font-bold p-4 mt-4"
                 >
                     <span className="text-xl font-bold text-center">{toastText}</span>
                 </div>

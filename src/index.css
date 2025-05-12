@@ -108,6 +108,14 @@ h1 {
   text-shadow: 0 -1px 0 rgb(36, 27, 11), 0 1px 0 rgb(235, 177, 77);
 }
 
+.bg-parchment {
+  background: transparent url('../src/assets/images/parchment.png') no-repeat center;
+  background-size: contain;
+  color: rgb(83, 63, 28);
+  font-size: 1.5rem;
+  text-shadow: 0 -1px 0 rgb(36, 27, 11), 0 1px 0 rgb(235, 177, 77);
+}
+
 /* ✅ Pop animation */
 @keyframes pop {
   0% {
