@@ -34,7 +34,7 @@ export const getTileStates = (
         }
         if (solution.includes(guess[i])) {
             solution = replaceCharAtIndex(solution, solution.indexOf(guess[i]), ' ')
-            tileStates[i] = 'out-of-place'
+            tileStates[i] = 'outofplace'
         } else {
             tileStates[i] = 'incorrect'
         }

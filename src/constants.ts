@@ -6,4 +6,4 @@ export const ENTER = "Enter";
 
 export const BACKSPACE = "Backspace";
 
-export type LetterState = "default" | "incorrect" | "correct" | "out-of-place";
+export type LetterState = "default" | "incorrect" | "correct" | "outofplace";

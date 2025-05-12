@@ -152,10 +152,10 @@ export const Game = ({ solution }: Props) => {
                 return;
             }
             if (
-                tileState === "out-of-place" ||
-                letterToLetterState[letter] === "out-of-place"
+                tileState === "outofplace" ||
+                letterToLetterState[letter] === "outofplace"
             ) {
-                letterToLetterState[letter] = "out-of-place";
+                letterToLetterState[letter] = "outofplace";
                 return;
             }
             if (tileState === "incorrect") {
