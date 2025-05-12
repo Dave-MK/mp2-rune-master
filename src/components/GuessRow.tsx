@@ -59,9 +59,9 @@ export const Tile: React.FC<TileProps> = ({ letter, state, idx }) => {
                     ["default-tile-text animate-flip"]: state !== 'default' && !!letter,
                     // State backgrounds
                     ["default-tile-text2"]: state === 'default',
-                    ["bg-[url(/src/assets/images/correct.png)] bg-center bg-contain bg-no-repeat bg-transparent correct-tile-text"]: state === 'correct' && revealColour,
-                    ["bg-[url(/src/assets/images/wrong.png)] bg-center bg-contain bg-no-repeat bg-transparent incorrect-tile-text"]: state === 'incorrect' && revealColour,
-                    ["bg-[url(/src/assets/images/oop.png)] bg-center bg-contain bg-no-repeat bg-transparent oop-tile-text"]: state === 'outofplace' && revealColour,
+                    ["correct-tile-text"]: state === 'correct' && revealColour,
+                    ["incorrect-tile-text"]: state === 'incorrect' && revealColour,
+                    ["oop-tile-text"]: state === 'outofplace' && revealColour,
                 },
                 'w-10 h-14 flex justify-center items-center text-4xl font-bold transition-all duration-200'
             )}

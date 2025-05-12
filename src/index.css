@@ -43,6 +43,18 @@ h1 {
   filter: drop-shadow(-0.5px 2px black);
 }
 
+.default-keyboard-tile {
+  background: transparent url(/src/assets/images/keyboard.png) no-repeat contain center;
+  color: rgb(180, 155, 111);
+  text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
+}
+
+.default-keyboard-tile2 {
+  background: transparent url(/src/assets/images/keyboard.png) no-repeat contain center;
+  color: rgb(180, 155, 111);
+  text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
+}
+
 .default-tile-text {
   background: transparent url(/src/assets/images/tile.png) no-repeat contain center;
   color: rgb(180, 155, 111);
@@ -56,16 +68,19 @@ h1 {
 }
 
 .correct-tile-text {
+  background: transparent url(/src/assets/images/correct.png) no-repeat contain center;
   color: rgb(82, 56, 16);
   text-shadow: 0 -1px 0 rgb(48, 42, 28), 0 1px 0 rgb(230, 190, 17);
 }
 
 .incorrect-tile-text {
+  background: transparent url(/src/assets/images/incorrect.png) no-repeat contain center;
   color: rgb(161, 121, 63);
   text-shadow: 0 -1px 0 rgb(39, 34, 23), 0 1px 0 rgb(221, 191, 134);
 }
 
 .oop-tile-text {
+  background: transparent url(/src/assets/images/oop.png) no-repeat contain center;
   color: rgb(83, 63, 28);
   text-shadow: 0 -1px 0 rgb(36, 27, 11), 0 1px 0 rgb(235, 177, 77);
 }
