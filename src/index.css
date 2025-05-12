@@ -90,7 +90,7 @@ h1 {
 }
 
 .incorrect-tile-text {
-  background: transparent url('../src/assets/images/incorrect.png') no-repeat center;
+  background: transparent url('../src/assets/images/wrong.png') no-repeat center;
   background-size: contain;
   color: rgb(161, 121, 63);
   text-shadow: 0 -1px 0 rgb(39, 34, 23), 0 1px 0 rgb(221, 191, 134);
