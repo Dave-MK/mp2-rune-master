@@ -53,10 +53,10 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
                     ["bg-[url(./assets/images/enter_backspace.png)] bg-center bg-contain bg-no-repeat bg-transparent default-tile-text"]: letter === ENTER || letter === BACKSPACE,
                     ["flex-1"]: letter !== ENTER && letter !== BACKSPACE,
                     ["flex-[2.15]"]: letter === ENTER || letter === BACKSPACE,
-                    ["bg-[url(./assets/images/keyboard.png)] bg-center bg-contain bg-no-repeat bg-transparent default-tile-text"]: letterState === 'default' && letter !== ENTER && letter !== BACKSPACE,
-                    ["bg-[url(./assets/images/correct.png)] bg-center bg-contain bg-no-repeat bg-transparent correct-tile-text"]: letterState === 'correct',
-                    ["bg-[url(./assets/images/wrong.png)] bg-center bg-contain bg-no-repeat bg-transparent incorrect-tile-text"]: letterState === 'incorrect',
-                    ["bg-[url(./assets/images/oop.png)] bg-center bg-contain bg-no-repeat bg-transparent oop-tile-text"]: letterState === 'outofplace'
+                    ["bg-[url(/src/assets/images/keyboard.png)] bg-center bg-contain bg-no-repeat bg-transparent default-tile-text"]: letterState === 'default' && letter !== ENTER && letter !== BACKSPACE,
+                    ["bg-[url(/src/assets/images/correct.png)] bg-center bg-contain bg-no-repeat bg-transparent correct-tile-text"]: letterState === 'correct',
+                    ["bg-[url(/src/assets/images/wrong.png)] bg-center bg-contain bg-no-repeat bg-transparent incorrect-tile-text"]: letterState === 'incorrect',
+                    ["bg-[url(/src/assets/images/oop.png)] bg-center bg-contain bg-no-repeat bg-transparent oop-tile-text"]: letterState === 'outofplace'
                 },
                 "flex justify-center items-center font-bold text-2xl rounded-md h-14 active:bg-amber-100"
             )}
