@@ -52,11 +52,11 @@ export const Tile: React.FC<TileProps> = ({ letter, state, idx }) => {
             className={classNames(
                 {
                     // Empty tile
-                    ["bg-[url(/src/assets/images/tile.png)] bg-center bg-contain bg-no-repeat bg-transparent default-tile-text"]: !letter,
+                    ["default-tile-text"]: !letter,
                     // Animate pop when letter appears
-                    ["bg-[url(/src/assets/images/tile.png)] bg-center bg-contain bg-no-repeat bg-transparent default-tile-text animate-pop"]: !!letter && state === 'default',
+                    ["default-tile-text animate-pop"]: !!letter && state === 'default',
                     // Animate flip when state changes (e.g., after guess is checked)
-                    ["bg-[url(/src/assets/images/tile.png)] bg-center bg-contain bg-no-repeat bg-transparent default-tile-text animate-flip"]: state !== 'default' && !!letter,
+                    ["default-tile-text animate-flip"]: state !== 'default' && !!letter,
                     // State backgrounds
                     ["bg-[url(/src/assets/images/tile.png)]"]: state === 'default',
                     ["bg-[url(/src/assets/images/correct.png)] bg-center bg-contain bg-no-repeat bg-transparent correct-tile-text"]: state === 'correct' && revealColour,
