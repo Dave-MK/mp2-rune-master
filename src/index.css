@@ -57,6 +57,13 @@ h1 {
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
 }
 
+.default-enter-backspace {
+  background: transparent url('../src/assets/images/enter_backspace.png') no-repeat center;
+  background-size: contain;
+  color: rgb(180, 155, 111);
+  text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
+}
+
 .default-tile-text {
   background: transparent url('../src/assets/images/tile.png') no-repeat center;
   background-size: contain;
