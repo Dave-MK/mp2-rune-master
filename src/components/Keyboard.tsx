@@ -4,7 +4,7 @@ import { BACKSPACE, ENTER, LetterState } from "../constants";
 const ROWS = [
     "QWERTYUIOP".split(""),
     " ASDFGHJKL ".split(""),
-    [ENTER, ..."ZXCVBNM".split(""), BACKSPACE],
+    [BACKSPACE, ..."ZXCVBNM".split(""), ENTER],
 ];
 
 type Props = {
@@ -58,7 +58,7 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
                     ["incorrect-tile-text"]: letterState === 'incorrect',
                     ["oop-tile-text"]: letterState === 'outofplace'
                 },
-                "flex justify-center items-center font-bold text-2xl rounded-md h-14 active:bg-amber-100"
+                "flex justify-center items-center font-bold rounded-md h-14 active:bg-amber-100"
             )}
             onClick={() => onKeyPress(letter)}
         >

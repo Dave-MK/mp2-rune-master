@@ -88,8 +88,8 @@ export const Game = ({ solution }: Props) => {
             setGameCompletion("lost");
             setTimeout(() => {
                 showToast(
-                    `Ha, Still just a mere Apprentice!
-                    The word was ${solution}!`);
+                    `You disappoint the Gods.
+                    Correct Runes: ${solution}`);
             }, 1500)
             return;
         }
@@ -165,16 +165,16 @@ export const Game = ({ solution }: Props) => {
     });
 
     return (
-        <div className="w-full h-screen flex justify-center">
+        <div className="w-full h-screen flex justify-around items-start">
             {toastText && (
                 <div
-                    className="bg-parchment z-10 max-w-xs flex justify-center animate-fade-in absolute font-bold p-4 mt-4"
+                    className="bg-parchment z-10 w-sm flex flex-col justify-center items-center animate-fade-in absolute p-4 mt-20"
                 >
-                    <span className="text-xl font-bold text-center">{toastText}</span>
+                    <span className="w-60 text-lg font-bold text-center">{toastText}</span>
                 </div>
             )}
             <div className="w-full max-w-lg flex flex-col items-center justify-around py-4 max-h-[625px]">
-                <div className="flex flex-col gap-1 mb-[5px]">
+                <div className="flex flex-col gap-1 mb-5">
                     {Array.from({ length: GAME_ROUNDS }).map((_, idx) => {
                         const isCurrentGuess = idx === guesses.length;
                         return (
