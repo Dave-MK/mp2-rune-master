@@ -61,7 +61,7 @@ export const Tile: React.FC<TileProps> = ({ letter, state, idx }) => {
                     ["bg-[url(./assets/images/tile.png)]"]: state === 'default',
                     ["bg-[url(./assets/images/correct.png)] bg-center bg-contain bg-no-repeat bg-transparent correct-tile-text"]: state === 'correct' && revealColour,
                     ["bg-[url(./assets/images/wrong.png)] bg-center bg-contain bg-no-repeat bg-transparent incorrect-tile-text"]: state === 'incorrect' && revealColour,
-                    ["bg-[url('/mp2-thats-the-word/assets/images/oop.png')] bg-center bg-contain bg-no-repeat bg-transparent oop-tile-text border-2"]: state === 'outofplace' && revealColour,
+                    ["bg-[url('assets/images/oop.png')] bg-center bg-contain bg-no-repeat bg-transparent oop-tile-text border-2"]: state === 'outofplace' && revealColour,
                 },
                 'w-10 h-14 flex justify-center items-center text-4xl font-bold transition-all duration-200'
             )}
