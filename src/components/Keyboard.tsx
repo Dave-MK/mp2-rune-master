@@ -53,7 +53,7 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
                     ["bg-[url(./assets/images/enter_backspace.png)] bg-center bg-contain bg-no-repeat bg-transparent default-tile-text"]: letter === ENTER || letter === BACKSPACE,
                     ["flex-1"]: letter !== ENTER && letter !== BACKSPACE,
                     ["flex-[2.15]"]: letter === ENTER || letter === BACKSPACE,
-                    ["bg-[url(./assets/images/keyboard.png)] bg-center bg-contain bg-no-repeat bg-transparent default-tile-text"]: letterState === 'default' && letter !== ENTER && letter !== BACKSPACE,
+                    ["bg-[url(./assets/images/keyboard.png)] bg-center bg-contain bg-no-repeat bg-transparent"]: letterState === 'default' && letter !== ENTER && letter !== BACKSPACE,
                     ["correct-tile-text"]: letterState === 'correct',
                     ["incorrect-tile-text"]: letterState === 'incorrect',
                     ["oop-tile-text"]: letterState === 'outofplace'
