@@ -35,6 +35,10 @@ body {
   height: 100vh;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 h1 {
   @apply relative font-bold text-4xl bg-gradient-to-tl from-yellow-600 via-yellow-300 to-yellow-600 inline-block text-transparent bg-clip-text; 
   font-family: "Pirata One", system-ui;
@@ -118,6 +122,16 @@ p {
 
 .bg-parchment {
   background: transparent url('../src/assets/images/parchment_16_9.webp') no-repeat center;
+  background-size: contain;
+  aspect-ratio: 16/9;
+  color: rgb(83, 63, 28);
+  font-size: 1.25rem;
+  font-weight: 100;
+  text-shadow: 0 -1px 0 rgb(36, 27, 11), 0 1px 0 rgb(235, 177, 77);
+}
+
+.bg-parchment-9-16 {
+  background: transparent url('../src/assets/images/parchment_9_16.webp') no-repeat center;
   background-size: contain;
   aspect-ratio: 16/9;
   color: rgb(83, 63, 28);

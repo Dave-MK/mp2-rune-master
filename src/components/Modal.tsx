@@ -14,50 +14,53 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                     }`}
                 onClick={onClose}
             >
-                <div className="flex flex-col justify-between p-10 max-w-5xl bg-parchment">
-                    <div
+                <div className="flex flex-col justify-around p-12 max-w-5xl bg-parchment-9-16">
+                    <div 
+                        className="flex flex-col justify-center items-center max-w-md p-2 px-8"
+                    >
+                        <div
                         className={`scroll-m-80 flex flex-col items-center w-full p-2 transition-all ${showModal ? "scale-100 opacity-100" : "scale-110 opacity-0"
                             }`}
                         onClick={(e) => e.stopPropagation()}
-                    >
-                        <span className="text-shadow-scroll text-yellow-950 text-5xl p-2 drop-shadow-md">
-                            <GiScrollUnfurled />
-                        </span>
-                        <h2>Becoming the Rune Master</h2>
-                        <button
-                            className="hidden"
-                            onClick={onClose}
                         >
-                            <LiaSkullCrossbonesSolid />
-                        </button>
-                    </div>
-                    <div 
-                        className="flex flex-col justify-center max-w-md py-2 px-8 text-sm">
-                        <hr className="p-2"/>
-                        <h3>Rules</h3>
-                        <ol>
-                            <li>
+                            <span className="text-shadow-scroll text-yellow-950 text-5xl p-2 drop-shadow-md">
+                                <GiScrollUnfurled />
+                            </span>
+                            <button
+                                className="hidden"
+                                onClick={onClose}
+                            >
+                                <LiaSkullCrossbonesSolid />
+                            </button>
+                        </div>
+                        <h2 className="text-4xl mb-4">Rules</h2>
+                        <ol className="flex flex-col justify-start overscroll-contain items-center text-center overflow-y-scroll snap-start  w-100 h-110 border-t-1 border-t-amber-800 border-b-1 border-b-amber-800 p-2">
+                            <li className="flex flex-col justify-center items-center p-2 mb-3">
+                                <h2>Rune of Ivory</h2>
+                                <img src="./src/assets/images/tile.webp" className="w-12 mb-3" />
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                    accusamus, ullam atque fugit harum rerum hic delectus in aperiam
-                                    nemo iusto odit dolore beatae eius ea laudantium eaque deserunt.
-                                    Quasi.
+                                    A plain Rune that has not been blessed with an enscription.
                                 </p>
                             </li>
-                            <li>
+                            <li className="flex flex-col justify-center items-center mb-3">
+                                <h2>Rune of Weathered Gold</h2>
+                                <img src="./src/assets/images/oop.webp" className="w-12 mb-3" />
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                    accusamus, ullam atque fugit harum rerum hic delectus in aperiam
-                                    nemo iusto odit dolore beatae eius ea laudantium eaque deserunt.
-                                    Quasi.
+                                    A Rune whose enscription is within the solution, but is incorrectly positioned.
                                 </p>
                             </li>
-                            <li>
+                            <li className="flex flex-col justify-center items-center mb-3">
+                                <h2>Rune of Decay</h2>
+                                <img src="./src/assets/images/wrong.webp" className="w-12 mb-3"/>
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                    accusamus, ullam atque fugit harum rerum hic delectus in aperiam
-                                    nemo iusto odit dolore beatae eius ea laudantium eaque deserunt.
-                                    Quasi.
+                                    It's inscription is not within the solution.
+                                </p>
+                            </li>
+                            <li className="flex flex-col justify-center items-center mb-3">
+                                <h2>Rune of the Master</h2>
+                                <img src="./src/assets/images/correct.webp" className="w-12 mb-3" />
+                                <p>
+                                    It's inscription is correctly placed. Five of these together brands you the Rune Master.
                                 </p>
                             </li>
                         </ol>
