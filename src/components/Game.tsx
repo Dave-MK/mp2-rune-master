@@ -89,7 +89,7 @@ export const Game = ({ solution }: Props) => {
             setTimeout(() => {
                 showToast(
                     `You disappoint the Gods.
-                    Correct Runes: ${solution}`);
+                    ${solution} was the word!`);
             }, 1500)
             return;
         }
