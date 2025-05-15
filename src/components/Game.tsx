@@ -165,16 +165,16 @@ export const Game = ({ solution }: Props) => {
     });
 
     return (
-        <div className="w-full h-screen flex justify-around items-start">
+        <div className="flex justify-around items-around">
             {toastText && (
                 <div
-                    className="bg-parchment z-10 w-sm flex flex-col justify-center items-center animate-fade-in absolute p-4 mt-20"
+                    className="bg-parchment z-10 w-xs md:w-lg flex flex-col justify-center items-center animate-fade-in absolute p-2 mt-20"
                 >
-                    <span className="w-60 text-lg font-bold text-center">{toastText}</span>
+                    <span className="w-60 md:w-75 text-lg md:text-2xl font-bold text-center">{toastText}</span>
                 </div>
             )}
-            <div className="w-full max-w-lg flex flex-col items-center justify-around py-4 max-h-[625px]">
-                <div className="flex flex-col gap-1 mb-5">
+            <div className="w-98 flex flex-col items-center justify-center p-4 max-h-[625px] md:max-h-[750px]">
+                <div className="flex flex-col gap-1 m-5 md:m-10">
                     {Array.from({ length: GAME_ROUNDS }).map((_, idx) => {
                         const isCurrentGuess = idx === guesses.length;
                         return (

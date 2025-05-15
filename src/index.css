@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@100;200;300;400;500;600;700&family=Pirata+One&display=swap');
-
-body {
-  font-family: 'Skranji', display;
-}
 @import "tailwindcss";
 
 #root {
   height: 100vh;
+  width: 100vw;
 }
 
 :root {
-  background: rgb(20, 112, 74) url(./assets/images/site_bg.webp) no-repeat 50% 35%;
-  background-size: cover;
+  background: url(./assets/images/site_bg.webp) no-repeat 50% 10%;
+  background-size: 425%;
   backdrop-filter: brightness(0.7) contrast(1.1);
   overflow: hidden;
 
@@ -24,6 +21,7 @@ body {
   color: white;
 
   height: 100vh;
+  width: 100vw;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -33,6 +31,8 @@ body {
 
 body {
   height: 100vh;
+  width: 100vw;
+  font-family: 'Skranji', display;
 }
 
 ::-webkit-scrollbar {
@@ -40,7 +40,7 @@ body {
 }
 
 h1 {
-  @apply relative font-bold text-4xl bg-gradient-to-tl from-yellow-600 via-yellow-300 to-yellow-600 inline-block text-transparent bg-clip-text; 
+  @apply relative text-3xl md:text-5xl bg-gradient-to-tl from-yellow-600 via-yellow-300 to-yellow-600 inline-block text-transparent bg-clip-text; 
   font-family: "Pirata One", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -53,7 +53,9 @@ h1 {
 }
 
 p {
-  font-size: 0.75rem;
+  font-size: 1rem;
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
 }
 
 .default-keyboard-tile {
@@ -125,7 +127,7 @@ p {
   background-size: contain;
   aspect-ratio: 16/9;
   color: rgb(83, 63, 28);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 100;
   text-shadow: 0 -1px 0 rgb(36, 27, 11), 0 1px 0 rgb(235, 177, 77);
 }

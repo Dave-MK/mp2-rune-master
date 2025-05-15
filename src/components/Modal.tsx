@@ -33,20 +33,37 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                                 <LiaSkullCrossbonesSolid />
                             </button>
                         </div>
-                        <h2 className="text-4xl mb-4">Rules</h2>
+                        <h2 className="text-4xl mb-4">How to Play</h2>
                         <ol className="flex flex-col justify-start overscroll-contain items-center text-center overflow-y-scroll snap-start  w-100 h-110 border-t-1 border-t-amber-800 border-b-1 border-b-amber-800 p-2">
                             <li className="flex flex-col justify-center items-center p-2 mb-3">
+                                <h2 className="underline text-2xl">Aim of the Game</h2>
+                                <p className="p-2">
+                                    To become the Rune Master, you must guess the word that presents five Gold runes.
+                                </p>
+                                <div className="flex">
+                                    <img src="./src/assets/images/correct.webp" className="w-12 m-1" />
+                                    <img src="./src/assets/images/correct.webp" className="w-12 m-1" />
+                                    <img src="./src/assets/images/correct.webp" className="w-12 m-1"/>
+                                    <img src="./src/assets/images/correct.webp" className="w-12 m-1" />
+                                    <img src="./src/assets/images/correct.webp" className="w-12 m-1" />
+                                </div>
+                                <p className="p-2">
+                                    If you fail six attempts to collect the five Gold runes, you will be branded a mere apprentice.
+                                </p>
+                            </li>
+                            <li className="flex flex-col justify-center items-center p-2 mb-3">
+                                <h2 className="text-2xl underline p-2">Rune Types & Purpose</h2>
                                 <h2>Rune of Ivory</h2>
                                 <img src="./src/assets/images/tile.webp" className="w-12 mb-3" />
                                 <p>
-                                    A plain Rune that has not been blessed with an enscription.
+                                    A plain Rune that has not been blessed with an inscription.
                                 </p>
                             </li>
                             <li className="flex flex-col justify-center items-center mb-3">
                                 <h2>Rune of Weathered Gold</h2>
                                 <img src="./src/assets/images/oop.webp" className="w-12 mb-3" />
                                 <p>
-                                    A Rune whose enscription is within the solution, but is incorrectly positioned.
+                                    A Rune whose inscription is within the solution, but is incorrectly positioned.
                                 </p>
                             </li>
                             <li className="flex flex-col justify-center items-center mb-3">
