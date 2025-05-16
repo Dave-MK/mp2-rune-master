@@ -10,16 +10,16 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
     return (
         <>
             <div
-                className={`flex items-center justify-center w-full h-screen fixed inset-0 transition-colors ${showModal ? "visible bg-black/50" : "invisible"
+                className={`flex w-full items-center justify-center fixed inset-0 transition-colors ${showModal ? "visible bg-black/50" : "invisible"
                     }`}
                 onClick={onClose}
             >
-                <div className="flex flex-col justify-around p-12 max-w-5xl bg-parchment-9-16">
+                <div className="flex flex-col w-[99vw] max-w-[600px] landscape:max-w-[350px] justify-around p-4 bg-parchment-9-16">
                     <div 
-                        className="flex flex-col justify-center items-center max-w-md p-2 px-8"
+                        className="flex flex-col justify-center items-center px-3 h-[100vw] landscape:max-h-[400px]"
                     >
                         <div
-                        className={`scroll-m-80 flex flex-col items-center w-full p-2 transition-all ${showModal ? "scale-100 opacity-100" : "scale-110 opacity-0"
+                        className={`scroll-m-80 flex flex-col flex-wrap w-fit items-center min-w-[320px] justify-around p-2 transition-all ${showModal ? "scale-100 opacity-100" : "scale-110 opacity-0"
                             }`}
                         onClick={(e) => e.stopPropagation()}
                         >
@@ -33,28 +33,28 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                                 <LiaSkullCrossbonesSolid />
                             </button>
                         </div>
-                        <h2 className="text-4xl mb-4">How to Play</h2>
-                        <ol className="flex flex-col justify-start overscroll-contain items-center text-center overflow-y-scroll snap-start  w-100 h-110 border-t-1 border-t-amber-800 border-b-1 border-b-amber-800 p-2">
-                            <li className="flex flex-col justify-center items-center p-2 mb-3">
-                                <h2 className="underline text-2xl">Aim of the Game</h2>
+                        <h2 className="text-2xl mb-2">How to Play</h2>
+                        <ol className="flex flex-col justify-start overscroll-contain w-fit h-[40vh] items-center text-center overflow-y-scroll snap-start border-t-amber-800 border-b-amber-800 p-1">
+                            <li className="flex flex-col justify-center items-center p-1 mb-1">
+                                <h2 className="underline text-md">Aim of the Game</h2>
                                 <p className="p-2">
                                     To become the Rune Master, you must guess the word that presents five Gold runes.
                                 </p>
                                 <div className="flex">
-                                    <img src="./src/assets/images/correct.webp" className="w-12 m-1" />
-                                    <img src="./src/assets/images/correct.webp" className="w-12 m-1" />
-                                    <img src="./src/assets/images/correct.webp" className="w-12 m-1"/>
-                                    <img src="./src/assets/images/correct.webp" className="w-12 m-1" />
-                                    <img src="./src/assets/images/correct.webp" className="w-12 m-1" />
+                                    <img src="./src/assets/images/correct.webp" className="w-8 m-1" />
+                                    <img src="./src/assets/images/correct.webp" className="w-8 m-1" />
+                                    <img src="./src/assets/images/correct.webp" className="w-8 m-1"/>
+                                    <img src="./src/assets/images/correct.webp" className="w-8 m-1" />
+                                    <img src="./src/assets/images/correct.webp" className="w-8 m-1" />
                                 </div>
                                 <p className="p-2">
                                     If you fail six attempts to collect the five Gold runes, you will be branded a mere apprentice.
                                 </p>
                             </li>
-                            <li className="flex flex-col justify-center items-center p-2 mb-3">
-                                <h2 className="text-2xl underline p-2">Rune Types & Purpose</h2>
+                            <li className="flex flex-col justify-center items-center p-1 mb-1">
+                                <h2 className="text-lg underline p-1">Rune Types & Purpose</h2>
                                 <h2>Rune of Ivory</h2>
-                                <img src="./src/assets/images/tile.webp" className="w-12 mb-3" />
+                                <img src="./src/assets/images/tile.webp" className="w-8 mb-1" />
                                 <p>
                                     A plain Rune that has not been blessed with an inscription.
                                 </p>

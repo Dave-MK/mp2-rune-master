@@ -14,10 +14,10 @@ type Props = {
 
 export const Keyboard = ({ onKeyPress, letterToLetterState }: Props) => {
     return (
-        <div className="w-98 flex flex-col justify-around items-around md:gap-[-1px]">
+        <div className="w-[98vw] max-w-[400px] flex flex-col justify-center m-1 items-center">
             {ROWS.map((letters, idx) => {
                 return (
-                    <div className="w-full flex gap-0.5 md:gap-[2px]" key={idx}>
+                    <div className="w-full flex md:gap-[1px]" key={idx}>
                         {letters.map((letter, idx) => {
                             return (
                                 <Key 
@@ -70,7 +70,7 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
                     viewBox="0 0 24 24"
                     width="24"
                     data-testid="icon-backspace"
-                    fill="rgb(180, 155, 111)"
+                    fill="rgb(160, 120, 150)"
                 >
                     <path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"></path>
                 </svg>

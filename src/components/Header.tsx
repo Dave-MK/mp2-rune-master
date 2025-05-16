@@ -15,7 +15,7 @@ export const Header = (_props: Props) => {
 
     return (
         <>
-            <div className="flex justify-between items-center w-full h-12 border-b border-teal-600 p-7 bg-teal-900/60">
+            <div className="flex justify-between items-center w-[100vw] h-12 md:h-16 border-b border-teal-600 p-2 bg-teal-900/60">
                 <div className="flex">
                     <span className="text-yellow-500 text-3xl md:text-5xl text-shadow-scroll">
                         <GiGems />

@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@100;200;300;400;500;600;700&family=Pirata+One&display=swap');
 @import "tailwindcss";
 
-#root {
+:root {
   height: 100vh;
   width: 100vw;
-}
 
-:root {
-  background: url(./assets/images/site_bg.webp) no-repeat 50% 10%;
-  background-size: 425%;
-  backdrop-filter: brightness(0.7) contrast(1.1);
-  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
 
   font-family: "Skranji", system-ui, -apple-system, BlinkMacSystemFont,'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 200;
@@ -20,13 +17,20 @@
   color-scheme: light dark;
   color: white;
 
-  height: 100vh;
-  width: 100vw;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  background: url(./assets/images/site_bg.webp) no-repeat;
+  background-size: cover;
+  @apply bg-position-[center_top] md:bg-position-[center_bottom] lg:bg-position-[center];
+  backdrop-filter: brightness(0.7) contrast(1.1);
+  overflow: hidden;
 }
 
 body {
@@ -40,7 +44,7 @@ body {
 }
 
 h1 {
-  @apply relative text-3xl md:text-5xl bg-gradient-to-tl from-yellow-600 via-yellow-300 to-yellow-600 inline-block text-transparent bg-clip-text; 
+  @apply relative text-2xl md:text-4xl lg:text-5xl bg-gradient-to-tl from-yellow-600 via-yellow-300 to-yellow-600 inline-block text-transparent bg-clip-text; 
   font-family: "Pirata One", system-ui;
   font-weight: 400;
   font-style: normal;
@@ -48,14 +52,14 @@ h1 {
   filter: drop-shadow(-0.5px 2px black);
 }
 
-.text-shadow-scroll {
-  filter: drop-shadow(0 -1px 0 rgb(36, 27, 11)) drop-shadow(0 1px 0 rgb(235, 177, 77));
-}
-
 p {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 100;
   text-rendering: optimizeLegibility;
+}
+
+.text-shadow-scroll {
+  filter: drop-shadow(0 -1px 0 rgb(36, 27, 11)) drop-shadow(0 1px 0 rgb(235, 177, 77));
 }
 
 .default-keyboard-tile {
@@ -135,7 +139,7 @@ p {
 .bg-parchment-9-16 {
   background: transparent url('../src/assets/images/parchment_9_16.webp') no-repeat center;
   background-size: contain;
-  aspect-ratio: 16/9;
+  aspect-ratio: 9/16;
   color: rgb(83, 63, 28);
   font-size: 1.25rem;
   font-weight: 100;
