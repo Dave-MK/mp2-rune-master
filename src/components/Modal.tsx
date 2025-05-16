@@ -10,7 +10,7 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
     return (
         <>
             <div
-                className={`flex w-full items-center justify-center fixed inset-0 transition-colors ${showModal ? "visible bg-black/50" : "invisible"
+                className={`z-10 flex w-full items-center justify-center fixed inset-0 transition-colors ${showModal ? "visible bg-black/50" : "invisible"
                     }`}
                 onClick={onClose}
             >
