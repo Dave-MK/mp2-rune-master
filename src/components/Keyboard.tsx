@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { BACKSPACE, ENTER, LetterState } from "../constants";
+import { BsBackspace } from "react-icons/bs";
 
 const ROWS = [
     "QWERTYUIOP".split(""),
@@ -14,10 +15,10 @@ type Props = {
 
 export const Keyboard = ({ onKeyPress, letterToLetterState }: Props) => {
     return (
-        <div className="w-[98vw] max-w-[400px] flex flex-col justify-center m-1 items-center">
+        <div className="flex flex-col justify-center m-1 items-center">
             {ROWS.map((letters, idx) => {
                 return (
-                    <div className="w-full flex md:gap-[1px]" key={idx}>
+                    <div className="w-[98vw] max-w-[400px] flex gap-[0.5px]" key={idx}>
                         {letters.map((letter, idx) => {
                             return (
                                 <Key 
@@ -50,7 +51,7 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
         <button
             className={classNames(
                 {
-                    ["default-enter-backspace"]: letter === ENTER || letter === BACKSPACE,
+                    ["default-enter"]: letter === ENTER || letter === BACKSPACE,
                     ["flex-1"]: letter !== ENTER && letter !== BACKSPACE,
                     ["flex-[2.15]"]: letter === ENTER || letter === BACKSPACE,
                     ["default-keyboard-tile"]: letterState === 'default' && letter !== ENTER && letter !== BACKSPACE,
@@ -58,22 +59,12 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
                     ["incorrect-tile-text"]: letterState === 'incorrect',
                     ["oop-tile-text"]: letterState === 'outofplace'
                 },
-                "flex justify-center items-center font-bold rounded-md h-14 active:bg-amber-100"
+                "flex w-10 h-14 justify-center items-center font-bold rounded-md active:bg-amber-100"
             )}
             onClick={() => onKeyPress(letter)}
         >
             {letter === BACKSPACE ? (
-                <svg
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    data-testid="icon-backspace"
-                    fill="rgb(160, 120, 150)"
-                >
-                    <path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"></path>
-                </svg>
+                <BsBackspace className="default-backspace" />
             ) : (
                 letter
             )}
