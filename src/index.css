@@ -65,7 +65,7 @@ p {
 .default-keyboard-tile {
   background: transparent url('../src/assets/images/keyboard.webp') no-repeat center;
   background-size: contain;
-  color: rgb(180, 155, 111);
+  color: #b49b6f;
   font-size: 1.25rem;
   @apply md:text-xl lg:text-2xl pt-1;
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
@@ -103,7 +103,7 @@ p {
   color: rgb(180, 155, 111);
   font-size: 1.25rem;
   @apply text-2xl md:text-3xl;
-  text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
+  text-shadow: 0 -1px 0 #534f43, 0 1px 0 rgb(255, 255, 255);
 }
 
 .default-tile-text2 {
@@ -118,10 +118,10 @@ p {
 .correct-tile-text {
   background: transparent url('../src/assets/images/correct.webp') no-repeat center;
   background-size: contain;
-  color: rgb(82, 56, 16);
+  color: #523810;
   font-size: 1.25rem;
   @apply text-2xl md:text-3xl;
-  text-shadow: 0 -1px 0 rgb(48, 42, 28), 0 1px 0 rgb(230, 190, 17);
+  text-shadow: 0 -1px 0 #302a1c, 0 1px 0 rgb(230, 190, 17);
 }
 
 .incorrect-tile-text {
@@ -130,7 +130,7 @@ p {
   color: rgb(161, 121, 63);
   font-size: 1.25rem;
   @apply text-2xl md:text-3xl;
-  text-shadow: 0 -1px 0 rgb(39, 34, 23), 0 1px 0 rgb(221, 191, 134);
+  text-shadow: 0 -1px 0 #272217, 0 1px 0 rgb(221, 191, 134);
 }
 
 .oop-tile-text {
@@ -139,7 +139,7 @@ p {
   color: rgb(83, 63, 28);
   font-size: 1.25rem;
   @apply text-2xl md:text-3xl;
-  text-shadow: 0 -1px 0 rgb(36, 27, 11), 0 1px 0 rgb(235, 177, 77);
+  text-shadow: 0 -1px 0 #241b0b, 0 1px 0 rgb(235, 177, 77);
 }
 
 .bg-parchment {
@@ -149,7 +149,7 @@ p {
   color: rgb(83, 63, 28);
   font-size: 1rem;
   font-weight: 100;
-  text-shadow: 0 -1px 0 rgb(36, 27, 11), 0 1px 0 rgb(235, 177, 77);
+  text-shadow: 0 -1px 0 #241b0b, 0 1px 0 rgb(235, 177, 77);
 }
 
 .bg-parchment-9-16 {
@@ -159,7 +159,7 @@ p {
   color: rgb(83, 63, 28);
   font-size: 1.25rem;
   font-weight: 100;
-  text-shadow: 0 -1px 0 rgb(36, 27, 11), 0 1px 0 rgb(235, 177, 77);
+  text-shadow: 0 -1px 0 #241b0b, 0 1px 0 rgb(235, 177, 77);
 }
 
 /* ✅ Pop animation */

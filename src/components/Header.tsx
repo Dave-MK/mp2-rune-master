@@ -1,4 +1,4 @@
-import { GiGems } from "react-icons/gi"
+import { GiFireGem } from "react-icons/gi"
 import { GiScrollUnfurled } from "react-icons/gi"
 import { Modal } from "./Modal"
 import { useState } from "react"
@@ -18,7 +18,7 @@ export const Header = (_props: Props) => {
             <div className="flex justify-between items-center w-[100vw] h-12 md:h-16 border-b border-teal-600 p-2 bg-teal-900/60">
                 <div className="flex">
                     <span className="text-yellow-500 text-3xl md:text-5xl text-shadow-scroll">
-                        <GiGems />
+                        <GiFireGem />
                     </span>
                     <div className="w-12 md:w-16"/>
                 </div>
