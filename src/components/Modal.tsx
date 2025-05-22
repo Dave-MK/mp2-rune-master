@@ -41,11 +41,11 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                                     To become the Rune Master, you must guess the word that presents five Gold runes.
                                 </p>
                                 <div className="flex">
-                                    <img src={`${process.env.PUBLIC_URL}/assets/images/correct.webp`} className="w-8 m-1" alt="Gold rune, correctly placed - 1" />
-                                    <img src={`${process.env.PUBLIC_URL}/assets/images/correct.webp`} className="w-8 m-1" alt="Gold rune, correctly placed - 2" />
-                                    <img src={`${process.env.PUBLIC_URL}/assets/images/correct.webp`} className="w-8 m-1" alt="Gold rune, correctly placed - 3" />
-                                    <img src={`${process.env.PUBLIC_URL}/assets/images/correct.webp`} className="w-8 m-1" alt="Gold rune, correctly placed - 4" />
-                                    <img src={`${process.env.PUBLIC_URL}/assets/images/correct.webp`} className="w-8 m-1" alt="Gold rune, correctly placed - 5" />
+                                    <img src="./assets/images/correct.webp" className="w-8 m-1" alt="Gold rune, correctly placed - 1" />
+                                    <img src="./assets/images/correct.webp" className="w-8 m-1" alt="Gold rune, correctly placed - 2" />
+                                    <img src="./assets/images/correct.webp" className="w-8 m-1" alt="Gold rune, correctly placed - 3" />
+                                    <img src="./assets/images/correct.webp" className="w-8 m-1" alt="Gold rune, correctly placed - 4" />
+                                    <img src="./assets/images/correct.webp" className="w-8 m-1" alt="Gold rune, correctly placed - 5" />
                                 </div>
                                 <p className="p-2">
                                     If you fail six attempts to collect the five Gold runes, you will be branded a mere apprentice.
@@ -54,28 +54,28 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                             <li className="flex flex-col justify-center items-center p-1 mb-1">
                                 <h2 className="text-lg underline p-1">Rune Types & Purpose</h2>
                                 <h2>Rune of Ivory</h2>
-                                <img src={`${process.env.PUBLIC_URL}/assets/images/tile.webp`} className="w-8 mb-1" alt="Ivory rune, no inscription" />
+                                <img src="./assets/images/tile.webp" className="w-8 mb-1" alt="Ivory rune, no inscription" />
                                 <p>
                                     A plain Rune that has not been blessed with an inscription.
                                 </p>
                             </li>
                             <li className="flex flex-col justify-center items-center mb-3">
                                 <h2>Rune of Weathered Gold</h2>
-                                <img src={`${process.env.PUBLIC_URL}/assets/images/oop.webp`} className="w-12 mb-3" alt="Weathered gold rune, incorrect position" />
+                                <img src="./assets/images/oop.webp" className="w-12 mb-3" alt="Weathered gold rune, incorrect position" />
                                 <p>
                                     A Rune whose inscription is within the solution, but is incorrectly positioned.
                                 </p>
                             </li>
                             <li className="flex flex-col justify-center items-center mb-3">
                                 <h2>Rune of Decay</h2>
-                                <img src={`${process.env.PUBLIC_URL}/assets/images/wrong.webp`} className="w-12 mb-3" alt="Rune of decay, not in solution"/>
+                                <img src="./assets/images/wrong.webp" className="w-12 mb-3" alt="Rune of decay, not in solution"/>
                                 <p>
                                     It's inscription is not within the solution.
                                 </p>
                             </li>
                             <li className="flex flex-col justify-center items-center mb-3">
                                 <h2>Rune of the Master</h2>
-                                <img src={`${process.env.PUBLIC_URL}/assets/images/correct.webp`} className="w-12 mb-3" alt="Rune of the master, correctly placed" />
+                                <img src="./assets/images/correct.webp" className="w-12 mb-3" alt="Rune of the master, correctly placed" />
                                 <p>
                                     It's inscription is correctly placed. Five of these together brands you the Rune Master.
                                 </p>
