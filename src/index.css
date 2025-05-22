@@ -43,8 +43,7 @@ body {
   display: none;
 }
 
-h1 {
-  @apply relative text-2xl md:text-4xl lg:text-5xl bg-gradient-to-tl from-yellow-600 via-yellow-300 to-yellow-600 inline-block text-transparent bg-clip-text; 
+h1 { 
   font-family: "Pirata One", system-ui;
   font-weight: 400;
   font-style: normal;

@@ -63,7 +63,7 @@ export const Tile: React.FC<TileProps> = ({ letter, state, idx }) => {
                     ["incorrect-tile-text"]: state === 'incorrect' && revealColour,
                     ["oop-tile-text"]: state === 'outofplace' && revealColour,
                 },
-                'w-10 h-14 md:w-12 md:h-16 flex justify-center items-center transition-all duration-200'
+                'w-8 h-12 xl:w-10 xl:h-14 flex justify-center items-center transition-all duration-200'
             )}
         >
             {letter}
