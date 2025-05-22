@@ -41,11 +41,11 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                                     To become the Rune Master, you must guess the word that presents five Gold runes.
                                 </p>
                                 <div className="flex">
-                                    <img src="./src/assets/images/correct.webp" className="w-8 m-1" />
-                                    <img src="./src/assets/images/correct.webp" className="w-8 m-1" />
-                                    <img src="./src/assets/images/correct.webp" className="w-8 m-1"/>
-                                    <img src="./src/assets/images/correct.webp" className="w-8 m-1" />
-                                    <img src="./src/assets/images/correct.webp" className="w-8 m-1" />
+                                    <img src="../src/assets/images/correct.webp" className="w-8 m-1" />
+                                    <img src="../src/assets/images/correct.webp" className="w-8 m-1" />
+                                    <img src="../src/assets/images/correct.webp" className="w-8 m-1"/>
+                                    <img src="../src/assets/images/correct.webp" className="w-8 m-1" />
+                                    <img src="../src/assets/images/correct.webp" className="w-8 m-1" />
                                 </div>
                                 <p className="p-2">
                                     If you fail six attempts to collect the five Gold runes, you will be branded a mere apprentice.
