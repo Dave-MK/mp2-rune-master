@@ -20,7 +20,7 @@ export const Footer = (_props: Props) => {
                         rel="noopener noreferrer"
                         className="col-start-1 row-start-1"
                     >
-                        <DiGithubFull className="text-6xl md:text-7xl lg:text-8xl text-teal-600 animate-ping" />
+                        <DiGithubFull className="text-6xl md:text-7xl lg:text-8xl text-teal-900 animate-ping" />
                     </a>
             </div>
         </>
