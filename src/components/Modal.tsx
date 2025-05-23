@@ -55,11 +55,7 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                             <li className="flex flex-col justify-center items-center p-1 mb-1">
                                 <h2 className="text-lg underline p-1">Rune Types & Purpose</h2>
                                 <h2>Rune of Ivory</h2>
-                                <img 
-                                    src="/assets/images/tile.webp" 
-                                    className="w-8 mb-1" 
-                                    alt="Ivory colored rune tile with a blank face, resting on a neutral parchment background. The rune is unmarked, conveying a sense of potential and calm. No inscriptions or text are present." 
-                                />
+                                <div className="modal-rune-tile w-10 h-14" /> 
                                 <p>
                                     A plain Rune that has not been blessed with an inscription.
                                 </p>
