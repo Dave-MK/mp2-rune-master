@@ -42,11 +42,11 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                                     To become the Rune Master, you must guess the word that presents five Gold runes.
                                 </p>
                                 <div className="flex">
-                                    <div className="modal-rune-correct w-10"></div>
-                                    <div className="modal-rune-correct w-10"></div> 
-                                    <div className="modal-rune-correct w-10"></div>
-                                    <div className="modal-rune-correct w-10"></div> 
-                                    <div className="modal-rune-correct w-10"></div>     
+                                    <div className="modal-rune-correct w-10 h-14"></div>
+                                    <div className="modal-rune-correct w-10 h-14"></div> 
+                                    <div className="modal-rune-correct w-10 h-14"></div>
+                                    <div className="modal-rune-correct w-10 h-14"></div> 
+                                    <div className="modal-rune-correct w-10 h-14"></div>     
                                 </div>
                                 <p className="p-2">
                                     If you fail six attempts to collect the five Gold runes, you will be branded a mere apprentice.
