@@ -10,7 +10,7 @@ export const Footer = (_props: Props) => {
                         href="https://github.com/Dave-MK/mp2-rune-master"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="col-start-1 row-start-1"
+                        className="col-start-1 row-start-1 z-10"
                     >
                         <DiGithubFull className="text-6xl md:text-7xl lg:text-8xl text-teal-600" />
                     </a>
