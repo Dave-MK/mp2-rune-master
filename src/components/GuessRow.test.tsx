@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { GuessRow } from './GuessRow'
 import { describe, expect, it } from 'vitest'
 import { GAME_WORD_LENGTH, LetterState } from '../constants'
+import '@testing-library/jest-dom'
 
 // Helper to generate letterStates array
 const makeLetterStates = (state: LetterState, length = GAME_WORD_LENGTH) =>

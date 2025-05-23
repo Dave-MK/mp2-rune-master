@@ -1,6 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, fireEvent, screen } from "@testing-library/react";
 import { Header } from "./Header";
+import '@testing-library/jest-dom'
 
 // Mock Modal to avoid rendering its internals
 vi.mock("./Modal", () => ({

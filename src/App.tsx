@@ -23,7 +23,11 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col h-[100vh]">
+    <div
+      className="flex flex-col h-[100vh]"
+      role="main"
+      aria-label="Word Game Application"
+    >
       <Header />
       <Game solution={solution.toUpperCase()} />
       <Footer />

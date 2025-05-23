@@ -14,11 +14,16 @@ type Props = {
 };
 
 export const Keyboard = ({ onKeyPress, letterToLetterState }: Props) => (
-    <div className="flex flex-col justify-center m-2 items-center">
+    <div
+        className="flex flex-col justify-center m-2 items-center"
+        role="group"
+        aria-label="On-screen keyboard"
+    >
         {ROWS.map((row, rowIdx) => (
             <div
                 className="w-[95vw] max-w-[400px] flex gap-[0.5px]"
                 key={rowIdx}
+                role="row"
             >
                 {row.map((letter, keyIdx) => (
                     <Key
@@ -45,12 +50,16 @@ type KeyProps = {
  */
 export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
     if (letter === " ") {
-        return <div className="flex-[0.5]" />;
+        return <div className="flex-[0.5]" aria-hidden="true" />;
     }
 
     const isSpecial = letter === ENTER || letter === BACKSPACE;
     const baseClasses =
         "flex w-10 h-14 justify-center items-center font-bold rounded-md active:bg-amber-100";
+
+    let ariaLabel = letter;
+    if (letter === ENTER) ariaLabel = "Enter";
+    if (letter === BACKSPACE) ariaLabel = "Backspace";
 
     return (
         <button
@@ -67,6 +76,10 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
                 }
             )}
             onClick={() => onKeyPress(letter)}
+            role="button"
+            aria-label={ariaLabel}
+            aria-pressed="false"
+            tabIndex={0}
         >
             {letter === BACKSPACE ? (
                 <BsBackspace className="default-backspace" />
@@ -76,4 +89,3 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
         </button>
     );
 };
-

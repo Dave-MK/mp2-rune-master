@@ -61,6 +61,9 @@ export const Tile = ({ letter, state, idx }: TileProps) => {
         <div
             style={{ animationDelay: state === 'default' ? '0ms' : `${animationDelay}ms` }}
             className={tileClass}
+            role="gridcell"
+            aria-label={letter ? `Letter ${letter}, ${state}` : "Empty tile"}
+            aria-selected={!!letter}
         >
             {letter}
         </div>

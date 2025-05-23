@@ -146,16 +146,34 @@ export const Game = ({ solution }: Props) => {
     // --- Render ---
 
     return (
-        <div className="flex justify-around items-around">
+        <div
+            className="flex justify-around items-around"
+            role="main"
+            aria-label="Rune Master Game"
+        >
             {toastText && (
-                <div className="bg-parchment z-10 w-xs md:w-lg flex flex-col justify-center items-center animate-fade-in absolute p-2 mt-20">
+                <div
+                    className="bg-parchment z-10 w-xs md:w-lg flex flex-col justify-center items-center animate-fade-in absolute p-2 mt-20"
+                    role="status"
+                    aria-live="polite"
+                    aria-atomic="true"
+                >
                     <span className="w-60 md:w-75 text-lg md:text-2xl font-bold text-center">
                         {toastText}
                     </span>
                 </div>
             )}
-            <div className="flex flex-col items-center justify-start mt-2">
-                <div className="flex flex-col m-2">
+            <div
+                className="flex flex-col items-center justify-start mt-2"
+                role="region"
+                aria-label="Game board and keyboard"
+            >
+                <div
+                    className="flex flex-col m-2"
+                    role="grid"
+                    aria-label="Guess rows"
+                    aria-rowcount={GAME_ROUNDS}
+                >
                     {Array.from({ length: GAME_ROUNDS }).map((_, idx) => {
                         const isCurrentGuess = idx === guesses.length;
                         return (

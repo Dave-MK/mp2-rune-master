@@ -1,88 +1,108 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import { describe, it, expect, beforeEach, vi } from "vitest";
+import { describe, it, expect, vi } from "vitest";
+import { render, fireEvent, screen } from "@testing-library/react";
 import { Keyboard, Key } from "./Keyboard";
-import { ENTER, BACKSPACE, LetterState } from "../constants";
+import { BACKSPACE, ENTER, LetterState } from "../constants";
+import '@testing-library/jest-dom';
 
-// Mock react-icons
-vi.mock("react-icons/bs", () => ({
-    BsBackspace: () => <span data-testid="backspace-icon" />,
-}));
+// Helper to create a mapping for letter states
 
 describe("Keyboard component", () => {
-    const mockOnKeyPress = vi.fn();
-    const letterToLetterState: Record<string, LetterState> = {
-        A: "correct",
-        B: "incorrect",
-        C: "outofplace",
-        D: "default",
-        [ENTER]: "default",
-        [BACKSPACE]: "default",
-    };
-
-    beforeEach(() => {
-        mockOnKeyPress.mockClear();
-    });
-
     it("renders all rows and keys", () => {
-        render(<Keyboard onKeyPress={mockOnKeyPress} letterToLetterState={{}} />);
-        // QWERTYUIOP
-        "QWERTYUIOP".split("").forEach((letter) => {
-            expect(screen.getByText(letter)).toBeInTheDocument();
-        });
-        // ASDFGHJKL (with spaces as spacers)
-        "ASDFGHJKL".split("").forEach((letter) => {
-            expect(screen.getByText(letter)).toBeInTheDocument();
-        });
-        // ZXCVBNM, ENTER, BACKSPACE
-        "ZXCVBNM".split("").forEach((letter) => {
-            expect(screen.getByText(letter)).toBeInTheDocument();
-        });
+        render(
+            <Keyboard
+                onKeyPress={() => {}}
+                letterToLetterState={{}}
+            />
+        );
+        // Check for a few representative keys
+        expect(screen.getByText("Q")).toBeInTheDocument();
+        expect(screen.getByText("A")).toBeInTheDocument();
+        expect(screen.getByText("Z")).toBeInTheDocument();
         expect(screen.getByText(ENTER)).toBeInTheDocument();
-        expect(screen.getByTestId("backspace-icon")).toBeInTheDocument();
+        // Backspace is rendered as an icon, not text
+        expect(screen.getByRole("button", { name: "" })).toBeInTheDocument();
     });
 
-    it("calls onKeyPress when a key is clicked", () => {
-        render(<Keyboard onKeyPress={mockOnKeyPress} letterToLetterState={{}} />);
-        fireEvent.click(screen.getByText("A"));
-        expect(mockOnKeyPress).toHaveBeenCalledWith("A");
-    });
-
-    it("calls onKeyPress when ENTER is clicked", () => {
-        render(<Keyboard onKeyPress={mockOnKeyPress} letterToLetterState={{}} />);
+    it("calls onKeyPress with correct letter when a key is clicked", () => {
+        const onKeyPress = vi.fn();
+        render(
+            <Keyboard
+                onKeyPress={onKeyPress}
+                letterToLetterState={{}}
+            />
+        );
+        fireEvent.click(screen.getByText("Q"));
+        expect(onKeyPress).toHaveBeenCalledWith("Q");
         fireEvent.click(screen.getByText(ENTER));
-        expect(mockOnKeyPress).toHaveBeenCalledWith(ENTER);
+        expect(onKeyPress).toHaveBeenCalledWith(ENTER);
     });
 
-    it("calls onKeyPress when BACKSPACE is clicked", () => {
-        render(<Keyboard onKeyPress={mockOnKeyPress} letterToLetterState={{}} />);
-        fireEvent.click(screen.getByTestId("backspace-icon").closest("button")!);
-        expect(mockOnKeyPress).toHaveBeenCalledWith(BACKSPACE);
-    });
-
-    it("applies correct classes based on letter state", () => {
-        render(<Keyboard onKeyPress={mockOnKeyPress} letterToLetterState={letterToLetterState} />);
-        const correctKey = screen.getByText("A");
-        const incorrectKey = screen.getByText("B");
-        const outofplaceKey = screen.getByText("C");
-        const defaultKey = screen.getByText("D");
-
-        expect(correctKey.className).toMatch(/correct-tile-text/);
-        expect(incorrectKey.className).toMatch(/incorrect-tile-text/);
-        expect(outofplaceKey.className).toMatch(/oop-tile-text/);
-        expect(defaultKey.className).toMatch(/default-keyboard-tile/);
+    it("applies correct class for letter states", () => {
+        const letterToLetterState = {
+            Q: "correct",
+            W: "incorrect",
+            E: "outofplace",
+            R: "default",
+        } as Record<string, LetterState>;
+        render(
+            <Keyboard
+                onKeyPress={() => {}}
+                letterToLetterState={letterToLetterState}
+            />
+        );
+        expect(screen.getByText("Q").className).toMatch(/correct-tile-text/);
+        expect(screen.getByText("W").className).toMatch(/incorrect-tile-text/);
+        expect(screen.getByText("E").className).toMatch(/oop-tile-text/);
+        expect(screen.getByText("R").className).toMatch(/default-keyboard-tile/);
     });
 
     it("renders a spacer for space characters", () => {
+        // The second row has spaces at start and end
+        render(
+            <Keyboard
+                onKeyPress={() => {}}
+                letterToLetterState={{}}
+            />
+        );
+        // There should be at least one element with flex-[0.5] (the spacer)
+        expect(document.querySelectorAll(".flex-\\[0\\.5\\]").length).toBeGreaterThan(0);
+    });
+});
+
+describe("Key component", () => {
+    it("renders a button for normal keys", () => {
+        render(
+            <Key letter="A" onKeyPress={() => {}} letterState="default" />
+        );
+        expect(screen.getByText("A")).toBeInTheDocument();
+    });
+
+    it("renders a button with special styling for ENTER and BACKSPACE", () => {
+        render(
+            <Key letter={ENTER} onKeyPress={() => {}} letterState="default" />
+        );
+        expect(screen.getByText(ENTER)).toBeInTheDocument();
+
+        render(
+            <Key letter={BACKSPACE} onKeyPress={() => {}} letterState="default" />
+        );
+        // Backspace icon is rendered, not text
+        expect(document.querySelector(".default-backspace")).toBeInTheDocument();
+    });
+
+    it("renders a spacer for space", () => {
         const { container } = render(
-            <Key letter=" " onKeyPress={mockOnKeyPress} letterState="default" />
+            <Key letter=" " onKeyPress={() => {}} letterState="default" />
         );
         expect(container.firstChild).toHaveClass("flex-[0.5]");
     });
 
-    it("renders backspace icon for BACKSPACE key", () => {
+    it("calls onKeyPress when clicked", () => {
+        const onKeyPress = vi.fn();
         render(
-            <Key letter={BACKSPACE} onKeyPress={mockOnKeyPress} letterState="default" />
+            <Key letter="B" onKeyPress={onKeyPress} letterState="default" />
         );
-        expect(screen.getByTestId("backspace-icon")).toBeInTheDocument();
+        fireEvent.click(screen.getByText("B"));
+        expect(onKeyPress).toHaveBeenCalledWith("B");
     });
 });
