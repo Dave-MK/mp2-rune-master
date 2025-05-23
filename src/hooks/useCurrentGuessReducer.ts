@@ -14,28 +14,36 @@ type ClearAction = {
     type: 'clear'
 }
 
-type Action = AddLetterAction | BackspaceAction | ClearAction;
+type Action = AddLetterAction | BackspaceAction | ClearAction
 
-const reducer = (state: string, action: Action) => {
-    if (action.type === 'add') {
-        if (state.length === GAME_WORD_LENGTH) {
+const addLetter = (state: string, letter: string): string => {
+    if (state.length >= GAME_WORD_LENGTH) return state
+    return state + letter
+}
+
+const backspace = (state: string): string => {
+    if (state.length === 0) return state
+    return state.slice(0, -1)
+}
+
+const clear = (): string => ''
+
+/**
+ * Reducer function to manage the state of the current guess in a word game.
+ */
+const reducer = (state: string, action: Action): string => {
+    switch (action.type) {
+        case 'add':
+            return addLetter(state, action.letter)
+        case 'backspace':
+            return backspace(state)
+        case 'clear':
+            return clear()
+        default:
             return state
-        }
-        return state + action.letter
     }
-    if (action.type === 'backspace') {
-        if (state.length !== 0) {
-            return state.substring(0, state.length - 1)
-        }
-    }
-    if (action.type === 'clear') {
-        return ''
-    }
-    return state;
 }
 
 export const useCurrentGuessReducer = () => {
-    return (
-        useReducer(reducer, '')
-    )
+    return useReducer(reducer, '')
 }
