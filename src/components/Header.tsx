@@ -33,14 +33,16 @@ export const Header = (_props: Props) => {
         <>
             <header
             className="flex justify-between items-center w-[100vw] h-12 border-b border-teal-600 p-2 bg-teal-900/60"
-            role="banner"
+            role="heading"
             aria-label="Main Header"
             >
             {/* Left: Logo */}
-            <div className="flex items-center" role="presentation">
+            <div className="flex items-center" role="logo">
                 <span
                 className="text-yellow-500 text-3xl md:text-4xl text-shadow-scroll"
                 aria-hidden="true"
+                aria-label="Rune Master Logo"
+                data-testid="logo"
                 >
                 <GiFireGem />
                 </span>

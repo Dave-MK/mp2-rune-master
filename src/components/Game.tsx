@@ -182,6 +182,7 @@ export const Game = ({ solution }: Props) => {
                                 guess={isCurrentGuess ? currentGuess : guesses[idx]}
                                 letterStates={guessIdxToTileStates[idx]}
                                 shake={shakeCurrentRow && isCurrentGuess}
+                                data-testid={`row-${idx}`}
                             />
                         );
                     })}

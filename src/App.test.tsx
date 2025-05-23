@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest'
 describe('App', () => {
     it('renders without crashing', () => {
         render(<App />)
-        expect(screen.getByText(/rune master/i)).toBeInTheDocument()
+        expect(screen.getAllByText(/rune master/i).length).toBeGreaterThan(0);
     })
 })
 

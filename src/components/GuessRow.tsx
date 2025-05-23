@@ -6,13 +6,18 @@ type Props = {
     guess: string | undefined;
     letterStates: Array<LetterState>;
     shake: boolean;
+    'data-testid'?: string; // <-- allow forwarding test id
 };
 
 /**
  * GuessRow component renders a row of tiles for the current guess.
  */
-export const GuessRow = ({ guess, letterStates, shake }: Props) => (
-    <div className={classNames("flex gap-[1px]", { 'animate-shake': shake })}>
+export const GuessRow = ({ guess, letterStates, shake, 'data-testid': dataTestId }: Props) => (
+    <div
+        className={classNames("flex gap-[1px]", { 'animate-shake': shake })}
+        role="row"
+        data-testid={dataTestId} // <-- apply test id to row container
+    >
         {Array.from({ length: GAME_WORD_LENGTH }).map((_, idx) => (
             <Tile
                 key={idx}

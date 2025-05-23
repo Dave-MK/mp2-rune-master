@@ -1,42 +1,31 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import { describe, it, expect } from 'vitest'
 import { Game } from './Game'
 import '@testing-library/jest-dom'
 
 describe('Game Component', () => {
-    it('renders the game title or instructions', () => {
-        render(<Game solution={''} />)
-        expect(screen.getByText(/start/i)).toBeInTheDocument()
+    it('shakes the row when Enter is pressed with an empty guess', () => {
+        render(<Game solution="valid" />)
+        fireEvent.keyDown(document, { key: 'Enter', code: 'Enter' })
+        const row = screen.getByTestId('row-0')
+        expect(row).toHaveClass('animate-shake')
     })
 
-    it('renders the game with a solution', () => {
-        render(<Game solution={'test'} />)
-        expect(screen.getByText(/test/i)).toBeInTheDocument()
+    it('shakes the row when on-screen Enter is clicked with an empty guess', () => {
+        render(<Game solution="valid" />)
+        const row = screen.getByTestId('row-0')
+        const enterKey = screen.getByRole('button', { name: /enter/i })
+        fireEvent.click(enterKey)
+        expect(row).toHaveClass('animate-shake')
     })
 
-    it('renders the game with an empty solution', () => {
-        render(<Game solution={''} />)
-        expect(screen.getByText(/start/i)).toBeInTheDocument()
-    })
-
-    it('causes the row to shake when solution is empty', () => {
-        render(<Game solution={''} />)
-        const shakingRow = screen.getByTestId('row-0') // Update test id as per your implementation
-        expect(shakingRow).toHaveClass('animate-shake')
-    })
-
-    it('renders the game with an invalid solution', () => {
-        render(<Game solution={'invalid'} />)
-        expect(screen.getByText(/invalid/i)).toBeInTheDocument()
-    })
-
-    it('renders the game with a valid solution', () => {
-        render(<Game solution={'valid'} />)
-        expect(screen.getByText(/valid/i)).toBeInTheDocument()
-    })
-
-    it('does not render special characters in the solution', () => {
-        render(<Game solution={'!@#$%^&*()'} />)
-        expect(screen.queryByText(/!@#\$%\^&\*\(\)/i)).not.toBeInTheDocument()
+    it('does not shake the row when a valid guess is entered and Enter is pressed', () => {
+        render(<Game solution="VALID" />)
+        const row = screen.getByTestId('row-0')
+        for (const key of 'VALID') {
+            fireEvent.keyDown(document, { key, code: `Key${key}` })
+        }
+        fireEvent.keyDown(document, { key: 'Enter', code: 'Enter' })
+        expect(row).not.toHaveClass('animate-shake')
     })
 })

@@ -1,0 +1,177 @@
+{
+  "numTotalTestSuites": 8,
+  "numPassedTestSuites": 8,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 10,
+  "numPassedTests": 10,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1748031051734,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "App"
+          ],
+          "fullName": "App renders without crashing",
+          "status": "passed",
+          "title": "renders without crashing",
+          "duration": 73.94230000000016,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1748031054315,
+      "endTime": 1748031054388.9424,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/apexd/OneDrive/Desktop/mp2-rune-master/src/App.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Game Component"
+          ],
+          "fullName": "Game Component shakes the row when Enter is pressed with an empty guess",
+          "status": "passed",
+          "title": "shakes the row when Enter is pressed with an empty guess",
+          "duration": 53.371200000000044,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "Game Component"
+          ],
+          "fullName": "Game Component shakes the row when on-screen Enter is clicked with an empty guess",
+          "status": "passed",
+          "title": "shakes the row when on-screen Enter is clicked with an empty guess",
+          "duration": 126.35770000000002,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "Game Component"
+          ],
+          "fullName": "Game Component does not shake the row when a valid guess is entered and Enter is pressed",
+          "status": "passed",
+          "title": "does not shake the row when a valid guess is entered and Enter is pressed",
+          "duration": 41.0639000000001,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1748031054291,
+      "endTime": 1748031054512.064,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/apexd/OneDrive/Desktop/mp2-rune-master/src/components/Game.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Header"
+          ],
+          "fullName": "Header renders title, logo, and buttons",
+          "status": "passed",
+          "title": "renders title, logo, and buttons",
+          "duration": 115.03890000000001,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "Header"
+          ],
+          "fullName": "Header reloads the page when new game button is clicked",
+          "status": "passed",
+          "title": "reloads the page when new game button is clicked",
+          "duration": 14.981700000000274,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "Header"
+          ],
+          "fullName": "Header shows and hides the modal on info button and close",
+          "status": "passed",
+          "title": "shows and hides the modal on info button and close",
+          "duration": 52.798899999999776,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1748031054176,
+      "endTime": 1748031054358.7988,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/apexd/OneDrive/Desktop/mp2-rune-master/src/components/Header.test.tsx"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "Keyboard interactions"
+          ],
+          "fullName": "Keyboard interactions calls onKeyPress with correct letter when a key is clicked",
+          "status": "passed",
+          "title": "calls onKeyPress with correct letter when a key is clicked",
+          "duration": 48.63979999999992,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "Keyboard interactions"
+          ],
+          "fullName": "Keyboard interactions calls onKeyPress when Key is clicked",
+          "status": "passed",
+          "title": "calls onKeyPress when Key is clicked",
+          "duration": 3.7064000000000306,
+          "failureMessages": [],
+          "meta": {}
+        },
+        {
+          "ancestorTitles": [
+            "Keyboard interactions"
+          ],
+          "fullName": "Keyboard interactions calls onKeyPress for BACKSPACE",
+          "status": "passed",
+          "title": "calls onKeyPress for BACKSPACE",
+          "duration": 69.38300000000027,
+          "failureMessages": [],
+          "meta": {}
+        }
+      ],
+      "startTime": 1748031054122,
+      "endTime": 1748031054243.383,
+      "status": "passed",
+      "message": "",
+      "name": "C:/Users/apexd/OneDrive/Desktop/mp2-rune-master/src/components/Keyboard.test.tsx"
+    }
+  ]
+}
