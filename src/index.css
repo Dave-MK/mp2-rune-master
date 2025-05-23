@@ -26,7 +26,7 @@
 #root {
   height: 100vh;
   width: 100vw;
-  background: url(./assets/images/site_bg.webp) no-repeat;
+  background: url(/assets/images/site_bg.webp) no-repeat;
   background-size: cover;
   @apply bg-position-[center_top] md:bg-position-[center_bottom] lg:bg-position-[center];
   backdrop-filter: brightness(0.7) contrast(1.1);
@@ -62,7 +62,7 @@ p {
 }
 
 .default-keyboard-tile {
-  background: transparent url('../src/assets/images/keyboard.webp') no-repeat center;
+  background: transparent url('/assets/images/keyboard.webp') no-repeat center;
   background-size: contain;
   color: #b49b6f;
   font-size: 1.25rem;
@@ -71,7 +71,7 @@ p {
 }
 
 .default-keyboard-tile2 {
-  background: transparent url('../src/assets/images/keyboard.webp') no-repeat center;
+  background: transparent url('/assets/images/keyboard.webp') no-repeat center;
   background-size: contain;
   color: rgb(180, 155, 111);
   font-size: 1.25rem;
@@ -80,7 +80,7 @@ p {
 }
 
 .default-enter {
-  background: transparent url('../src/assets/images/enter_backspace.webp') no-repeat center;
+  background: transparent url('/assets/images/enter_backspace.webp') no-repeat center;
   background-size: contain;
   color: rgb(180, 155, 111);
   font-size: 1.25rem;
@@ -89,7 +89,7 @@ p {
 }
 
 .default-backspace {
-  background: transparent url('../src/assets/images/enter_backspace.webp') no-repeat center;
+  background: transparent url('/assets/images/enter_backspace.webp') no-repeat center;
   background-size: contain;
   color: rgb(129, 111, 79);
   font-size: 1.25rem;
@@ -97,7 +97,7 @@ p {
 }
 
 .default-tile-text {
-  background: transparent url('../src/assets/images/tile.webp') no-repeat center;
+  background: transparent url('/assets/images/tile.webp') no-repeat center;
   background-size: contain;
   color: rgb(180, 155, 111);
   font-size: 1.25rem;
@@ -106,7 +106,7 @@ p {
 }
 
 .default-tile-text2 {
-  background: transparent url('../src/assets/images/tile.webp') no-repeat center;
+  background: transparent url('/assets/images/tile.webp') no-repeat center;
   background-size: contain;
   color: rgb(180, 155, 111);
   font-size: 1.25rem;
@@ -115,7 +115,7 @@ p {
 }
 
 .correct-tile-text {
-  background: transparent url('../src/assets/images/correct.webp') no-repeat center;
+  background: transparent url('/assets/images/correct.webp') no-repeat center;
   background-size: contain;
   color: #523810;
   font-size: 1.25rem;
@@ -124,7 +124,7 @@ p {
 }
 
 .incorrect-tile-text {
-  background: transparent url('../src/assets/images/wrong.webp') no-repeat center;
+  background: transparent url('/assets/images/wrong.webp') no-repeat center;
   background-size: contain;
   color: rgb(161, 121, 63);
   font-size: 1.25rem;
@@ -133,7 +133,7 @@ p {
 }
 
 .oop-tile-text {
-  background: transparent url('../src/assets/images/oop.webp') no-repeat center;
+  background: transparent url('/assets/images/oop.webp') no-repeat center;
   background-size: contain;
   color: rgb(83, 63, 28);
   font-size: 1.25rem;
@@ -142,7 +142,7 @@ p {
 }
 
 .bg-parchment {
-  background: transparent url('../src/assets/images/parchment_16_9.webp') no-repeat center;
+  background: transparent url('/assets/images/parchment_16_9.webp') no-repeat center;
   background-size: contain;
   aspect-ratio: 16/9;
   color: rgb(83, 63, 28);
@@ -152,7 +152,7 @@ p {
 }
 
 .bg-parchment-9-16 {
-  background: transparent url('../src/assets/images/parchment_9_16.webp') no-repeat center;
+  background: transparent url('/assets/images/parchment_9_16.webp') no-repeat center;
   background-size: contain;
   aspect-ratio: 9/16;
   color: rgb(83, 63, 28);
