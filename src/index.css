@@ -57,6 +57,26 @@ p {
   text-rendering: optimizeLegibility;
 }
 
+.modal-rune-tile {
+  background: transparent url('/assets/images/tile.webp') no-repeat center;
+  background-size: contain;
+}
+
+.modal-rune-correct {
+  background: transparent url('/assets/images/correct.webp') no-repeat center;
+  background-size: contain;
+}
+
+.modal-rune-oop {
+  background: transparent url('/assets/images/oop.webp') no-repeat center;
+  background-size: contain;
+}
+
+.modal-rune-incorrect {
+  background: transparent url('/assets/images/wrong.webp') no-repeat center;
+  background-size: contain;
+}
+
 .text-shadow-scroll {
   filter: drop-shadow(0 -1px 0 rgb(36, 27, 11)) drop-shadow(0 1px 0 rgb(235, 177, 77));
 }

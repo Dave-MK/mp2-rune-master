@@ -42,11 +42,7 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                                     To become the Rune Master, you must guess the word that presents five Gold runes.
                                 </p>
                                 <div className="flex">
-                                    <img src="/assets/images/correct.webp" className="w-8 m-1" alt="Gold rune, correctly placed - 1" />
-                                    <img src="/assets/images/correct.webp" className="w-8 m-1" alt="Gold rune, correctly placed - 2" />
-                                    <img src="/assets/images/correct.webp" className="w-8 m-1" alt="Gold rune, correctly placed - 3" />
-                                    <img src="/assets/images/correct.webp" className="w-8 m-1" alt="Gold rune, correctly placed - 4" />
-                                    <img src="/assets/images/correct.webp" className="w-8 m-1" alt="Gold rune, correctly placed - 5" />
+                                    <div className="modal-rune-correct" />    
                                 </div>
                                 <p className="p-2">
                                     If you fail six attempts to collect the five Gold runes, you will be branded a mere apprentice.
