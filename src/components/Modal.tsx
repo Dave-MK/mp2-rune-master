@@ -33,6 +33,7 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                                 <LiaSkullCrossbonesSolid />
                             </button>
                         </div>
+                        {/* There are some classes declared for the H1 in the css */}
                         <h2 className="text-2xl mb-2">How to Play</h2>
                         <ol className="flex flex-col justify-start overscroll-contain w-fit h-[40vh] items-center text-center overflow-y-scroll snap-start border-t-amber-800 border-b-amber-800 p-1">
                             <li className="flex flex-col justify-center items-center p-1 mb-1">
