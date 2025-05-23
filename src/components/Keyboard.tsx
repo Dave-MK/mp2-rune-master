@@ -76,3 +76,4 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
         </button>
     );
 };
+
