@@ -42,11 +42,11 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                                     To become the Rune Master, you must guess the word that presents five Gold runes.
                                 </p>
                                 <div className="flex">
-                                    <div className="modal-rune-correct w-10 h-14"></div>
-                                    <div className="modal-rune-correct w-10 h-14"></div> 
-                                    <div className="modal-rune-correct w-10 h-14"></div>
-                                    <div className="modal-rune-correct w-10 h-14"></div> 
-                                    <div className="modal-rune-correct w-10 h-14"></div>     
+                                    <div className="modal-rune-correct w-10 h-14" />
+                                    <div className="modal-rune-correct w-10 h-14" /> 
+                                    <div className="modal-rune-correct w-10 h-14" />
+                                    <div className="modal-rune-correct w-10 h-14" /> 
+                                    <div className="modal-rune-correct w-10 h-14" />     
                                 </div>
                                 <p className="p-2">
                                     If you fail six attempts to collect the five Gold runes, you will be branded a mere apprentice.
@@ -62,21 +62,21 @@ export const Modal: React.FC<propTypes> = ({ showModal, onClose }) => {
                             </li>
                             <li className="flex flex-col justify-center items-center mb-3">
                                 <h2>Rune of Weathered Gold</h2>
-                                <img src="/assets/images/oop.webp" className="w-12 mb-3" alt="Weathered gold rune, incorrect position" />
+                            <div className="modal-rune-oop w-10 h-14" />                                
                                 <p>
                                     A Rune whose inscription is within the solution, but is incorrectly positioned.
                                 </p>
                             </li>
                             <li className="flex flex-col justify-center items-center mb-3">
                                 <h2>Rune of Decay</h2>
-                                <img src="/assets/images/wrong.webp" className="w-12 mb-3" alt="Rune of decay, not in solution"/>
+                                <div className="modal-rune-incorrect w-10 h-14" />
                                 <p>
                                     It's inscription is not within the solution.
                                 </p>
                             </li>
                             <li className="flex flex-col justify-center items-center mb-3">
                                 <h2>Rune of the Master</h2>
-                                <img src="/assets/images/correct.webp" className="w-12 mb-3" alt="Rune of the master, correctly placed" />
+                                <div className="modal-rune-correct w-10 h-14" />
                                 <p>
                                     It's inscription is correctly placed. Five of these together brands you the Rune Master.
                                 </p>
