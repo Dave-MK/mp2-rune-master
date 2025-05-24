@@ -15,7 +15,7 @@ type Props = {
 
 export const Keyboard = ({ onKeyPress, letterToLetterState }: Props) => (
     <div
-        className="flex flex-col justify-center m-2 items-center"
+        className="flex flex-col justify-center m-2 items-center md:text-xl lg:text-2xl pt-1"
         role="group"
         aria-label="On-screen keyboard"
     >
@@ -55,7 +55,7 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
 
     const isSpecial = letter === ENTER || letter === BACKSPACE;
     const baseClasses =
-        "flex w-10 h-14 justify-center items-center font-bold rounded-md active:bg-amber-100";
+        "flex w-10 h-14 justify-center items-center font-bold rounded-md active:bg-amber-100 md:text-xl lg:text-2xl pt-1";
 
     let ariaLabel = letter;
     if (letter === ENTER) ariaLabel = "Enter";
@@ -68,11 +68,11 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
             {
                 "flex-1": !isSpecial,
                 "flex-[2.15]": isSpecial,
-                "default-enter tile-text-base": isSpecial,
-                "default-keyboard-tile tile-text-base": letterState === "default" && !isSpecial,
-                "correct-tile-text tile-text-base": letterState === "correct",
-                "incorrect-tile-text tile-text-base": letterState === "incorrect",
-                "oop-tile-text tile-text-base": letterState === "outofplace",
+                "default-enter": isSpecial,
+                "default-keyboard-tile": letterState === "default" && !isSpecial,
+                "correct-tile-text": letterState === "correct",
+                "incorrect-tile-text": letterState === "incorrect",
+                "oop-tile-text": letterState === "outofplace",
             }
             )}
             onClick={() => onKeyPress(letter)}
@@ -84,7 +84,7 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
             type="button"
         >
             {letter === BACKSPACE ? (
-            <BsBackspace className="default-backspace tile-text-base" />
+            <BsBackspace className="default-backspace md:text-xl lg:text-2xl pt-1" />
             ) : (
             letter
             )}

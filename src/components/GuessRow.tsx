@@ -52,15 +52,15 @@ export const Tile = ({ letter, state, idx }: TileProps) => {
 
     const tileClass = classNames(
         {
-            "default-tile-text tile-text-base": !letter,
-            "default-tile-text tile-text-base animate-pop": !!letter && state === 'default',
-            "default-tile-text tile-text-base animate-flip": state !== 'default' && !!letter,
-            "default-tile-text2 tile-text-base": state === 'default',
-            "correct-tile-text tile-text-base": state === 'correct' && revealColour,
-            "incorrect-tile-text tile-text-base": state === 'incorrect' && revealColour,
-            "oop-tile-text tile-text-base": state === 'outofplace' && revealColour,
+            "default-tile-text": !letter,
+            "default-tile-text animate-pop": !!letter && state === 'default',
+            "default-tile-text animate-flip": state !== 'default' && !!letter,
+            "default-tile-text2": state === 'default',
+            "correct-tile-text": state === 'correct' && revealColour,
+            "incorrect-tile-text": state === 'incorrect' && revealColour,
+            "oop-tile-text": state === 'outofplace' && revealColour,
         },
-        'w-8 h-12 xl:w-10 xl:h-14 flex justify-center items-center transition-all duration-200'
+        'w-8 h-12 xl:w-10 xl:h-14 md:text-xl lg:text-2xl pt-1 flex justify-center items-center transition-all duration-200'
     );
 
     return (
