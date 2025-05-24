@@ -84,7 +84,7 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
             type="button"
         >
             {letter === BACKSPACE ? (
-            <BsBackspace className="default-backspace md:text-2xl lg:text-3xl pt-1" />
+            <BsBackspace className="default-backspace md:text-2xl lg:text-3xl font-extrabold pt-1" />
             ) : (
             letter
             )}
