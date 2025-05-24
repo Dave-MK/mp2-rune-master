@@ -16,7 +16,9 @@
   height: 100vh;
   width: 100vw;
 
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+          box-sizing: border-box;
   margin: 0;
   padding: 0;  
 
@@ -44,9 +46,22 @@
   width: 100vw;
   background: url(/assets/images/site_bg.webp) no-repeat;
   background-size: cover;
-  @apply bg-position-[center_top] md:bg-position-[center_bottom] lg:bg-position-[center];
-  backdrop-filter: brightness(0.7) contrast(1.1);
+  background-position: center top;
+  -webkit-backdrop-filter: brightness(0.7) contrast(1.1);
+          backdrop-filter: brightness(0.7) contrast(1.1);
   overflow: hidden;
+}
+  
+  @media (min-width: 768px) {
+    #root {
+      background-position: center bottom;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    #root {
+      background-position: center;
+    }
 }
 
 /* 
@@ -73,7 +88,8 @@ h1 {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 3px;
-  filter: drop-shadow(-0.5px 2px black);
+  -webkit-filter: drop-shadow(-0.5px 2px black);
+          filter: drop-shadow(-0.5px 2px black);
 }
 
 /* 
@@ -121,7 +137,8 @@ p {
   Applies dual drop-shadow effect for scrollable text.
 */
 .text-shadow-scroll {
-  filter: drop-shadow(0 -1px 0 rgb(36, 27, 11)) drop-shadow(0 1px 0 rgb(235, 177, 77));
+  -webkit-filter: drop-shadow(0 -1px 0 rgb(36, 27, 11)) drop-shadow(0 1px 0 rgb(235, 177, 77));
+          filter: drop-shadow(0 -1px 0 rgb(36, 27, 11)) drop-shadow(0 1px 0 rgb(235, 177, 77));
 }
 
 /* 
@@ -132,8 +149,21 @@ p {
   background-size: contain;
   color: #816f50;
   font-size: 1.25rem;
-  @apply md:text-xl lg:text-2xl pt-1;
+  padding-top: 0.25rem;
+  font-size: 1.25rem;
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
+  }
+  
+  @media (min-width: 768px) {
+    .default-keyboard-tile {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .default-keyboard-tile {
+      font-size: 1.5rem;
+    }
 }
 
 /* 
@@ -144,8 +174,20 @@ p {
   background-size: contain;
   color: #816f50;
   font-size: 1.25rem;
-  @apply md:text-xl lg:text-2xl pt-1;
+  padding-top: 0.25rem;
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
+}
+
+@media (min-width: 768px) {
+  .default-keyboard-tile2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .default-keyboard-tile2 {
+    font-size: 1.5rem;
+  }
 }
 
 /* 
@@ -156,8 +198,14 @@ p {
   background-size: contain;
   color: #816f50;
   font-size: 1.25rem;
-  @apply text-xl md:text-2xl pt-1;
+  padding-top: 0.25rem;
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
+  }
+  @media (min-width: 768px) {
+    .default-enter {
+      font-size: 1.5rem;
+      padding-top: 0.25rem;
+    }
 }
 
 /* 
@@ -168,7 +216,12 @@ p {
   background-size: contain;
   color: #816f50;
   font-size: 1.25rem;
-  @apply text-xl md:text-2xl;
+}
+
+@media (min-width: 768px) {
+  .default-backspace {
+    font-size: 1.5rem;
+  }
 }
 
 /* 
@@ -179,9 +232,41 @@ p {
   background-size: contain;
   color: #816f50;
   font-size: 1.25rem;
-  @apply text-2xl md:text-3xl;
+  font-size: 1.25rem;
   text-shadow: 0 -1px 0 #534f43, 0 1px 0 rgb(255, 255, 255);
 }
+  /* Responsive font size */
+  @media (min-width: 768px) {
+    .default-tile-text {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .default-tile-text { 
+      font-size: 1.75rem;
+  }
+  
+}
+
+/* 
+  Shared tile text base styles for DRY principle.
+*/
+.tile-text-base {
+  background-size: contain;
+  font-size: 1.25rem;
+}
+  /* Responsive font size */
+  @media (min-width: 768px) {
+    .tile-text-base {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .tile-text-base {
+      font-size: 1.75rem;
+    }
+  }
+
 
 /* 
   Alternate style for default tile text.
@@ -189,45 +274,41 @@ p {
 .default-tile-text2 {
   background: transparent url('/assets/images/tile.webp') no-repeat center;
   background-size: contain;
-  color: #816f50;
   font-size: 1.25rem;
-  @apply text-2xl md:text-3xl;
+  color: #816f50;
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
 }
 
 /* 
-  Styles text for correct tiles with background, color, font size, and text shadow.
+  Styles text for correct tiles with background, color, and text shadow.
 */
 .correct-tile-text {
   background: transparent url('/assets/images/correct.webp') no-repeat center;
   background-size: contain;
-  color: #503610;
   font-size: 1.25rem;
-  @apply text-2xl md:text-3xl;
-  text-shadow: 0 -1px 0 #302a1c, 0 1px 0 rgb(230, 190, 17);
+  color: #503610;
+  text-shadow: 0 -1px 0 #302a1c, 0 1px 0 #e6be11;
 }
 
 /* 
-  Styles text for incorrect tiles with background, color, font size, and text shadow.
+  Styles text for incorrect tiles with background, color, and text shadow.
 */
 .incorrect-tile-text {
   background: transparent url('/assets/images/wrong.webp') no-repeat center;
   background-size: contain;
-  color: #eeb45e;
   font-size: 1.25rem;
-  @apply text-2xl md:text-3xl;
+  color: #eeb45e;
   text-shadow: 0 -1px 0 #272217, 0 1px 0 rgb(221, 191, 134);
 }
 
 /* 
-  Styles text for "out of place" tiles with background, color, font size, and text shadow.
+  Styles text for "out of place" tiles with background, color, and text shadow.
 */
 .oop-tile-text {
   background: transparent url('/assets/images/oop.webp') no-repeat center;
   background-size: contain;
-  color: rgb(80, 60, 27);
   font-size: 1.25rem;
-  @apply text-2xl md:text-3xl;
+  color: #503c1b;
   text-shadow: 0 -1px 0 #241b0b, 0 1px 0 rgb(235, 177, 77);
 }
 
@@ -238,7 +319,7 @@ p {
   background: transparent url('/assets/images/parchment_16_9.webp') no-repeat center;
   background-size: contain;
   aspect-ratio: 16/9;
-  color: rgb(83, 63, 28);
+  color: #533f1c;
   font-size: 1rem;
   font-weight: 100;
   text-shadow: 0 -1px 0 #241b0b, 0 1px 0 rgb(235, 177, 77);
@@ -251,7 +332,7 @@ p {
   background: transparent url('/assets/images/parchment_9_16.webp') no-repeat center;
   background-size: contain;
   aspect-ratio: 9/16;
-  color: rgb(83, 63, 28);
+  color: #533f1c;
   font-size: 1.25rem;
   font-weight: 100;
   text-shadow: 0 -1px 0 #241b0b, 0 1px 0 rgb(235, 177, 77);
@@ -260,24 +341,45 @@ p {
 /* 
   Defines a pop animation for interactive feedback.
 */
-@keyframes pop {
+@-webkit-keyframes pop {
   0% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pop {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /* 
   Applies the pop animation.
 */
 .animate-pop {
-  animation: pop 100ms ease-in-out;
+  -webkit-animation: pop 100ms ease-in-out;
+          animation: pop 100ms ease-in-out;
 }
 
 /* 
   Defines a fade-in animation for smooth appearance.
 */
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -290,52 +392,96 @@ p {
   Applies the fade-in animation.
 */
 .animate-fade-in {
-  animation: fade-in 300ms ease-in;
+  -webkit-animation: fade-in 300ms ease-in;
+          animation: fade-in 300ms ease-in;
 }
 
 /* 
   Defines a shake animation for error or attention feedback.
 */
-@keyframes shake {
+@-webkit-keyframes shake {
   10%, 90% {
-    transform: translateX(-1px);
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px);
   }
   20%, 80% {
-    transform: translateX(2px);
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
   }
   30%, 50%, 70% {
-    transform: translateX(-4px);
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
   }
   40%, 60% {
-    transform: translateX(4px);
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
+  }
+}
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translateX(-1px);
+            transform: translateX(-1px);
+  }
+  20%, 80% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
+  }
+  40%, 60% {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
   }
 }
 /* 
   Applies the shake animation.
 */
 .animate-shake {
-  animation: shake 600ms;
+  -webkit-animation: shake 600ms;
+          animation: shake 600ms;
 }
 
 /* 
   Defines a flip animation for tile flipping effects.
 */
-@keyframes flip {
+@-webkit-keyframes flip {
   0% {
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   50% {
-    transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
   }
   100% {
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+@keyframes flip {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
 }
 /* 
   Applies the flip animation.
 */
 .animate-flip {
-  animation: flip 600ms ease-in;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
+  -webkit-animation: flip 600ms ease-in;
+          animation: flip 600ms ease-in;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
