@@ -68,11 +68,11 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
             {
                 "flex-1": !isSpecial,
                 "flex-[2.15]": isSpecial,
-                "default-enter": isSpecial,
-                "default-keyboard-tile": letterState === "default" && !isSpecial,
-                "correct-tile-text": letterState === "correct",
-                "incorrect-tile-text": letterState === "incorrect",
-                "oop-tile-text": letterState === "outofplace",
+                "default-enter tile-text-base": isSpecial,
+                "default-keyboard-tile tile-text-base": letterState === "default" && !isSpecial,
+                "correct-tile-text tile-text-base": letterState === "correct",
+                "incorrect-tile-text tile-text-base": letterState === "incorrect",
+                "oop-tile-text tile-text-base": letterState === "outofplace",
             }
             )}
             onClick={() => onKeyPress(letter)}
@@ -84,7 +84,7 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
             type="button"
         >
             {letter === BACKSPACE ? (
-            <BsBackspace className="default-backspace" />
+            <BsBackspace className="default-backspace tile-text-base" />
             ) : (
             letter
             )}
