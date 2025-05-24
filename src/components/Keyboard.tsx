@@ -69,10 +69,10 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
                 "flex-1": !isSpecial,
                 "flex-[2.15]": isSpecial,
                 "default-enter": isSpecial,
-                "default-keyboard-tile": letterState === "default" && !isSpecial,
-                "correct-tile-text": letterState === "correct",
-                "incorrect-tile-text": letterState === "incorrect",
-                "oop-tile-text": letterState === "outofplace",
+                "default-keyboard-tile md:text-xl lg:text-2xl pt-1": letterState === "default" && !isSpecial,
+                "correct-tile-text md:text-xl lg:text-2xl pt-1": letterState === "correct",
+                "incorrect-tile-text md:text-xl lg:text-2xl pt-1": letterState === "incorrect",
+                "oop-tile-text md:text-xl lg:text-2xl pt-1": letterState === "outofplace",
             }
             )}
             onClick={() => onKeyPress(letter)}

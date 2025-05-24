@@ -187,7 +187,6 @@ p {
   background-size: contain;
   color: #816f50;
   font-size: 1.25rem;
-  @apply text-2xl md:text-3xl;
   text-shadow: 0 -1px 0 #534f43, 0 1px 0 rgb(255, 255, 255);
 }
 
@@ -199,7 +198,6 @@ p {
   background-size: contain;
   color: #816f50;
   font-size: 1.25rem;
-  @apply text-2xl md:text-3xl;
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
 }
 
@@ -211,7 +209,6 @@ p {
   background-size: contain;
   color: #503610;
   font-size: 1.25rem;
-  @apply text-2xl md:text-3xl;
   text-shadow: 0 -1px 0 #302a1c, 0 1px 0 #e6be11;
 }
 
@@ -223,7 +220,6 @@ p {
   background-size: contain;
   color: #eeb45e;
   font-size: 1.25rem;
-  @apply text-2xl md:text-3xl;
   text-shadow: 0 -1px 0 #272217, 0 1px 0 rgb(221, 191, 134);
 }
 
@@ -235,7 +231,6 @@ p {
   background-size: contain;
   color: #503c1b;
   font-size: 1.25rem;
-  @apply text-2xl md:text-3xl;
   text-shadow: 0 -1px 0 #241b0b, 0 1px 0 rgb(235, 177, 77);
 }
 
