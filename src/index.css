@@ -130,7 +130,7 @@ p {
 .default-keyboard-tile {
   background: transparent url('/assets/images/keyboard.webp') no-repeat center;
   background-size: contain;
-  color: #b49b6f;
+  color: #816f50;
   font-size: 1.25rem;
   @apply md:text-xl lg:text-2xl pt-1;
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
@@ -142,7 +142,7 @@ p {
 .default-keyboard-tile2 {
   background: transparent url('/assets/images/keyboard.webp') no-repeat center;
   background-size: contain;
-  color: rgb(180, 155, 111);
+  color: #816f50;
   font-size: 1.25rem;
   @apply md:text-xl lg:text-2xl pt-1;
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
@@ -154,7 +154,7 @@ p {
 .default-enter {
   background: transparent url('/assets/images/enter_backspace.webp') no-repeat center;
   background-size: contain;
-  color: rgb(180, 155, 111);
+  color: #816f50;
   font-size: 1.25rem;
   @apply text-xl md:text-2xl pt-1;
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
@@ -166,7 +166,7 @@ p {
 .default-backspace {
   background: transparent url('/assets/images/enter_backspace.webp') no-repeat center;
   background-size: contain;
-  color: rgb(129, 111, 79);
+  color: #816f50;
   font-size: 1.25rem;
   @apply text-xl md:text-2xl;
 }
@@ -177,7 +177,7 @@ p {
 .default-tile-text {
   background: transparent url('/assets/images/tile.webp') no-repeat center;
   background-size: contain;
-  color: rgb(180, 155, 111);
+  color: #816f50;
   font-size: 1.25rem;
   @apply text-2xl md:text-3xl;
   text-shadow: 0 -1px 0 #534f43, 0 1px 0 rgb(255, 255, 255);
@@ -189,7 +189,7 @@ p {
 .default-tile-text2 {
   background: transparent url('/assets/images/tile.webp') no-repeat center;
   background-size: contain;
-  color: rgb(180, 155, 111);
+  color: #816f50;
   font-size: 1.25rem;
   @apply text-2xl md:text-3xl;
   text-shadow: 0 -1px 0 rgb(83, 79, 67), 0 1px 0 rgb(255, 255, 255);
@@ -201,7 +201,7 @@ p {
 .correct-tile-text {
   background: transparent url('/assets/images/correct.webp') no-repeat center;
   background-size: contain;
-  color: #523810;
+  color: #503610;
   font-size: 1.25rem;
   @apply text-2xl md:text-3xl;
   text-shadow: 0 -1px 0 #302a1c, 0 1px 0 rgb(230, 190, 17);
@@ -213,7 +213,7 @@ p {
 .incorrect-tile-text {
   background: transparent url('/assets/images/wrong.webp') no-repeat center;
   background-size: contain;
-  color: rgb(161, 121, 63);
+  color: #eeb45e;
   font-size: 1.25rem;
   @apply text-2xl md:text-3xl;
   text-shadow: 0 -1px 0 #272217, 0 1px 0 rgb(221, 191, 134);
@@ -225,7 +225,7 @@ p {
 .oop-tile-text {
   background: transparent url('/assets/images/oop.webp') no-repeat center;
   background-size: contain;
-  color: rgb(83, 63, 28);
+  color: rgb(80, 60, 27);
   font-size: 1.25rem;
   @apply text-2xl md:text-3xl;
   text-shadow: 0 -1px 0 #241b0b, 0 1px 0 rgb(235, 177, 77);
