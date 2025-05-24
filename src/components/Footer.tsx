@@ -14,38 +14,42 @@ export const Footer = (_props: Props) => {
             role="contentinfo"
             aria-label="Footer"
         >
-            {/* Animated ping effect */}
-            <a
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="col-start-1 row-start-1"
-                aria-label="Project GitHub Repository (animated background)"
-                role="link"
-                tabIndex={-1}
-                aria-hidden="true"
-            >
-                <DiGithubFull
-                    className="text-6xl md:text-7xl lg:text-8xl text-teal-900 animate-ping"
-                    aria-hidden="true"
-                    focusable="false"
-                />
-            </a>
             {/* Main GitHub icon */}
             <a
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="col-start-1 row-start-1 z-10"
-                aria-label="Project GitHub Repository"
-                role="link"
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col-start-1 row-start-1 z-10"
+            aria-label="Project GitHub Repository"
+            role="link"
+            aria-describedby="github-desc"
             >
-                <DiGithubFull
-                    className="text-6xl md:text-7xl lg:text-8xl text-teal-600 z-10"
-                    aria-label="GitHub logo"
-                    focusable="false"
-                />
+            <DiGithubFull
+                className="text-6xl md:text-7xl lg:text-8xl text-teal-600 z-10"
+                aria-label="GitHub logo"
+                focusable="false"
+            />
             </a>
+            {/* Animated ping effect */}
+            <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="col-start-1 row-start-1"
+            aria-label="Project GitHub Repository (animated background)"
+            role="link"
+            tabIndex={-1}
+            aria-hidden="true"
+            >
+            <DiGithubFull
+                className="text-6xl md:text-7xl lg:text-8xl text-teal-900 animate-ping"
+                aria-hidden="true"
+                focusable="false"
+            />
+            </a>
+            <span id="github-desc" className="sr-only">
+            Visit the project GitHub repository in a new tab.
+            </span>
         </footer>
     )
 }

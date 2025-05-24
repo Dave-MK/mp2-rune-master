@@ -16,6 +16,7 @@ export const GuessRow = ({ guess, letterStates, shake, 'data-testid': dataTestId
     <div
         className={classNames("flex gap-[1px]", { 'animate-shake': shake })}
         role="row"
+        aria-rowindex={1}
         data-testid={dataTestId} // <-- apply test id to row container
     >
         {Array.from({ length: GAME_WORD_LENGTH }).map((_, idx) => (

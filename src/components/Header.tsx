@@ -33,15 +33,14 @@ export const Header = (_props: Props) => {
         <>
             <header
             className="flex justify-between items-center w-[100vw] h-12 border-b border-teal-600 p-2 bg-teal-900/60"
-            role="heading"
+            role="banner"
             aria-label="Main Header"
             >
             {/* Left: Logo */}
-            <div className="flex items-center" role="logo">
+            <div className="flex items-center" role="img" aria-label="Rune Master Logo">
                 <span
                 className="text-yellow-500 text-3xl md:text-4xl text-shadow-scroll"
                 aria-hidden="true"
-                aria-label="Rune Master Logo"
                 data-testid="logo"
                 >
                 <GiFireGem />
@@ -64,8 +63,9 @@ export const Header = (_props: Props) => {
                 onClick={handleNewGame}
                 aria-label="Start New Game"
                 aria-controls="app-title"
+                type="button"
                 >
-                <MdFiberNew aria-hidden="true" />
+                <MdFiberNew aria-hidden="true" focusable="false" />
                 </button>
                 <button
                 className="text-yellow-500 text-2xl md:text-3xl text-shadow-scroll"
@@ -74,8 +74,9 @@ export const Header = (_props: Props) => {
                 aria-haspopup="dialog"
                 aria-expanded={showModal}
                 aria-controls="info-modal"
+                type="button"
                 >
-                <GiScrollUnfurled aria-hidden="true" />
+                <GiScrollUnfurled aria-hidden="true" focusable="false" />
                 </button>
             </div>
             </header>

@@ -64,27 +64,29 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
     return (
         <button
             className={classNames(
-                baseClasses,
-                {
-                    "flex-1": !isSpecial,
-                    "flex-[2.15]": isSpecial,
-                    "default-enter": isSpecial,
-                    "default-keyboard-tile": letterState === "default" && !isSpecial,
-                    "correct-tile-text": letterState === "correct",
-                    "incorrect-tile-text": letterState === "incorrect",
-                    "oop-tile-text": letterState === "outofplace",
-                }
+            baseClasses,
+            {
+                "flex-1": !isSpecial,
+                "flex-[2.15]": isSpecial,
+                "default-enter": isSpecial,
+                "default-keyboard-tile": letterState === "default" && !isSpecial,
+                "correct-tile-text": letterState === "correct",
+                "incorrect-tile-text": letterState === "incorrect",
+                "oop-tile-text": letterState === "outofplace",
+            }
             )}
             onClick={() => onKeyPress(letter)}
             role="button"
             aria-label={ariaLabel}
             aria-pressed="false"
+            aria-disabled="false"
             tabIndex={0}
+            type="button"
         >
             {letter === BACKSPACE ? (
-                <BsBackspace className="default-backspace" />
+            <BsBackspace className="default-backspace" />
             ) : (
-                letter
+            letter
             )}
         </button>
     );
