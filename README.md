@@ -1,7 +1,7 @@
-![Image from MP2 Rune Master!](https://app.milanote.com/media/p/images/1UhMpm1gHeLmbk/AUZ/image.png)
+![Site header title](/documentation/readme-assets/header-title.png)
 
-# MP2 Rune Master - About the project
-
+# MP2 - About the project
+---
 ### **Presentation of interactive data**
 
 In this project, I'll build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals.
@@ -16,32 +16,15 @@ In this project, I'll build an interactive front-end site. The site should respo
 
 I have decided to create a word guessing game called "Rune Master!", not too dissimilar from something like Wordle, but with a woodland pagan rune theme.
 
-## Overall Tasks
-- [x] Create and complete project layout and timeline
-- [x] Change of theme
-- [x] Branding
-- [x] Personas
-- [x] Component breakdown
-- [x] Wireframes
-- [x] Document and Repo initialisation
-- [x] Build out components and develop based on wireframes and plan
-- [x] Build general structure
-- [x] Refine styling
-- [x] Add interaction and modals
-- [x] Add and refine animations
-- [x] Refine and ensure full responsiveness
-- [x] Complete automated testing using Vitest and manual end user testing
-- [ ] Complete all sections of README and documentation
-
 ## Project Requirements
 
 ### **Main Technologies**
 
-- <mark>Required</mark>: HTML, CSS, JavaScript.
+- **Required**: HTML, CSS, JavaScript.
 
-    <mark>Optional</mark>: jQuery or any other JavaScript libraries, external APIs.
+    **Optional**: jQuery or any other JavaScript libraries, external APIs.
 
-- Chosen: ReactJS framework, built and served using Vite, with Tailwind CSS for styling and Vitest for automation testing. 
+- **Chosen Tech Stack**: ReactJS + TypeScript for UI and interactivity, built and served using Vite, with Tailwind CSS for styling and Vitest for automation testing. 
 
 ### **Mandatory Requirements**
 
@@ -60,32 +43,50 @@ A project violating any of these requirements will FAIL
 6. **Attribution**: Maintain clear separation between code written by you and code from external sources (e.g. libraries or tutorials). Attribute any code from external sources to its source via comments above the code and (for larger dependencies) in the README.
 
 7. **Deployment**: Deploy the final version of your code to a hosting platform such as GitHub Pages.
+---
+# Project Documentation
 
 ## User Stories
 
-## As a regular user, I want to be able to view a menu and see the game and content easily, so that I don't feel overwhelmed.
-- [x] The page should contain a header menu, a body and footer
-- [ ] The menu should contain links to "rules", "achievements" and "email opt in"
-- [x] The footer should contain social links
-- [x] The main body of the page should contain the tile board and Keyboard
-## As someone who doesn't play a lot of games, I want to be able to view a set of rules, so that I know how to play the game properly.
-- [x] The rules icon in the menu should link to the rules modal
-## As a word game enthusiast, I want to choose the difficulty level, so that I can challenge myself, but also make it more relaxed if I see fit.
-- [ ] The initial state of the game should allow users to choose the difficulty, Easy, Medium, Hard
-- [ ] The levels should equate to the following modes, Easy - to be a 3 letter word with 10 tries, Medium - to be a 5 letter word with 8 tries and Hard - to be a 7 letter word with 5 tries
-## As a person who isn't great with words, I would like the ability to choose from a few lifeline functions, so that when I am stuck I can get hints or letter reveals.
-- [ ] An icon should be available at the bottom of the tile board allowing users to reveal 1 word for less points
-- [ ] An icon should be available to allow user to reveal the whole word, but will receive no points
-## As an avid mobile and browser gamer, I want to be able to earn achievements and rewards for hitting milestones and winning games.
-- [ ] Achievements, badges etc should be accessible via the menu and display as a modal
-## As someone with a short attention span, I want to see quick responses, colours and sounds, so that it will hold my attention and make the game more fun to play.
-- [x] Should have type animations as user types of clicks the word, like a pop or flash
-- [x] Letters should colour certain colours depending on whether they are in the wrong position, correct or not in the word
-- [x] There should be flip animations for correct letters
-- [x] If the user correctly guesses the word a modal pops up with the word and does a celebration animation
-- [x] If the user runs out of tries the tiles should flip over and turn red and return to the initial difficulty choice state
-## As a Mobile and Laptop user, I want to the game to adapt to the device I am playing on, so that I can play while on the go and also when relaxing at home.
-- [x] The page, menu, tiles and keyboard should be responsive and accommodate all major device widths
+#### As a regular user, I want to be able to view a menu and see the game and content easily, so that I don't feel overwhelmed. - MUST HAVE
+- The page should contain a header menu, a body and footer
+- The menu should contain links to "rules" icon and "new game" icon
+- The footer should contain social links
+- The main body of the page should contain the tile board and Keyboard
+#### As someone who doesn't play a lot of games, I want to be able to view a set of rules, so that I know how to play the game properly. - MUST HAVE
+- The rules icon in the menu should link to the rules modal
+#### As someone with a short attention span, I want to see quick responses, colours and sounds, so that it will hold my attention and make the game more fun to play. - SHOULD HAVE
+- Should have type animations as user types of clicks the word, like a pop or flash
+- Letters should colour certain colours depending on whether they are in the wrong position, correct or not in the word
+- There should be flip animations for correct letters
+- If the user correctly guesses the word a modal pops up with the word and does a celebration animation
+- If the user runs out of tries the tiles should flip over and turn red and return to the initial difficulty choice state
+#### As a Mobile and Laptop user, I want to the game to adapt to the device I am playing on, so that I can play while on the go and also when relaxing at home. - MUST HAVE
+- The page, menu, tiles and keyboard should be responsive and accommodate all major device widths
+#### As a word game enthusiast, I want to choose the difficulty level, so that I can challenge myself, but also make it more relaxed if I see fit. - COULD HAVE - Coming in a later phase
+- The initial state of the game should allow users to choose the difficulty, Easy, Medium, Hard
+- The levels should equate to the following modes, Easy - to be a 3 letter word with 10 tries, Medium - to be a 5 letter word with 8 tries and Hard - to be a 7 letter word with 5 tries
+#### As a person who isn't great with words, I would like the ability to choose from a few lifeline functions, so that when I am stuck I can get hints or letter reveals. - COULD HAVE - Coming in a later phase
+- An icon should be available at the bottom of the tile board allowing users to reveal 1 word for less points
+- An icon should be available to allow user to reveal the whole word, but will receive no points
+#### As an avid mobile and browser gamer, I want to be able to earn achievements and rewards for hitting milestones and winning games. - COULD HAVE - Coming in a later phase
+- Achievements, badges etc should be accessible via the menu and display as a modal
+
+## Project Setup
+
+### **Setting up and importing, the project, file structure, styles and testing frameworks and libraries**
+
+[**Vite + ReactJS Application Setup**](/documentation/readme-assets/logo.png)<br>
+View this particular part of the documentation to see how I setup my project.
+
+[**Tailwind CSS Setup and Import**](/documentation/readme-assets/logo.png)<br>
+View this particular part of the documentation to see how setup and import Tailwind into my project.
+
+[**React Icon Import**](/documentation/readme-assets/logo.png)<br>
+View this particular part of the documentation to see how I installed and imported react icons.
+
+[**Vitest Setup**](/documentation/readme-assets/logo.png)<br>
+View this particular part of the documentation to see how I setup my automated testing using Vitest.
 
 ## Background Style and Imagery
 
@@ -93,21 +94,21 @@ A project violating any of these requirements will FAIL
 
 A faded background to look as though the user is playing the game in a spacey cyber environment. A gradient overlay of the above colours will brighten the theme up a little and assist with readability for the fonts.
 
-![Image from MP2 Rune Master!](https://media.milanote.com/p/resized/1U5Mms159xaizN/1U5Mms159xaizN-CwQc6-large.jpeg)
+![Site background image](/documentation/readme-assets/site-bg.jpg)
 
 ### Rune Images
 
-![Image from MP2 Rune Master!](https://app.milanote.com/media/p/images/1UhKRi1wkfF6fI/UBG/rune-images%20%281%29.png)
+![Rune Images](/documentation/readme-assets/rune-images.png)
 
 ## Colour Palette
 
-![Image from MP2 Rune Master!](https://app.milanote.com/media/p/images/1UiQbC1ofFzVc3/Rex/Rune%20Master%20Colours.png?w=800)
+![Colour Paletter](/documentation/readme-assets/rune-master-colours.png)
 
 ## Typography
 
 ### Primary
 
-![Image from MP2 Rune Master!](https://app.milanote.com/media/p/images/1UhK8H1wkfuDb8/KOc/image.png)
+![Pirata One Font](/documentation/readme-assets/pirata-one-font.png)
 
 [Pirata One - Google Fonts](https://fonts.google.com/specimen/Pirata+One)
 
@@ -115,94 +116,71 @@ Pirata One is a gothic Textura font, simplified and optimized to work well on sc
 
 ### Secondary
 
-![Image from MP2 Rune Master!](https://app.milanote.com/media/p/images/1UhKbA1wkfuDb9/p9o/image.png)
+![Skranji Font](/documentation/readme-assets/skranji-font.png)
 
 [Skranji - Google Fonts](https://fonts.google.com/specimen/Skranji?query=skran)
 
 Skranji is primitive and exotic, evoking the thunder of Norse gods, giving a great choice for runic symbols and engravings.
 
-## Secondary Font
-
-### **Importing Tailwindcss and the Fonts**
-
-In the vite.config file, Tailwind needs to be imported by placing it in the Plugins array:
-
-```
-plugins: [
-    react(),
-    tailwind()
-]
-```
-
-At the below to the top of the stylesheet before:
-
-```
-@import "tailwindcss";
-```
-
-Add the below to the top of the stylesheet, but before the tailwind import:
-
-```
-@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Outfit:wght@100..900&display=swap');
-```
-
 ## Logo
 
-For the logo and other icons I am using React-Icons:
+For the logo and other icons I am using React-Icons: [See React Icons](https://react-icons.github.io/react-icons/)
 
-https://react-icons.github.io/react-icons/
-
-![Image from MP2 Rune Master!](https://app.milanote.com/media/p/images/1UhK5u1wkfuDb5/0Qd/image.png)
+![Site Logo](/documentation/readme-assets/logo.png)
 
 ## Design
 
-[MP2-USER-FLOW](https://media.milanote.com/p/files/1UhXXI1wklFS6Y/suK/canvas_user-flow-250522_0455.pdf) (298 KB)
+[User flow](/documentation/readme-assets/MP2-USER-FLOW.pdf)<br>
+The user flow shows the planned journey the user can go through, due to time contraints some of this flow could not be implemented at this time.
 
 # User Flow
 
-[MP2-RUNE-MASTER-WIREFRAMES](https://media.milanote.com/p/files/1UhpdT12a6eg0G/DlZ/MP2-RUNE-MASTER-compressed.pdf) (6.5 MB)
+[Wireframes](/documentation/readme-assets/MP2-RUNE-MASTER-WIREFRAMES.pdf)<br>
+The wireframes show how the game should look on various device sizes, mobile, tablet and desktop
 
 ## Testing
 
 ### Manual Testing
 
-Table element string placeholder
+[UAT Test Script](/documentation/testing/uat/manual-uat.md)
 
 ### Automated Testing
 
-Table element string placeholder
+[Vitest - Automated Testing](/documentation/testing/automation/vitest-results.json)
 
-### Issues, Fixes & Future Features
+## Issues, Fixes & Future Features
 
-## Issues Fixed
-- [x] Contrast Issues for the tiles and keyboard
-- [x] Link to manifest removed from index.html as this is redundant and was throwing console errors
-- [x] Background tile images moved from inline styles to index.css due to issues rendering in deployment
-- [x] Accessibility issues fixed with aria attributes, still room for improvement
-- [ ] Some issues with keyboard fonts
-- [ ] Issue where background images of certain tiles and keyboard tiles wouldn't display
-- [ ] Similar background image issue as above where images were fine in test environment, but wouldn't show in deployment
-## Issues still present
-- [ ] The odd syntax error due to this being my first project using TypeScript, Tailwind CSS and ReactJS
-- [ ] Tailwind class declarations could be neater
-- [ ] Due to time, certain features will be introduced at a later date - as stated in Future Features
-## Future Features
-- [ ] Ability to earn and view Achievements
-- [ ] Hints for the solution
-- [ ] More refined local storage usage to allow game to be saved
-- [ ] Leader board to allow users to view others guess accuracy and speed
-- [ ] Share button to share to social media
-- [ ] Head to head, 2 players online able to play the same game, the person to guess first wins
+### Issues Fixed
+- Contrast Issues for the tiles and keyboard
+- Link to manifest removed from index.html as this is redundant and was throwing console errors
+- Background tile images moved from inline styles to index.css due to issues rendering in deployment
+- Accessibility issues fixed with aria attributes, still room for improvement
+- Some issues with keyboard fonts
+- Issue where background images of certain tiles and keyboard tiles wouldn't display
+- Similar background image issue as above where images were fine in test environment, but wouldn't show in deployment
+### Issues still present
+- As mentioned above accessibility could be improved further
+- Tailwind class declarations could be neater
+- Due to time, certain features will be introduced at a later date - as stated in Future Features
+- Git Commit messages could be optimised in future, this is still a skill i am working on
+- When testing on an old monitor i have noticed the GitHub link at the bottom goes off the page, but doesnt happen on more modern monitors / resolutions, didn't find a quick enough fix in time
+### Future Features
+- Ability to earn and view Achievements
+- Hints for the solution
+- More refined local storage usage to allow game to be saved
+- Leader board to allow users to view others guess accuracy and speed
+- Share button to share to social media
+- Head to head, 2 players online able to play the same game, the person to guess first wins
 
 ## Deployment
 
-## GitHub Repo
+### GitHub Repo
 
 [Dave-MK - Overview](http://github.com/dave-mk)
 
 Videographer | Graphic Designer | Web Developer | Family Guy - Dave-MK
 
-## Live Site (GitHub Pages)
+### Live Site (GitHub Pages)
 
 [Rune Master](https://dave-mk.github.io/mp2-rune-master)
 
@@ -210,11 +188,21 @@ A word game - guess the correct runes within six attempts and become the Rune Ma
 
 ## Acknowledgements
 
-[undefined](undefined)
+[ReactJS Documentation](undefined) - ReactJS + TypeScript setup using Vite
 
-[undefined](undefined)
+[Josh Tries Coding](undefined) - Game core functionality
 
-[undefined](undefined)
+[undefined](undefined) - Modal creation
+
+[TypeScript Documentation](undefined) - TypeScript
+
+[Tailwind CSS Documentation](undefined) - Tailwind CSS
+
+[Vite Documentation](undefined) - Vitest setup and execution
+
+[Official Wordle Game - NYTimes](undefined) - Wordle for the inspiration
+
+[Adobe Firefly](undefined) - Adobe Firefly
 
 
 
