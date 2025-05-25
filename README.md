@@ -1,7 +1,9 @@
-![Site header title](/documentation/readme-assets/header-title.png)
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/header-title.png" alt="Rune master site header" style="width:30vw;" />
+</div>
 
-# MP2 - About the project
 ---
+# <u>MP2 - About the project</u>
 ### **Presentation of interactive data**
 
 In this project, I'll build an interactive front-end site. The site should respond to the users' actions, allowing users to actively engage with data, alter the way the site displays the information to achieve their preferred goals.
@@ -49,7 +51,7 @@ A project violating any of these requirements will FAIL
 
 7. **Deployment**: Deploy the final version of your code to a hosting platform such as GitHub Pages.
 ---
-# Project Documentation
+# <u>Project Documentation</u>
 
 ## User Stories
 
@@ -81,7 +83,7 @@ A project violating any of these requirements will FAIL
 - Achievements should be accessible via the menu and display as a modal
 - Badges etc should be accessible via the menu and display as a modal
 
-## Project Setup
+# <u>Project Setup</u>
 
 ### **Setting up and importing, the project, file structure, styles and testing frameworks and libraries**
 
@@ -103,23 +105,35 @@ All images apart from the icons were generated using adobe's AI image generator 
 
 ### Background
 
-A faded background to look as though the user is playing the game in a spacey cyber environment. A gradient overlay of the above colours will brighten the theme up a little and assist with readability for the fonts.
+A pagan woodland background with a fantastical theme. Paired with the runes, it acheives the pagan/medieval look and feel.
 
-![Site background image](/documentation/readme-assets/site-bg.jpg)
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/site-bg.jpg" alt="Rune master site background" style="width:70vw;" />
+</div>
 
 ### Rune Images
 
-![Rune Images](/documentation/readme-assets/rune-images.png)
+Runes of ivory and gold, along with parchment add to the pagan feel, giving a mystical and hero like vibe for the user.
+
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/rune-images.png" alt="Rune images" style="width:50vw;" />
+</div>
 
 ## Colour Palette
 
-![Colour Paletter](/documentation/readme-assets/rune-master-colours.png)
+The overall colour theme, while on the surface isn't 100% complimentary, weirdly serves the theme well.
+
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/rune-master-colours.png" alt="Rune master site colours" style="width:40vw;" />
+</div>
 
 ## Typography
 
 ### Primary
 
-![Pirata One Font](/documentation/readme-assets/pirata-one-font.png)
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/pirata-one-font.png" alt="Rune master primary font" style="width:25vw;" />
+</div>
 
 [**Pirata One - Google Fonts**](https://fonts.google.com/specimen/Pirata+One)
 
@@ -127,7 +141,9 @@ Pirata One is a gothic Textura font, simplified and optimized to work well on sc
 
 ### Secondary
 
-![Skranji Font](/documentation/readme-assets/skranji-font.png)
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/skranji-font.png" alt="Rune master secondary font" style="width:25vw;" />
+</div>
 
 [**Skranji - Google Fonts**](https://fonts.google.com/specimen/Skranji?query=skran)
 
@@ -137,20 +153,28 @@ Skranji is primitive and exotic, evoking the thunder of Norse gods, giving a gre
 
 For the logo and other icons I am using React-Icons: [See React Icons](https://react-icons.github.io/react-icons/)
 
-![Site Logo](/documentation/readme-assets/logo.png)
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/logo.png" alt="Rune master site logo" style="width:35vw;" />
+</div>
 
-## Design
+## User Flow
 
-[**User flow**](/documentation/readme-assets/MP2-USER-FLOW.pdf)<br>
 The user flow shows the planned journey the user can go through, due to time contraints some of this flow could not be implemented at this time.
 
-# User Flow
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/user-flow.webp" alt="Rune master game user flow" style="width:70vw;" />
+</div>
 
-[**Wireframes**](/documentation/readme-assets/MP2-RUNE-MASTER-WIREFRAMES.pdf)<br>
-The wireframes show how the game should look on various device sizes, mobile, tablet and desktop
+## Wireframes
+
+The wireframes show how the game should look on various device sizes, mobile, tablet and desktop.
+
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/wireframes.webp" alt="Rune master game wireframes" style="width:70vw;" />
+</div>
 
 ---
-## Testing
+# <u>Testing</u>
 
 ### Manual Testing
 
@@ -158,32 +182,53 @@ The wireframes show how the game should look on various device sizes, mobile, ta
 
 #### WAVE Accessibility Testing
 
-**Initial Failed Test**<br>
-![WAVE Initial Test](/documentation/readme-assets/wave-initial-test.png)
+**Initial Failed Test**
 
-**Final Passed Test**<br>
-![WAVE Initial Test](/documentation/readme-assets/wave-final-test.png)
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/wave-initial-test.png" alt="Wave initial test" style="width:30vw;" />
+</div>
+
+**Final Passed Test**
+
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/wave-final-test.png" alt="Wave final test" style="width:30vw;" />
+</div>
 
 #### Lighthouse Performance Testing
 
-**Initial Test**<br>
-![Initial Performance](/documentation/readme-assets/initial-performance-test.png)
+**Initial Test**
 
-**Final Test**<br>
-![Final Performance](/documentation/readme-assets/final-performance-test.png)
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/initial-performance-test.png" alt="Initial performance test" style="width:30vw;" />
+</div>
 
-**Performance Metrics**<br>
-![Metrics](/documentation/readme-assets/performance-metrics.png)
+**Final Test**
+
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/final-performance-test.png" alt="final performance test" style="width:30vw;" />
+</div>
+
+**Performance Metrics**
+
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/performance-metrics.png" alt="performance metrics" style="width:30vw;" />
+</div>
 
 #### HTML Validation
 
-**Validated HTML Code**<br>
-![HTML Validation](/documentation/readme-assets/html-validation.png)
+**Validated HTML Code**
+
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/html-validation.png" alt="html validation" style="width:30vw;" />
+</div>
 
 #### CSS Validation
 
-**Validated CSS Code**<br>
-![CSS Validation](/documentation/readme-assets/css-validation.png)
+**Validated CSS Code**
+
+<div style="text-align:center;">
+    <img src="./documentation/readme-assets/css-validation.png" alt="css validation" style="width:30vw;" />
+</div>
 
 ### Automated Testing
 
@@ -192,13 +237,13 @@ The wireframes show how the game should look on various device sizes, mobile, ta
 ## Issues, Fixes & Future Features
 
 ### Issues Fixed
-- [x] Contrast Issues for the tiles and keyboard
-- [x] Link to manifest removed from index.html as this is redundant and was throwing console errors
-- [x] Background tile images moved from inline styles to index.css due to issues rendering in deployment
-- [x] Accessibility issues fixed with aria attributes, still room for improvement
-- [x] Some issues with keyboard fonts
-- [x] Issue where background images of certain tiles and keyboard tiles wouldn't display
-- [x] Similar background image issue as above where images were fine in test environment, but wouldn't show in deployment
+- Contrast Issues for the tiles and keyboard
+- Link to manifest removed from index.html as this is redundant and was throwing console errors
+- Background tile images moved from inline styles to index.css due to issues rendering in deployment
+- Accessibility issues fixed with aria attributes, still room for improvement
+- Some issues with keyboard fonts
+- Issue where background images of certain tiles and keyboard tiles wouldn't display
+- Similar background image issue as above where images were fine in test environment, but wouldn't show in deployment
 
 ### Issues still present
 - As mentioned above accessibility could be improved further
@@ -220,13 +265,19 @@ The wireframes show how the game should look on various device sizes, mobile, ta
 - **A 404 page and more robust toasts for user guidence and support**
 
 ---
-## Deployment
+# <u>Deployment</u>
 
-#### GitHub Repo
+#### GitHub Profile
 
 [**Dave-MK - Overview**](http://github.com/dave-mk)
 
-Videographer | Graphic Designer | Web Developer | Family Guy - Dave-MK
+My GitHub profile
+
+#### GitHub Repo
+
+A link to the entire Rune Master repository
+
+[**MP2 Rune Master - Repo Overview**](http://github.com/dave-mk/mp2-rune-master)
 
 #### GitHub Project Page
 
@@ -258,7 +309,9 @@ A word game - guess the correct runes within six attempts and become the Rune Ma
 
 [Official Wordle Game - NYTimes](https://www.nytimes.com/games/wordle/index.html) - I was inspired by the Wordle game on NYTimes website
 
+[FreeConvert png to webp](https://www.freeconvert.com/png-to-webp) - For converting the pngs used in the game to webp format to improve performance
+
 [Adobe Firefly](https://firefly.adobe.com/) - Adobe Firefly for the amazing AI text-to-image generation - a real time saver
 
-
+[Coolors.co](https://coolors.co/) - Coolors to generate the colour palette for the site.
 
