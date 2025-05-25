@@ -87,16 +87,16 @@ A project violating any of these requirements will FAIL
 
 ### **Setting up and importing, the project, file structure, styles and testing frameworks and libraries**
 
-[**Vite + ReactJS Application Setup**](/documentation/readme-assets/logo.png)<br>
+[**Vite + ReactJS Application Setup**](https://vite.dev/guide/#scaffolding-your-first-vite-project)<br>
 View this particular part of the documentation to see how I setup my project.
 
-[**Tailwind CSS Setup and Import**](/documentation/readme-assets/logo.png)<br>
+[**Tailwind CSS Setup and Import**](https://tailwindcss.com/docs/installation/using-vite)<br>
 View this particular part of the documentation to see how setup and import Tailwind into my project.
 
-[**React Icon Import**](/documentation/readme-assets/logo.png)<br>
+[**React Icon Import**](https://react-icons.github.io/react-icons/)<br>
 View this particular part of the documentation to see how I installed and imported react icons.
 
-[**Vitest Setup**](/documentation/readme-assets/logo.png)<br>
+[**Vitest Setup**](https://vitest.dev/guide/#adding-vitest-to-your-project)<br>
 View this particular part of the documentation to see how I setup my automated testing using Vitest.
 
 ## Background Style and Imagery
@@ -313,5 +313,5 @@ A word game - guess the correct runes within six attempts and become the Rune Ma
 
 [Adobe Firefly](https://firefly.adobe.com/) - Adobe Firefly for the amazing AI text-to-image generation - a real time saver
 
-[Coolors.co](https://coolors.co/) - Coolors to generate the colour palette for the site.
+[Coolors.co](https://coolors.co/) - Coolors to generate the colour palette for the site
 
