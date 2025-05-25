@@ -24,7 +24,12 @@ I have decided to create a word guessing game called "Rune Master!", not too dis
 
     **Optional**: jQuery or any other JavaScript libraries, external APIs.
 
-- **Chosen Tech Stack**: ReactJS + TypeScript for UI and interactivity, built and served using Vite, with Tailwind CSS for styling and Vitest for automation testing. 
+- **Chosen Tech Stack** 
+    + **Vite**: Built with Vite because of its speed and the fact its a single page app
+    + **React**: For it's plug and play feel and performance
+    + **TypeScript**: For its more explicit nature and ability to present obvious errors, I like the fact its JavaScript with extra features, I felt like i had more tools at my finger tips
+    + **Tailwind CSS**: For speedy utility classes 
+    + **Vitest**: For my automation testing because it requires less setup than JEST and better compatibility when using Vite
 
 ### **Mandatory Requirements**
 
@@ -90,6 +95,8 @@ View this particular part of the documentation to see how I setup my automated t
 
 ## Background Style and Imagery
 
+All images apart from the icons were generated using adobe's AI image generator - Firefly.
+
 ### Background
 
 A faded background to look as though the user is playing the game in a spacey cyber environment. A gradient overlay of the above colours will brighten the theme up a little and assist with readability for the fonts.
@@ -110,7 +117,7 @@ A faded background to look as though the user is playing the game in a spacey cy
 
 ![Pirata One Font](/documentation/readme-assets/pirata-one-font.png)
 
-[Pirata One - Google Fonts](https://fonts.google.com/specimen/Pirata+One)
+[**Pirata One - Google Fonts**](https://fonts.google.com/specimen/Pirata+One)
 
 Pirata One is a gothic Textura font, simplified and optimized to work well on screen and pixel displays. Its condensed structure and spacing give the perfect medieval feel.
 
@@ -118,7 +125,7 @@ Pirata One is a gothic Textura font, simplified and optimized to work well on sc
 
 ![Skranji Font](/documentation/readme-assets/skranji-font.png)
 
-[Skranji - Google Fonts](https://fonts.google.com/specimen/Skranji?query=skran)
+[**Skranji - Google Fonts**](https://fonts.google.com/specimen/Skranji?query=skran)
 
 Skranji is primitive and exotic, evoking the thunder of Norse gods, giving a great choice for runic symbols and engravings.
 
@@ -130,23 +137,23 @@ For the logo and other icons I am using React-Icons: [See React Icons](https://r
 
 ## Design
 
-[User flow](/documentation/readme-assets/MP2-USER-FLOW.pdf)<br>
+[**User flow**](/documentation/readme-assets/MP2-USER-FLOW.pdf)<br>
 The user flow shows the planned journey the user can go through, due to time contraints some of this flow could not be implemented at this time.
 
 # User Flow
 
-[Wireframes](/documentation/readme-assets/MP2-RUNE-MASTER-WIREFRAMES.pdf)<br>
+[**Wireframes**](/documentation/readme-assets/MP2-RUNE-MASTER-WIREFRAMES.pdf)<br>
 The wireframes show how the game should look on various device sizes, mobile, tablet and desktop
 
 ## Testing
 
 ### Manual Testing
 
-[UAT Test Script](/documentation/testing/uat/manual-uat.md)
+[**UAT Test Script**](/documentation/testing/uat/manual-uat.md)
 
 ### Automated Testing
 
-[Vitest - Automated Testing](/documentation/testing/automation/vitest-results.json)
+[**Vitest - Automated Testing**](/documentation/testing/automation/vitest-results.json)
 
 ## Issues, Fixes & Future Features
 
@@ -158,51 +165,61 @@ The wireframes show how the game should look on various device sizes, mobile, ta
 - Some issues with keyboard fonts
 - Issue where background images of certain tiles and keyboard tiles wouldn't display
 - Similar background image issue as above where images were fine in test environment, but wouldn't show in deployment
+
 ### Issues still present
 - As mentioned above accessibility could be improved further
 - Tailwind class declarations could be neater
 - Due to time, certain features will be introduced at a later date - as stated in Future Features
 - Git Commit messages could be optimised in future, this is still a skill i am working on
 - When testing on an old monitor i have noticed the GitHub link at the bottom goes off the page, but doesnt happen on more modern monitors / resolutions, didn't find a quick enough fix in time
+- Local Storage caching was implemented, it was working fine, but commented it out (deactivated it) as in its basic state wasn't much use to the user, I have left this in the code with a view of making it more robust in the future and reactivating it
+
 ### Future Features
-- Ability to earn and view Achievements
-- Hints for the solution
-- More refined local storage usage to allow game to be saved
-- Leader board to allow users to view others guess accuracy and speed
-- Share button to share to social media
-- Head to head, 2 players online able to play the same game, the person to guess first wins
+- **Ability to earn and view Achievements**
+- **Hints for the solution**
+- **More refined local storage usage to allow game to be saved**
+- **Leader board to allow users to view others guess accuracy and speed**
+- **Share button to share to social media**
+- **Head to head, 2 players online able to play the same game, the person to guess first wins**
+- **Utilising Local storage better to assist in some of the above features as well as the ability to save games**
+- **Email opt in and contact form**
+- **A 404 page and more robust toasts for user guidence and support**
 
 ## Deployment
 
 ### GitHub Repo
 
-[Dave-MK - Overview](http://github.com/dave-mk)
+[**Dave-MK - Overview**](http://github.com/dave-mk)
 
 Videographer | Graphic Designer | Web Developer | Family Guy - Dave-MK
 
+### GitHub Project Page
+
+[**MP2-Rune-Master Project**](http://github.com/dave-mk)
+
 ### Live Site (GitHub Pages)
 
-[Rune Master](https://dave-mk.github.io/mp2-rune-master)
+[**Rune Master**](https://dave-mk.github.io/mp2-rune-master)
 
 A word game - guess the correct runes within six attempts and become the Rune Master!
 
 ## Acknowledgements
 
-[ReactJS Documentation](undefined) - ReactJS + TypeScript setup using Vite
+[Vite React Setup Documentation](https://vite.dev/guide/#scaffolding-your-first-vite-project) - ReactJS + TypeScript setup using Vite
 
-[Josh Tries Coding](undefined) - Game core functionality
+[Josh Teaches Code](https://www.youtube.com/watch?v=qT33aMpQFC8&t=13242s) - Game core functionality
 
-[undefined](undefined) - Modal creation
+[Semi Circle Youtube](https://www.youtube.com/watch?v=1CN7C6u31zA) - Modal creation
 
-[TypeScript Documentation](undefined) - TypeScript
+[TypeScript Documentation](https://www.typescriptlang.org/docs/) - TypeScript knowledge and support
 
-[Tailwind CSS Documentation](undefined) - Tailwind CSS
+[Tailwind CSS Setup Documentation](https://tailwindcss.com/docs/installation/using-vite) - Tailwind CSS setup
 
-[Vite Documentation](undefined) - Vitest setup and execution
+[Vitest Setup Documentation](https://vitest.dev/guide/#adding-vitest-to-your-project) - Vitest setup and execution
 
-[Official Wordle Game - NYTimes](undefined) - Wordle for the inspiration
+[Official Wordle Game - NYTimes](https://www.nytimes.com/games/wordle/index.html) - Wordle for the inspiration
 
-[Adobe Firefly](undefined) - Adobe Firefly
+[Adobe Firefly](https://firefly.adobe.com/) - Adobe Firefly for the amazing AI image generation
 
 
 
