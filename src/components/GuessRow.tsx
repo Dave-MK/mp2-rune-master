@@ -1,4 +1,3 @@
-import React from "react"; /* For ESLint react scope errors */
 import classNames from "classnames";
 import { GAME_WORD_LENGTH, LetterState } from "../constants";
 import { useEffect, useState } from "react";

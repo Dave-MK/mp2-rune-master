@@ -106,7 +106,7 @@ All images apart from the icons were generated using adobe's AI image generator 
 
 ### Background
 
-A pagan woodland background with a fantastical theme. Paired with the runes, it acheives the pagan/medieval look and feel.
+A pagan woodland background with a fantastical theme. Paired with the runes, it achieves the pagan/medieval look and feel.
 
 <div style="text-align:center;">
     <img src="./documentation/readme-assets/site-bg.jpg" alt="Rune master site background" style="width:70vw;" />
@@ -235,10 +235,18 @@ The wireframes show how the game should look on various device sizes, mobile, ta
 Due to using react and typescript I opted for ESLint instead of JSHint for a more in depth analysis of my scripts code. I ran these tests and had the results written to a json file.
 
 **Initial ESLint Report**<br>
-In the initial report you will notice most or all of the errors relate to react scope, this appears to be due to some confusion from the linter when reading the .tsx files. There are more in depth ways to fix this that would require a large refactor of my code, but a quicker and simpler fix was to use:
+In the initial report you will notice most or all of the errors relate to react scope, This is related to the ESLint configuration (or the version of React) expects import React from "react"; at the top of every file that uses JSX.
+
+If you omit this import, ESLint will complain, even if your code works with React 17+ (which no longer requires this import due to the new JSX/TSX transform).
+
+So to fix this, and prevent it picking up this deprecated error, I added the following rules to the eslint.config.js file.
 
 ```
-import React from "react";
+  {
+    rules: {
+      "react/react-in-jsx-scope": "off"
+    }
+  }
 ```
 
 [**ESLint - Initial Report**](/documentation/testing/ESLint/initial-eslint-results.json)
@@ -268,7 +276,7 @@ If you observe in the final ESLint report, there are no errors remaining.
 - Tailwind class declarations could be neater
 - Due to time, certain features will be introduced at a later date - as stated in Future Features
 - Git Commit messages could be optimised in future, this is still a skill i am working on
-- When testing on an old monitor i have noticed the GitHub link at the bottom goes off the page, but doesnt happen on more modern monitors / resolutions, didn't find a quick enough fix in time
+- When testing on an old monitor i have noticed the GitHub link at the bottom goes off the page, but doesn't happen on more modern monitors / resolutions, didn't find a quick enough fix in time
 - Local Storage caching was implemented, it was working fine, but commented it out (deactivated it) as in its basic state wasn't much use to the user, I have left this in the code with a view of making it more robust in the future and reactivating it
 
 ### Future Features
@@ -280,7 +288,7 @@ If you observe in the final ESLint report, there are no errors remaining.
 - **Head to head, 2 players online able to play the same game, the person to guess first wins**
 - **Utilising Local storage better to assist in some of the above features as well as the ability to save games**
 - **Email opt in and contact form**
-- **A 404 page and more robust toasts for user guidence and support**
+- **A 404 page and more robust toasts for user guidance and support**
 
 ---
 # <u>Deployment</u>

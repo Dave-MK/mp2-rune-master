@@ -1,4 +1,3 @@
-import React from "react"; /* For ESLint react scope errors */
 import { render, screen } from '@testing-library/react'
 import App from './App'
 import { describe, expect, it } from 'vitest'

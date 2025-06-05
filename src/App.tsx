@@ -1,4 +1,3 @@
-import React from "react"; /* For ESLint react scope errors */
 import { useEffect, useState } from "react";
 import { Game } from "./components/Game";
 import { Header } from "./components/Header";

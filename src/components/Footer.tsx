@@ -1,4 +1,3 @@
-import React from "react"; /* For ESLint react scope errors */
 import { DiGithubFull } from "react-icons/di"
 
 /**

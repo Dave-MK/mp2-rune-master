@@ -1,4 +1,3 @@
-import React from "react"; /* For ESLint react scope errors */
 import { useState } from "react";
 import { GiFireGem, GiScrollUnfurled } from "react-icons/gi";
 import { MdFiberNew } from "react-icons/md";
