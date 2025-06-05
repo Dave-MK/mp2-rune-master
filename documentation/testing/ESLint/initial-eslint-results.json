@@ -1,0 +1,1396 @@
+[
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\eslint.config.js",
+        "messages": [],
+        "suppressedMessages": [],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\App.test.tsx",
+        "messages": [
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 7,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 7,
+                "endColumn": 23
+            }
+        ],
+        "suppressedMessages": [],
+        "errorCount": 1,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "import { render, screen } from '@testing-library/react'\r\nimport App from './App'\r\nimport { describe, expect, it } from 'vitest'\r\n\r\ndescribe('App', () => {\r\n    it('renders without crashing', () => {\r\n        render(<App />)\r\n        expect(screen.getAllByText(/rune master/i).length).toBeGreaterThan(0);\r\n    })\r\n})\r\n\r\n",
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\App.tsx",
+        "messages": [],
+        "suppressedMessages": [
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 27,
+                "column": 5,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 31,
+                "endColumn": 6,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 32,
+                "column": 7,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 32,
+                "endColumn": 17,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 33,
+                "column": 7,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 33,
+                "endColumn": 49,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 34,
+                "column": 7,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 34,
+                "endColumn": 17,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            }
+        ],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\components\\Footer.tsx",
+        "messages": [],
+        "suppressedMessages": [
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 11,
+                "column": 9,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 15,
+                "endColumn": 10,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 16,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 24,
+                "endColumn": 14,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 26,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 26,
+                "endColumn": 144,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 28,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 28,
+                "endColumn": 137,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 29,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 29,
+                "endColumn": 37,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 34,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 34,
+                "endColumn": 56,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            }
+        ],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\components\\Game.test.tsx",
+        "messages": [
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 8,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 8,
+                "endColumn": 41
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 15,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 15,
+                "endColumn": 41
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 23,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 23,
+                "endColumn": 41
+            }
+        ],
+        "suppressedMessages": [],
+        "errorCount": 3,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "import { render, screen, fireEvent } from '@testing-library/react'\r\nimport { describe, it, expect } from 'vitest'\r\nimport { Game } from './Game'\r\nimport '@testing-library/jest-dom'\r\n\r\ndescribe('Game Component', () => {\r\n    it('shakes the row when Enter is pressed with an empty guess', () => {\r\n        render(<Game solution=\"valid\" />)\r\n        fireEvent.keyDown(document, { key: 'Enter', code: 'Enter' })\r\n        const row = screen.getByTestId('row-0')\r\n        expect(row).toHaveClass('animate-shake')\r\n    })\r\n\r\n    it('shakes the row when on-screen Enter is clicked with an empty guess', () => {\r\n        render(<Game solution=\"valid\" />)\r\n        const row = screen.getByTestId('row-0')\r\n        const enterKey = screen.getByRole('button', { name: /enter/i })\r\n        fireEvent.click(enterKey)\r\n        expect(row).toHaveClass('animate-shake')\r\n    })\r\n\r\n    it('does not shake the row when a valid guess is entered and Enter is pressed', () => {\r\n        render(<Game solution=\"VALID\" />)\r\n        const row = screen.getByTestId('row-0')\r\n        for (const key of 'VALID') {\r\n            fireEvent.keyDown(document, { key, code: `Key${key}` })\r\n        }\r\n        fireEvent.keyDown(document, { key: 'Enter', code: 'Enter' })\r\n        expect(row).not.toHaveClass('animate-shake')\r\n    })\r\n})",
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\components\\Game.tsx",
+        "messages": [
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 149,
+                "column": 9,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 154,
+                "endColumn": 10
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 156,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 161,
+                "endColumn": 14
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 162,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 162,
+                "endColumn": 90
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 167,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 171,
+                "endColumn": 14
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 172,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 177,
+                "endColumn": 14
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 181,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 188,
+                "endColumn": 23
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 192,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 196,
+                "endColumn": 15
+            }
+        ],
+        "suppressedMessages": [],
+        "errorCount": 7,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "import { useCallback, useEffect, useRef, useState } from \"react\";\r\nimport {\r\n    BACKSPACE,\r\n    ENTER,\r\n    GAME_ROUNDS,\r\n    GAME_WORD_LENGTH,\r\n    LetterState,\r\n} from \"../constants\";\r\nimport { GuessRow } from \"./GuessRow\";\r\nimport { Keyboard } from \"./Keyboard\";\r\nimport { useCurrentGuessReducer } from \"../hooks/useCurrentGuessReducer\";\r\nimport { isValidWord } from \"../utils/IsValidWord\";\r\nimport { getTileStates } from \"../utils/getTileStates\";\r\nimport {\r\n    getStoredGameState,\r\n    setStoredGameState,\r\n} from \"../utils/gameStateStorage\";\r\n\r\ntype Props = {\r\n    solution: string;\r\n};\r\n\r\ntype GameCompletionState = \"active\" | \"won\" | \"lost\";\r\n\r\n/**\r\n * The main game component for the Rune Master word game.\r\n */\r\nexport const Game = ({ solution }: Props) => {\r\n    // State\r\n    const [currentGuess, dispatch] = useCurrentGuessReducer();\r\n    const [guesses, setGuesses] = useState<string[]>(getStoredGameState());\r\n    const [gameCompletionState, setGameCompletion] = useState<GameCompletionState>(\"active\");\r\n    const [toastText, setToastText] = useState<string>(\"\");\r\n    const [shakeCurrentRow, setShakeCurrentRow] = useState<boolean>(false);\r\n\r\n    // Refs for timeouts\r\n    const toastTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);\r\n    const shakeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);\r\n\r\n    // --- Utility Callbacks ---\r\n\r\n    // Update guesses and persist to storage\r\n    const setGuessesCallback = useCallback(\r\n        (newGuesses: string[]) => {\r\n            setGuesses(newGuesses);\r\n            setStoredGameState(newGuesses);\r\n        },\r\n        []\r\n    );\r\n\r\n    // Show toast notification for a limited time\r\n    const showToast = useCallback((text: string) => {\r\n        if (toastTimeout.current) clearTimeout(toastTimeout.current);\r\n        setToastText(text);\r\n        toastTimeout.current = setTimeout(() => setToastText(\"\"), 5000);\r\n    }, []);\r\n\r\n    // Trigger shake animation for current guess row\r\n    const shakeCurrentGuess = useCallback(() => {\r\n        if (shakeTimeout.current) clearTimeout(shakeTimeout.current);\r\n        setShakeCurrentRow(true);\r\n        shakeTimeout.current = setTimeout(() => setShakeCurrentRow(false), 1000);\r\n    }, []);\r\n\r\n    // --- Game Logic ---\r\n\r\n    // Handle guess submission\r\n    const submitWord = useCallback(() => {\r\n        if (currentGuess.length !== GAME_WORD_LENGTH) {\r\n            showToast(\"Not enough letters\");\r\n            shakeCurrentGuess();\r\n            return;\r\n        }\r\n        if (!isValidWord(currentGuess)) {\r\n            shakeCurrentGuess();\r\n            return;\r\n        }\r\n        setGuessesCallback([...guesses, currentGuess]);\r\n        dispatch({ type: \"clear\" });\r\n\r\n        if (currentGuess === solution) {\r\n            setGameCompletion(\"won\");\r\n            setTimeout(() => showToast(\"You truly are the Rune Master!\"), 1500);\r\n            return;\r\n        }\r\n        if (guesses.length + 1 === GAME_ROUNDS) {\r\n            setGameCompletion(\"lost\");\r\n            setTimeout(() => {\r\n                showToast(`You disappoint the Gods.\\n${solution} was the word!`);\r\n            }, 1500);\r\n        }\r\n    }, [currentGuess, guesses, dispatch, solution, showToast, shakeCurrentGuess, setGuessesCallback]);\r\n\r\n    // Handle key press events\r\n    const onKeyPress = useCallback(\r\n        (key: string) => {\r\n            if (gameCompletionState !== \"active\") return;\r\n\r\n            if (key === BACKSPACE) {\r\n                dispatch({ type: \"backspace\" });\r\n                return;\r\n            }\r\n            if (key === ENTER) {\r\n                submitWord();\r\n                return;\r\n            }\r\n            if (key.length === 1 && /[a-zA-Z]/.test(key)) {\r\n                dispatch({ type: \"add\", letter: key.toUpperCase() });\r\n            }\r\n        },\r\n        [gameCompletionState, dispatch, submitWord]\r\n    );\r\n\r\n    // Listen for physical keyboard events\r\n    useEffect(() => {\r\n        const onKeyDownEvt = (evt: KeyboardEvent) => onKeyPress(evt.key);\r\n        window.addEventListener(\"keydown\", onKeyDownEvt);\r\n        return () => window.removeEventListener(\"keydown\", onKeyDownEvt);\r\n    }, [onKeyPress]);\r\n\r\n    // --- Tile and Keyboard State ---\r\n\r\n    // Compute tile states for each guess row\r\n    const guessIdxToTileStates = Array.from({ length: GAME_ROUNDS }, (_, idx) => {\r\n        const isSubmitted = idx < guesses.length;\r\n        return getTileStates(solution, guesses[idx], isSubmitted);\r\n    });\r\n\r\n    // Compute keyboard letter states\r\n    const letterToLetterState: Record<string, LetterState> = {};\r\n    guessIdxToTileStates.forEach((tileStates, idx) => {\r\n        const guess = guesses[idx];\r\n        if (!guess) return;\r\n        tileStates.forEach((tileState, letterIdx) => {\r\n            const letter = guess[letterIdx];\r\n            if (tileState === \"correct\" || letterToLetterState[letter] === \"correct\") {\r\n                letterToLetterState[letter] = \"correct\";\r\n            } else if (tileState === \"outofplace\" || letterToLetterState[letter] === \"outofplace\") {\r\n                letterToLetterState[letter] = \"outofplace\";\r\n            } else if (tileState === \"incorrect\") {\r\n                letterToLetterState[letter] = \"incorrect\";\r\n            }\r\n        });\r\n    });\r\n\r\n    // --- Render ---\r\n\r\n    return (\r\n        <div\r\n            className=\"flex justify-around items-around\"\r\n            role=\"main\"\r\n            aria-label=\"Rune Master Game\"\r\n            aria-live=\"polite\"\r\n        >\r\n            {toastText && (\r\n            <div\r\n                className=\"bg-parchment z-10 w-xs md:w-lg flex flex-col justify-center items-center animate-fade-in absolute p-2 mt-20\"\r\n                role=\"status\"\r\n                aria-live=\"assertive\"\r\n                aria-atomic=\"true\"\r\n            >\r\n                <span className=\"w-60 md:w-75 text-lg md:text-2xl font-bold text-center\">\r\n                {toastText}\r\n                </span>\r\n            </div>\r\n            )}\r\n            <div\r\n            className=\"flex flex-col items-center justify-start mt-2\"\r\n            role=\"region\"\r\n            aria-label=\"Game board and keyboard\"\r\n            >\r\n            <div\r\n                className=\"flex flex-col m-2\"\r\n                role=\"grid\"\r\n                aria-label=\"Guess rows\"\r\n                aria-rowcount={GAME_ROUNDS}\r\n            >\r\n                {Array.from({ length: GAME_ROUNDS }).map((_, idx) => {\r\n                const isCurrentGuess = idx === guesses.length;\r\n                return (\r\n                    <GuessRow\r\n                    key={idx}\r\n                    guess={isCurrentGuess ? currentGuess : guesses[idx]}\r\n                    letterStates={guessIdxToTileStates[idx]}\r\n                    shake={shakeCurrentRow && isCurrentGuess}\r\n                    data-testid={`row-${idx}`}\r\n                    aria-rowindex={idx + 1}\r\n                    />\r\n                );\r\n                })}\r\n            </div>\r\n            <Keyboard\r\n                onKeyPress={onKeyPress}\r\n                letterToLetterState={letterToLetterState}\r\n                aria-label=\"On-screen keyboard\"\r\n            />\r\n            </div>\r\n        </div>\r\n    );\r\n};\r\n",
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\components\\GuessRow.tsx",
+        "messages": [
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 16,
+                "column": 5,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 21,
+                "endColumn": 6
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 23,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 28,
+                "endColumn": 15
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 67,
+                "column": 9,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 73,
+                "endColumn": 10
+            }
+        ],
+        "suppressedMessages": [],
+        "errorCount": 3,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "import classNames from \"classnames\";\r\nimport { GAME_WORD_LENGTH, LetterState } from \"../constants\";\r\nimport { useEffect, useState } from \"react\";\r\n\r\ntype Props = {\r\n    guess: string | undefined;\r\n    letterStates: Array<LetterState>;\r\n    shake: boolean;\r\n    'data-testid'?: string; // <-- allow forwarding test id\r\n};\r\n\r\n/**\r\n * GuessRow component renders a row of tiles for the current guess.\r\n */\r\nexport const GuessRow = ({ guess, letterStates, shake, 'data-testid': dataTestId }: Props) => (\r\n    <div\r\n        className={classNames(\"flex gap-[1px]\", { 'animate-shake': shake })}\r\n        role=\"row\"\r\n        aria-rowindex={1}\r\n        data-testid={dataTestId} // <-- apply test id to row container\r\n    >\r\n        {Array.from({ length: GAME_WORD_LENGTH }).map((_, idx) => (\r\n            <Tile\r\n                key={idx}\r\n                idx={idx}\r\n                letter={guess ? guess[idx] : ''}\r\n                state={letterStates[idx]}\r\n            />\r\n        ))}\r\n    </div>\r\n);\r\n\r\ntype TileProps = {\r\n    letter: string;\r\n    state: LetterState;\r\n    idx: number;\r\n};\r\n\r\n/**\r\n * Tile component represents a single letter tile in a guessing game row.\r\n */\r\nexport const Tile = ({ letter, state, idx }: TileProps) => {\r\n    const [revealColour, setRevealColour] = useState(false);\r\n    const animationDelay = idx * 150;\r\n\r\n    useEffect(() => {\r\n        if (state !== 'default') {\r\n            const timeout = setTimeout(() => setRevealColour(true), animationDelay + 300);\r\n            return () => clearTimeout(timeout);\r\n        }\r\n    }, [state, animationDelay]);\r\n\r\n    const tileClass = classNames(\r\n        {\r\n            \"default-tile-text md:text-xl lg:text-2xl pt-1\": !letter,\r\n            \"default-tile-text animate-pop md:text-xl lg:text-2xl pt-1\": !!letter && state === 'default',\r\n            \"default-tile-text animate-flip md:text-xl lg:text-2xl pt-1\": state !== 'default' && !!letter,\r\n            \"default-tile-text2 md:text-xl lg:text-2xl pt-1\": state === 'default',\r\n            \"correct-tile-text md:text-xl lg:text-2xl pt-1\": state === 'correct' && revealColour,\r\n            \"incorrect-tile-text md:text-xl lg:text-2xl pt-1\": state === 'incorrect' && revealColour,\r\n            \"oop-tile-text md:text-xl lg:text-2xl pt-1\": state === 'outofplace' && revealColour,\r\n        },\r\n        'w-8 h-12 xl:w-10 xl:h-14 md:text-xl lg:text-2xl pt-1 flex justify-center items-center transition-all duration-200'\r\n    );\r\n\r\n    return (\r\n        <div\r\n            style={{ animationDelay: state === 'default' ? '0ms' : `${animationDelay}ms` }}\r\n            className={tileClass}\r\n            role=\"gridcell\"\r\n            aria-label={letter ? `Letter ${letter}, ${state}` : \"Empty tile\"}\r\n            aria-selected={!!letter}\r\n        >\r\n            {letter}\r\n        </div>\r\n    );\r\n};",
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\components\\Header.test.tsx",
+        "messages": [
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 12,
+                "column": 12,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 12,
+                "endColumn": 22
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 22,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 22,
+                "endColumn": 26
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 28,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 28,
+                "endColumn": 26
+            }
+        ],
+        "suppressedMessages": [],
+        "errorCount": 3,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "import { describe, it, expect, vi, beforeEach } from \"vitest\";\r\nimport { render, fireEvent, screen } from \"@testing-library/react\";\r\nimport { Header } from \"./Header\";\r\nimport '@testing-library/jest-dom'\r\n\r\ndescribe(\"Header\", () => {\r\n    beforeEach(() => {\r\n        vi.restoreAllMocks();\r\n    });\r\n\r\n    it(\"renders title, logo, and buttons\", () => {\r\n    render(<Header />);\r\n    expect(screen.getByRole('heading', { name: /rune master/i })).toBeInTheDocument();\r\n    expect(screen.getByTestId('logo')).toBeInTheDocument();\r\n    expect(screen.getByLabelText(/start new game/i)).toBeInTheDocument();\r\n    expect(screen.getByLabelText(/open info modal/i)).toBeInTheDocument();\r\n});\r\n\r\n    it(\"reloads the page when new game button is clicked\", () => {\r\n        const reloadMock = vi.fn();\r\n        vi.stubGlobal(\"window\", { location: { reload: reloadMock } });\r\n        render(<Header />);\r\n        fireEvent.click(screen.getByLabelText(/start new game/i));\r\n        expect(reloadMock).toHaveBeenCalled();\r\n    });\r\n\r\n    it(\"shows and hides the modal on info button and close\", () => {\r\n        render(<Header />);\r\n        // Modal should not be visible initially\r\n        expect(screen.queryByRole(\"dialog\")).not.toBeInTheDocument();\r\n\r\n        // Open modal\r\n        fireEvent.click(screen.getByLabelText(/open info modal/i));\r\n        expect(screen.getByRole(\"dialog\")).toBeInTheDocument();\r\n\r\n        // Close modal\r\n        fireEvent.click(screen.getByRole(\"button\", { name: /close/i }));\r\n        expect(screen.queryByRole(\"dialog\")).not.toBeInTheDocument();\r\n    });\r\n});\r\n",
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\components\\Header.tsx",
+        "messages": [
+            {
+                "ruleId": "@typescript-eslint/no-empty-object-type",
+                "severity": 2,
+                "message": "The `{}` (\"empty object\") type allows any non-nullish value, including literals like `0` and `\"\"`.\n- If that's what you want, disable this lint rule with an inline comment or configure the 'allowObjectTypes' rule option.\n- If you want a type meaning \"any object\", you probably want `object` instead.\n- If you want a type meaning \"any value\", you probably want `unknown` instead.",
+                "line": 6,
+                "column": 14,
+                "nodeType": "TSTypeLiteral",
+                "messageId": "noEmptyObject",
+                "endLine": 6,
+                "endColumn": 16,
+                "suggestions": [
+                    {
+                        "messageId": "replaceEmptyObjectType",
+                        "data": {
+                            "replacement": "object"
+                        },
+                        "fix": {
+                            "range": [
+                                193,
+                                195
+                            ],
+                            "text": "object"
+                        },
+                        "desc": "Replace `{}` with `object`."
+                    },
+                    {
+                        "messageId": "replaceEmptyObjectType",
+                        "data": {
+                            "replacement": "unknown"
+                        },
+                        "fix": {
+                            "range": [
+                                193,
+                                195
+                            ],
+                            "text": "unknown"
+                        },
+                        "desc": "Replace `{}` with `unknown`."
+                    }
+                ]
+            },
+            {
+                "ruleId": "@typescript-eslint/no-unused-vars",
+                "severity": 2,
+                "message": "'_props' is defined but never used.",
+                "line": 17,
+                "column": 24,
+                "nodeType": null,
+                "messageId": "unusedVar",
+                "endLine": 17,
+                "endColumn": 30
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 33,
+                "column": 9,
+                "nodeType": "JSXOpeningFragment",
+                "messageId": "notInScope",
+                "endLine": 33,
+                "endColumn": 11
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 34,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 38,
+                "endColumn": 14
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 40,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 40,
+                "endColumn": 89
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 41,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 45,
+                "endColumn": 18
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 46,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 46,
+                "endColumn": 30
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 48,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 48,
+                "endColumn": 68
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 52,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 55,
+                "endColumn": 14
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 60,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 60,
+                "endColumn": 89
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 61,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 67,
+                "endColumn": 18
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 68,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 68,
+                "endColumn": 68
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 70,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 78,
+                "endColumn": 18
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 79,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 79,
+                "endColumn": 74
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 85,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 85,
+                "endColumn": 71
+            }
+        ],
+        "suppressedMessages": [],
+        "errorCount": 15,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "import { useState } from \"react\";\r\nimport { GiFireGem, GiScrollUnfurled } from \"react-icons/gi\";\r\nimport { MdFiberNew } from \"react-icons/md\";\r\nimport { Modal } from \"./Modal\";\r\n\r\ntype Props = {};\r\n\r\n/**\r\n * Header component for the Rune Master application.\r\n *\r\n * Renders the top navigation bar with the game title, icons, and action buttons.\r\n * Includes a button to start a new game (reloads the page) and a button to open a modal.\r\n *\r\n * @param _props - Component props (currently unused).\r\n * @returns The header JSX element with navigation and modal controls.\r\n */\r\nexport const Header = (_props: Props) => {\r\n    const [showModal, setShowModal] = useState(false);\r\n\r\n    const handleNewGame = () => {\r\n        window.location.reload();\r\n    };\r\n\r\n    const handleOpenModal = () => {\r\n        setShowModal(true);\r\n    };\r\n\r\n    const handleCloseModal = () => {\r\n        setShowModal(false);\r\n    };\r\n\r\n    return (\r\n        <>\r\n            <header\r\n            className=\"flex justify-between items-center w-[100vw] h-12 border-b border-teal-600 p-2 bg-teal-900/60\"\r\n            role=\"banner\"\r\n            aria-label=\"Main Header\"\r\n            >\r\n            {/* Left: Logo */}\r\n            <div className=\"flex items-center\" role=\"img\" aria-label=\"Rune Master Logo\">\r\n                <span\r\n                className=\"text-yellow-500 text-3xl md:text-4xl text-shadow-scroll\"\r\n                aria-hidden=\"true\"\r\n                data-testid=\"logo\"\r\n                >\r\n                <GiFireGem />\r\n                </span>\r\n                <div className=\"w-12 md:w-14\" aria-hidden=\"true\" />\r\n            </div>\r\n\r\n            {/* Center: Title */}\r\n            <h1\r\n                className=\"relative text-2xl md:text-4xl bg-gradient-to-tl from-yellow-600 via-yellow-300 to-yellow-600 inline-block text-transparent bg-clip-text\"\r\n                id=\"app-title\"\r\n            >\r\n                Rune Master\r\n            </h1>\r\n\r\n            {/* Right: Action Buttons */}\r\n            <div className=\"flex items-center\" role=\"group\" aria-label=\"Header Actions\">\r\n                <button\r\n                className=\"text-yellow-500 text-3xl md:text-4xl text-shadow-scroll px-2\"\r\n                onClick={handleNewGame}\r\n                aria-label=\"Start New Game\"\r\n                aria-controls=\"app-title\"\r\n                type=\"button\"\r\n                >\r\n                <MdFiberNew aria-hidden=\"true\" focusable=\"false\" />\r\n                </button>\r\n                <button\r\n                className=\"text-yellow-500 text-2xl md:text-3xl text-shadow-scroll\"\r\n                onClick={handleOpenModal}\r\n                aria-label=\"Open Info Modal\"\r\n                aria-haspopup=\"dialog\"\r\n                aria-expanded={showModal}\r\n                aria-controls=\"info-modal\"\r\n                type=\"button\"\r\n                >\r\n                <GiScrollUnfurled aria-hidden=\"true\" focusable=\"false\" />\r\n                </button>\r\n            </div>\r\n            </header>\r\n\r\n            {/* Modal */}\r\n            <Modal showModal={showModal} onClose={handleCloseModal} />\r\n        </>\r\n    );\r\n};",
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\components\\Keyboard.test.tsx",
+        "messages": [
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 10,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 10,
+                "endColumn": 77
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 19,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 19,
+                "endColumn": 80
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 26,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 26,
+                "endColumn": 88
+            }
+        ],
+        "suppressedMessages": [],
+        "errorCount": 3,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "import { describe, it, expect, vi } from \"vitest\";\r\nimport { render, fireEvent, screen } from \"@testing-library/react\";\r\nimport { Keyboard, Key } from \"./Keyboard\";\r\nimport { BACKSPACE, ENTER } from \"../constants\";\r\nimport '@testing-library/jest-dom';\r\n\r\ndescribe(\"Keyboard interactions\", () => {\r\n    it(\"calls onKeyPress with correct letter when a key is clicked\", () => {\r\n        const onKeyPress = vi.fn();\r\n        render(<Keyboard onKeyPress={onKeyPress} letterToLetterState={{}} />);\r\n        fireEvent.click(screen.getByText(\"Q\"));\r\n        expect(onKeyPress).toHaveBeenCalledWith(\"Q\");\r\n        fireEvent.click(screen.getByText(ENTER));\r\n        expect(onKeyPress).toHaveBeenCalledWith(ENTER);\r\n    });\r\n\r\n    it(\"calls onKeyPress when Key is clicked\", () => {\r\n        const onKeyPress = vi.fn();\r\n        render(<Key letter=\"B\" onKeyPress={onKeyPress} letterState=\"default\" />);\r\n        fireEvent.click(screen.getByText(\"B\"));\r\n        expect(onKeyPress).toHaveBeenCalledWith(\"B\");\r\n    });\r\n\r\n    it(\"calls onKeyPress for BACKSPACE\", () => {\r\n        const onKeyPress = vi.fn();\r\n        render(<Key letter={BACKSPACE} onKeyPress={onKeyPress} letterState=\"default\" />);\r\n        fireEvent.click(screen.getByRole(\"button\", { name: \"Backspace\" }));\r\n        expect(onKeyPress).toHaveBeenCalledWith(BACKSPACE);\r\n    });\r\n});\r\n",
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\components\\Keyboard.tsx",
+        "messages": [],
+        "suppressedMessages": [
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 18,
+                "column": 5,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 22,
+                "endColumn": 6,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 24,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 28,
+                "endColumn": 14,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 30,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 35,
+                "endColumn": 23,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 54,
+                "column": 16,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 54,
+                "endColumn": 65,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 66,
+                "column": 9,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 86,
+                "endColumn": 10,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 88,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 88,
+                "endColumn": 81,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 89,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 89,
+                "endColumn": 82,
+                "suppressions": [
+                    {
+                        "kind": "directive",
+                        "justification": ""
+                    }
+                ]
+            }
+        ],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\components\\Modal.tsx",
+        "messages": [
+            {
+                "ruleId": "react/prop-types",
+                "severity": 2,
+                "message": "'showModal' is missing in props validation",
+                "line": 12,
+                "column": 47,
+                "nodeType": "Property",
+                "messageId": "missingPropType",
+                "endLine": 12,
+                "endColumn": 56
+            },
+            {
+                "ruleId": "react/prop-types",
+                "severity": 2,
+                "message": "'onClose' is missing in props validation",
+                "line": 12,
+                "column": 58,
+                "nodeType": "Property",
+                "messageId": "missingPropType",
+                "endLine": 12,
+                "endColumn": 65
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 26,
+                "column": 9,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 31,
+                "endColumn": 10
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 32,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 40,
+                "endColumn": 14
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 41,
+                "column": 13,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 41,
+                "endColumn": 111
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 42,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 45,
+                "endColumn": 18
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 46,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 49,
+                "endColumn": 18
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 50,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 50,
+                "endColumn": 41
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 53,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 58,
+                "endColumn": 18
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 59,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 59,
+                "endColumn": 48
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 62,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 62,
+                "endColumn": 64
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 63,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 67,
+                "endColumn": 18
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 69,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 69,
+                "endColumn": 84
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 70,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 70,
+                "endColumn": 55
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 71,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 71,
+                "endColumn": 40
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 74,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 74,
+                "endColumn": 85
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 76,
+                "column": 25,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 76,
+                "endColumn": 100
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 79,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 79,
+                "endColumn": 40
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 84,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 84,
+                "endColumn": 84
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 85,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 85,
+                "endColumn": 59
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 86,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 86,
+                "endColumn": 25
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 87,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 87,
+                "endColumn": 104
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 88,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 88,
+                "endColumn": 24
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 92,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 92,
+                "endColumn": 80
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 93,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 93,
+                "endColumn": 25
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 94,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 94,
+                "endColumn": 112
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 95,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 95,
+                "endColumn": 24
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 99,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 99,
+                "endColumn": 80
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 100,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 100,
+                "endColumn": 25
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 101,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 101,
+                "endColumn": 109
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 102,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 102,
+                "endColumn": 24
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 106,
+                "column": 17,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 106,
+                "endColumn": 80
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 107,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 107,
+                "endColumn": 25
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 108,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 108,
+                "endColumn": 112
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 109,
+                "column": 21,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 109,
+                "endColumn": 24
+            }
+        ],
+        "suppressedMessages": [],
+        "errorCount": 35,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "import { GiScrollUnfurled } from \"react-icons/gi\";\r\nimport { LiaSkullCrossbonesSolid } from \"react-icons/lia\";\r\n\r\ntype ModalProps = {\r\n    showModal: boolean;\r\n    onClose: () => void;\r\n};\r\n\r\n/**\r\n * Modal component displays a modal dialog with game instructions and rune explanations.\r\n */\r\nexport const Modal: React.FC<ModalProps> = ({ showModal, onClose }) => {\r\n    // Overlay classes for modal visibility\r\n    const overlayClasses = [\r\n        \"z-10 flex w-full items-center justify-center fixed inset-0 transition-colors\",\r\n        showModal ? \"visible bg-black/50\" : \"invisible\"\r\n    ].join(\" \");\r\n\r\n    // Modal content classes for animation\r\n    const contentClasses = [\r\n        \"scroll-m-80 flex flex-col flex-wrap w-fit items-center min-w-[320px] justify-around p-2 transition-all\",\r\n        showModal ? \"scale-100 opacity-100\" : \"scale-110 opacity-0\"\r\n    ].join(\" \");\r\n\r\n    return (\r\n        <div\r\n            className={overlayClasses}\r\n            onClick={onClose}\r\n            role=\"presentation\"\r\n            aria-hidden={!showModal}\r\n        >\r\n            <div\r\n            className=\"flex flex-col w-[99vw] max-w-[600px] landscape:max-w-[350px] justify-around p-4 bg-parchment-9-16\"\r\n            role=\"dialog\"\r\n            aria-modal=\"true\"\r\n            aria-labelledby=\"modal-title\"\r\n            aria-describedby=\"modal-desc\"\r\n            tabIndex={-1}\r\n            // Ensure modal is focusable for accessibility\r\n            >\r\n            <div className=\"flex flex-col justify-center items-center px-3 h-[100vw] landscape:max-h-[400px]\">\r\n                <div\r\n                className={contentClasses}\r\n                onClick={e => e.stopPropagation()}\r\n                >\r\n                <span\r\n                    className=\"text-shadow-scroll text-yellow-950 text-5xl p-2 drop-shadow-md\"\r\n                    aria-hidden=\"true\"\r\n                >\r\n                    <GiScrollUnfurled />\r\n                </span>\r\n                {/* Close button (hidden) */}\r\n                <button\r\n                    className=\"hidden\"\r\n                    onClick={onClose}\r\n                    aria-label=\"Close modal\"\r\n                    type=\"button\"\r\n                >\r\n                    <LiaSkullCrossbonesSolid />\r\n                </button>\r\n                </div>\r\n                <h2 id=\"modal-title\" className=\"text-2xl mb-2\">How to Play</h2>\r\n                <ol\r\n                id=\"modal-desc\"\r\n                className=\"flex flex-col justify-start overscroll-contain w-fit h-[40vh] items-center text-center overflow-y-scroll snap-start border-t-amber-800 border-b-amber-800 p-1\"\r\n                aria-live=\"polite\"\r\n                >\r\n                {/* Aim of the Game */}\r\n                <li className=\"flex flex-col justify-center items-center p-1 mb-1\">\r\n                    <h2 className=\"underline text-md\">Aim of the Game</h2>\r\n                    <p className=\"p-2\">\r\n                    To become the Rune Master, you must guess the word that presents five Gold runes.\r\n                    </p>\r\n                    <div className=\"flex\" aria-label=\"Five gold runes\" role=\"group\">\r\n                    {[...Array(5)].map((_, i) => (\r\n                        <div key={i} className=\"modal-rune-correct w-10 h-14\" aria-hidden=\"true\" />\r\n                    ))}\r\n                    </div>\r\n                    <p className=\"p-2\">\r\n                    If you fail six attempts to collect the five Gold runes, you will be branded a mere apprentice.\r\n                    </p>\r\n                </li>\r\n                {/* Rune Types & Purpose */}\r\n                <li className=\"flex flex-col justify-center items-center p-1 mb-1\">\r\n                    <h2 className=\"text-lg underline p-1\">Rune Types & Purpose</h2>\r\n                    <h2>Rune of Ivory</h2>\r\n                    <div className=\"modal-rune-tile w-10 h-14\" aria-label=\"Rune of Ivory\" role=\"img\" />\r\n                    <p>\r\n                    A plain Rune that has not been blessed with an inscription.\r\n                    </p>\r\n                </li>\r\n                <li className=\"flex flex-col justify-center items-center mb-3\">\r\n                    <h2>Rune of Weathered Gold</h2>\r\n                    <div className=\"modal-rune-oop w-10 h-14\" aria-label=\"Rune of Weathered Gold\" role=\"img\" />\r\n                    <p>\r\n                    A Rune whose inscription is within the solution, but is incorrectly positioned.\r\n                    </p>\r\n                </li>\r\n                <li className=\"flex flex-col justify-center items-center mb-3\">\r\n                    <h2>Rune of Decay</h2>\r\n                    <div className=\"modal-rune-incorrect w-10 h-14\" aria-label=\"Rune of Decay\" role=\"img\" />\r\n                    <p>\r\n                    Its inscription is not within the solution.\r\n                    </p>\r\n                </li>\r\n                <li className=\"flex flex-col justify-center items-center mb-3\">\r\n                    <h2>Rune of the Master</h2>\r\n                    <div className=\"modal-rune-correct w-10 h-14\" aria-label=\"Rune of the Master\" role=\"img\" />\r\n                    <p>\r\n                    Its inscription is correctly placed. Five of these together brands you the Rune Master.\r\n                    </p>\r\n                </li>\r\n                </ol>\r\n            </div>\r\n            </div>\r\n        </div>\r\n    );\r\n};\r\n",
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\config\\allowed_words.ts",
+        "messages": [],
+        "suppressedMessages": [],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\constants.ts",
+        "messages": [],
+        "suppressedMessages": [],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\hooks\\useCurrentGuessReducer.ts",
+        "messages": [],
+        "suppressedMessages": [],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\main.tsx",
+        "messages": [
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 12,
+                "column": 5,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 12,
+                "endColumn": 17
+            },
+            {
+                "ruleId": "react/react-in-jsx-scope",
+                "severity": 2,
+                "message": "'React' must be in scope when using JSX",
+                "line": 13,
+                "column": 7,
+                "nodeType": "JSXOpeningElement",
+                "messageId": "notInScope",
+                "endLine": 13,
+                "endColumn": 14
+            }
+        ],
+        "suppressedMessages": [],
+        "errorCount": 2,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "source": "import { StrictMode } from \"react\";\nimport { createRoot } from \"react-dom/client\";\nimport \"./index.css\";\nimport App from \"./App.tsx\";\n\n// Get the root DOM element\nconst rootElement = document.getElementById(\"root\");\n\nif (rootElement) {\n  // Create a React root and render the App inside StrictMode\n  createRoot(rootElement).render(\n    <StrictMode>\n      <App />\n    </StrictMode>\n  );\n} else {\n  // Optionally handle the case where the root element is missing\n  console.error('Root element with id \"root\" not found.');\n}\n",
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\utils\\IsValidWord.ts",
+        "messages": [],
+        "suppressedMessages": [],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\utils\\gameStateStorage.ts",
+        "messages": [],
+        "suppressedMessages": [],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\utils\\getTileStates.ts",
+        "messages": [
+            {
+                "ruleId": "prefer-const",
+                "severity": 2,
+                "message": "'solutionCopy' is never reassigned. Use 'const' instead.",
+                "line": 39,
+                "column": 9,
+                "nodeType": "Identifier",
+                "messageId": "useConst",
+                "endLine": 39,
+                "endColumn": 21,
+                "fix": {
+                    "range": [
+                        1366,
+                        1404
+                    ],
+                    "text": "const solutionCopy = solution.split('');"
+                }
+            }
+        ],
+        "suppressedMessages": [],
+        "errorCount": 1,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 1,
+        "fixableWarningCount": 0,
+        "source": "import { GAME_WORD_LENGTH, LetterState } from \"../constants\";\r\n\r\n/**\r\n * Replaces the character at the specified index in a string with a new character.\r\n */\r\nexport const replaceCharAtIndex = (\r\n    str: string,\r\n    idx: number,\r\n    newChar: string\r\n): string => {\r\n    return str.substring(0, idx) + newChar + str.substring(idx + 1);\r\n};\r\n\r\n/**\r\n * Determines the state of each tile in a word-guessing game based on the user's guess and the solution.\r\n *\r\n * @param solution - The correct word to be guessed.\r\n * @param guess - The user's current guess.\r\n * @param isSubmitted - Indicates whether the guess has been submitted.\r\n * @returns An array of `LetterState` representing the state of each tile:\r\n *   - 'correct' if the letter is in the correct position,\r\n *   - 'outofplace' if the letter is in the solution but in the wrong position,\r\n *   - 'incorrect' if the letter is not in the solution,\r\n *   - 'default' if the guess has not been submitted.\r\n */\r\nexport const getTileStates = (\r\n    solution: string,\r\n    guess: string,\r\n    isSubmitted: boolean\r\n): LetterState[] => {\r\n    // Initialize all tile states to 'default'\r\n    const tileStates: LetterState[] = Array(GAME_WORD_LENGTH).fill('default');\r\n\r\n    if (!isSubmitted || !guess) {\r\n        return tileStates;\r\n    }\r\n\r\n    // Make a mutable copy of the solution for marking used letters\r\n    let solutionCopy = solution.split('');\r\n\r\n    // First pass: mark correct letters\r\n    for (let i = 0; i < GAME_WORD_LENGTH; i++) {\r\n        if (guess[i] === solutionCopy[i]) {\r\n            tileStates[i] = 'correct';\r\n            solutionCopy[i] = ' '; // Mark as used\r\n        }\r\n    }\r\n\r\n    // Second pass: mark out-of-place and incorrect letters\r\n    for (let i = 0; i < GAME_WORD_LENGTH; i++) {\r\n        if (tileStates[i] === 'correct') continue;\r\n\r\n        const guessChar = guess[i];\r\n        const foundIdx = solutionCopy.indexOf(guessChar);\r\n\r\n        if (foundIdx !== -1) {\r\n            tileStates[i] = 'outofplace';\r\n            solutionCopy[foundIdx] = ' '; // Mark as used\r\n        } else {\r\n            tileStates[i] = 'incorrect';\r\n        }\r\n    }\r\n\r\n    return tileStates;\r\n};\r\n",
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\src\\vite-env.d.ts",
+        "messages": [],
+        "suppressedMessages": [],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\vite.config.ts",
+        "messages": [],
+        "suppressedMessages": [],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    },
+    {
+        "filePath": "C:\\Users\\apexd\\OneDrive\\Desktop\\mp2-rune-master\\vitest.config.ts",
+        "messages": [],
+        "suppressedMessages": [],
+        "errorCount": 0,
+        "fatalErrorCount": 0,
+        "warningCount": 0,
+        "fixableErrorCount": 0,
+        "fixableWarningCount": 0,
+        "usedDeprecatedRules": []
+    }
+]

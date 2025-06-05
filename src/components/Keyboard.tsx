@@ -1,3 +1,4 @@
+import React from "react"; /* For ESLint react scope errors */
 import classNames from "classnames";
 import { BACKSPACE, ENTER, LetterState } from "../constants";
 import { IoIosBackspace } from "react-icons/io";

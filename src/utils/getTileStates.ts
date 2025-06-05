@@ -36,7 +36,7 @@ export const getTileStates = (
     }
 
     // Make a mutable copy of the solution for marking used letters
-    let solutionCopy = solution.split('');
+    const solutionCopy = solution.split('');
 
     // First pass: mark correct letters
     for (let i = 0; i < GAME_WORD_LENGTH; i++) {

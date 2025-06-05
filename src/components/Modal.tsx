@@ -1,3 +1,4 @@
+import React from "react"; /* For ESLint react scope errors */
 import { GiScrollUnfurled } from "react-icons/gi";
 import { LiaSkullCrossbonesSolid } from "react-icons/lia";
 

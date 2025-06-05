@@ -1,9 +1,8 @@
+import React from "react"; /* For ESLint react scope errors */
 import { useState } from "react";
 import { GiFireGem, GiScrollUnfurled } from "react-icons/gi";
 import { MdFiberNew } from "react-icons/md";
 import { Modal } from "./Modal";
-
-type Props = {};
 
 /**
  * Header component for the Rune Master application.
@@ -11,10 +10,9 @@ type Props = {};
  * Renders the top navigation bar with the game title, icons, and action buttons.
  * Includes a button to start a new game (reloads the page) and a button to open a modal.
  *
- * @param _props - Component props (currently unused).
  * @returns The header JSX element with navigation and modal controls.
  */
-export const Header = (_props: Props) => {
+export const Header = () => {
     const [showModal, setShowModal] = useState(false);
 
     const handleNewGame = () => {

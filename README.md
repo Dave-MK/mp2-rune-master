@@ -32,6 +32,7 @@ I have decided to create a word guessing game called "Rune Master!", not too dis
     + **TypeScript**: For its more explicit nature and ability to present obvious errors, I like the fact its JavaScript with extra features, I felt like i had more tools at my finger tips
     + **Tailwind CSS**: For speedy utility classes 
     + **Vitest**: For my automation testing because it requires less setup than JEST and better compatibility when using Vite
+    + **ESLint**: For linting I opted for ESLint over JSHint due to the requirement for more depth in error analysis, JSHint is also a deprecated feature in VSCode and ESLint is a more industry-wide accepted and utilised linter
 
 ### **Mandatory Requirements**
 
@@ -230,6 +231,22 @@ The wireframes show how the game should look on various device sizes, mobile, ta
     <img src="./documentation/readme-assets/css-validation.png" alt="css validation" style="width:30vw;" />
 </div>
 
+#### ESLint script testing
+Due to using react and typescript I opted for ESLint instead of JSHint for a more in depth analysis of my scripts code. I ran these tests and had the results written to a json file.
+
+**Initial ESLint Report**<br>
+In the initial report you will notice most or all of the errors relate to react scope, this appears to be due to some confusion from the linter when reading the .tsx files. There are more in depth ways to fix this that would require a large refactor of my code, but a quicker and simpler fix was to use:
+
+```
+import React from "react";
+```
+
+[**ESLint - Initial Report**](/documentation/testing/ESLint/initial-eslint-results.json)
+
+If you observe in the final ESLint report, there are no errors remaining.
+
+[**ESLint - Final Report**](/documentation/testing/ESLint/final-eslint-results.json)
+
 ### Automated Testing
 
 [**Vitest - Automated Testing**](/documentation/testing/automation/vitest-results.json)
@@ -244,6 +261,7 @@ The wireframes show how the game should look on various device sizes, mobile, ta
 - Some issues with keyboard fonts
 - Issue where background images of certain tiles and keyboard tiles wouldn't display
 - Similar background image issue as above where images were fine in test environment, but wouldn't show in deployment
+- React scope issues picked up in ESLint testing
 
 ### Issues still present
 - As mentioned above accessibility could be improved further

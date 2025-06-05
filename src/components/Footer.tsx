@@ -1,11 +1,10 @@
+import React from "react"; /* For ESLint react scope errors */
 import { DiGithubFull } from "react-icons/di"
-
-type Props = {}
 
 /**
  * Footer component that displays a centered GitHub icon with a ping animation.
  */
-export const Footer = (_props: Props) => {
+export const Footer = () => {
     const githubUrl = "https://github.com/Dave-MK/mp2-rune-master"
 
     return (

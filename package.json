@@ -7,6 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "lint:report": "eslint . -f json -o eslint-results.json",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "preview": "vite preview",
     "test": "vitest run --reporter=default --reporter=json --outputFile=vitest-results.json",
     "test:watch": "vitest --watch"
@@ -21,19 +25,20 @@
     "tailwindcss": "^4.1.5"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
+    "@eslint/js": "^9.28.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.22.0",
+    "eslint": "^9.28.0",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
-    "globals": "^16.0.0",
+    "globals": "^16.2.0",
     "jsdom": "^26.1.0",
     "typescript": "~5.7.2",
-    "typescript-eslint": "^8.26.1",
+    "typescript-eslint": "^8.33.1",
     "vite": "^6.3.1",
     "vitest": "^3.1.4"
   }

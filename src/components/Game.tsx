@@ -1,3 +1,4 @@
+import React from "react"; /* For ESLint react scope errors */
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
     BACKSPACE,
