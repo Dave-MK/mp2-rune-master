@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { BACKSPACE, ENTER, LetterState } from "../constants";
-import { BsBackspace } from "react-icons/bs";
+import { IoIosBackspace } from "react-icons/io";
 
 const ROWS = [
     "QWERTYUIOP".split(""),
@@ -55,7 +55,7 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
 
     const isSpecial = letter === ENTER || letter === BACKSPACE;
     const baseClasses =
-        "flex w-10 h-14 justify-center items-center font-bold rounded-md active:bg-amber-100 md:text-xl lg:text-2xl pt-1";
+        "flex w-10 h-14 justify-center items-center font-bold rounded-md active:bg-amber-100 md:text-xl lg:text-2xl pt-1 z-15";
 
     let ariaLabel = letter;
     if (letter === ENTER) ariaLabel = "Enter";
@@ -84,7 +84,9 @@ export const Key = ({ letter, onKeyPress, letterState }: KeyProps) => {
             type="button"
         >
             {letter === BACKSPACE ? (
-            <BsBackspace className="default-backspace md:text-2xl lg:text-3xl font-extrabold pt-1" />
+                <div className="flex items-center justify-center w-full h-full">
+                    <IoIosBackspace className="text-lg md:text-xl lg:text-2xl" />
+                </div>
             ) : (
             letter
             )}

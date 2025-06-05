@@ -10,45 +10,30 @@ export const Footer = (_props: Props) => {
 
     return (
         <footer
-            className="w-full grid mt-auto mb-auto justify-center items-center"
+            className="w-full py-2 mt-auto flex justify-center items-center"
             role="contentinfo"
             aria-label="Footer"
         >
-            {/* Main GitHub icon */}
             <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-start-1 row-start-1 z-10"
-            aria-label="Project GitHub Repository"
-            role="link"
-            aria-describedby="github-desc"
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Project GitHub Repository"
+                role="link"
+                aria-describedby="github-desc"
+                className="relative group"
             >
-            <DiGithubFull
-                className="text-6xl md:text-7xl lg:text-8xl text-teal-600 z-10"
-                aria-label="GitHub logo"
-                focusable="false"
-            />
+                {/* Base icon */}
+                <DiGithubFull className="-mt-5 text-6xl md:text-7xl text-teal-200 animate-pulse group-hover:text-teal-100 transition-colors" />
+                {/* Ping animation using a pseudo-icon */}
+                <span className="-mt-5 absolute inset-0 rounded-full text-6xl md:text-7xl text-teal-800 opacity-75 pointer-events-none">
+                    <DiGithubFull />
+                </span>
             </a>
-            {/* Animated ping effect */}
-            <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="col-start-1 row-start-1"
-            aria-label="Project GitHub Repository (animated background)"
-            role="link"
-            tabIndex={-1}
-            aria-hidden="true"
-            >
-            <DiGithubFull
-                className="text-6xl md:text-7xl lg:text-8xl text-teal-900 animate-ping"
-                aria-hidden="true"
-                focusable="false"
-            />
-            </a>
+
+            {/* Screen reader text */}
             <span id="github-desc" className="sr-only">
-            Visit the project GitHub repository in a new tab.
+                Visit the project GitHub repository in a new tab.
             </span>
         </footer>
     )
