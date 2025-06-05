@@ -269,6 +269,7 @@ If you observe in the final ESLint report, there are no errors remaining.
 - Some issues with keyboard fonts
 - Issue where background images of certain tiles and keyboard tiles wouldn't display
 - Similar background image issue as above where images were fine in test environment, but wouldn't show in deployment
+- When testing on an old monitor i have noticed the GitHub link at the bottom goes off the page, but doesn't happen on more modern monitors - now fixed
 - React scope issues picked up in ESLint testing
 
 ### Issues still present
@@ -276,7 +277,6 @@ If you observe in the final ESLint report, there are no errors remaining.
 - Tailwind class declarations could be neater
 - Due to time, certain features will be introduced at a later date - as stated in Future Features
 - Git Commit messages could be optimised in future, this is still a skill i am working on
-- When testing on an old monitor i have noticed the GitHub link at the bottom goes off the page, but doesn't happen on more modern monitors / resolutions, didn't find a quick enough fix in time
 - Local Storage caching was implemented, it was working fine, but commented it out (deactivated it) as in its basic state wasn't much use to the user, I have left this in the code with a view of making it more robust in the future and reactivating it
 
 ### Future Features

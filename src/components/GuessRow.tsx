@@ -60,7 +60,7 @@ export const Tile = ({ letter, state, idx }: TileProps) => {
             "incorrect-tile-text md:text-xl lg:text-2xl pt-1": state === 'incorrect' && revealColour,
             "oop-tile-text md:text-xl lg:text-2xl pt-1": state === 'outofplace' && revealColour,
         },
-        'w-8 h-12 xl:w-10 xl:h-14 md:text-xl lg:text-2xl pt-1 flex justify-center items-center transition-all duration-200'
+        'w-14 h-20 md:w-10 md:h-14 md:text-xl lg:text-2xl pt-1 flex justify-center items-center transition-all duration-200'
     );
 
     return (

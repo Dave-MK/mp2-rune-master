@@ -13,7 +13,7 @@ type ModalProps = {
 export const Modal: React.FC<ModalProps> = ({ showModal, onClose }) => {
     // Overlay classes for modal visibility
     const overlayClasses = [
-        "z-10 flex w-full items-center justify-center fixed inset-0 transition-colors",
+        "z-20 flex w-full items-center justify-center fixed inset-0 transition-colors",
         showModal ? "visible bg-black/50" : "invisible"
     ].join(" ");
 
